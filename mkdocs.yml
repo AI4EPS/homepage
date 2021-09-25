@@ -11,7 +11,7 @@ edit_uri: ""
 # Page tree
 nav:
   - Home: index.md
-  - DeepDenoise: '!include ./DeepDenoiser/mkdocs.yml'
+  - DeepDenoiser: '!include ./DeepDenoiser/mkdocs.yml'
   - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
   - GaMMA: '!include ./GMMA/mkdocs.yml'
   - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
