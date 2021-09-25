@@ -1,25 +1,30 @@
 site_name: "AI4Earth"
-site_url: ""
-site_author: ""
+site_url: "https://ai4earth.github.io/HomePage/"
+site_author: "Weiqiang Zhu"
 site_description: ""
 
 # Repository
-repo_name: ""
-repo_url: ""
+repo_name: "GitHub"
+repo_url: "https://github.com/AI4Earth"
 edit_uri: ""
 
 # Page tree
 nav:
   - Home: index.md
+  - DeepDenoise: '!include ./DeepDenoiser/mkdocs.yml'
+  - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
+  - GaMMA: '!include ./GMMA/mkdocs.yml'
+  - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
 
+# Configuration
 theme:
-  name: 'material'
+  name: "material"
 
-  # 404 page
+  # Static files
   static_templates:
     - 404.html
 
-  # Necessary for search to work properly
+  # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
 
@@ -62,4 +67,6 @@ theme:
     logo: logo
 
 plugins:
+  - search
   - mkdocs-jupyter
+  - monorepo
