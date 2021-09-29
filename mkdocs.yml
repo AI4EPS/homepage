@@ -10,7 +10,7 @@ edit_uri: ""
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: README.md
   - DeepDenoiser: '!include ./DeepDenoiser/mkdocs.yml'
   - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
   - GaMMA: '!include ./GMMA/mkdocs.yml'
