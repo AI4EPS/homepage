@@ -2,7 +2,7 @@
 
 <!--- ## AI for earthquake monitoring --->
 
-![](assets/defense_flyer_zhuwq.png)
+![](https://raw.githubusercontent.com/AI4Earth/home/master/docs/assets/defense_flyer_zhuwq.png)
 
 Still under development...
 
