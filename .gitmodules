@@ -1,12 +1,16 @@
 [submodule "DeepDenoiser"]
 	path = DeepDenoiser
 	url = https://github.com/wayneweiqiang/DeepDenoiser.git
+    branch=master
 [submodule "PhaseNet"]
 	path = PhaseNet
 	url = https://github.com/wayneweiqiang/PhaseNet.git
+    branch=master
 [submodule "GMMA"]
 	path = GMMA
 	url = https://github.com/wayneweiqiang/GMMA.git
+    branch=master
 [submodule "QuakeFlow"]
 	path = QuakeFlow
 	url = https://github.com/wayneweiqiang/QuakeFlow.git
+    branch=master
