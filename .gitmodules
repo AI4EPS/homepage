@@ -6,9 +6,9 @@
 	path = PhaseNet
 	url = https://github.com/wayneweiqiang/PhaseNet.git
     branch=master
-[submodule "GMMA"]
-	path = GMMA
-	url = https://github.com/wayneweiqiang/GMMA.git
+[submodule "GaMMA"]
+	path = GaMMA
+	url = https://github.com/wayneweiqiang/GaMMA.git
     branch=master
 [submodule "QuakeFlow"]
 	path = QuakeFlow
