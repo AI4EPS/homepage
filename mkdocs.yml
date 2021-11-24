@@ -13,7 +13,7 @@ nav:
   - Home: README.md
   - DeepDenoiser: '!include ./DeepDenoiser/mkdocs.yml'
   - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
-  - GaMMA: '!include ./GMMA/mkdocs.yml'
+  - GaMMA: '!include ./GaMMA/mkdocs.yml'
   - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
 
 # Configuration
