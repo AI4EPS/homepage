@@ -4,7 +4,7 @@ site_author: "Weiqiang Zhu"
 site_description: ""
 
 # Repository
-repo_name: "GitHub"
+repo_name: "AI4Earth"
 repo_url: "https://github.com/ai4earth.github.io"
 edit_uri: ""
 
@@ -12,13 +12,17 @@ edit_uri: ""
 nav:
   - Home: README.md
   - Research: 
+    - Research.md
+    - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
     - DeepDenoiser: '!include ./DeepDenoiser/mkdocs.yml'
     - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
     - GaMMA: '!include ./GaMMA/mkdocs.yml'
-    - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
-  - Teaching
-  - Publication
-  - CV
+    - ADSeismic: '!include ./ADSeismic.jl/mkdocs.yml'
+  - Teaching: 
+    - Teaching.md
+    - PyEarth: '!include ./classes/pyearth/mkdocs.yml'
+  - Publication: Publication.md
+  - CV: CV.pdf
 
 
 # Configuration
@@ -42,7 +46,7 @@ theme:
     # - navigation.expand
     - navigation.indexes
     # - navigation.instant
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
@@ -73,5 +77,17 @@ theme:
 
 plugins:
   - search
-  - mkdocs-jupyter
+  - mkdocs-jupyter:
+      ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
   - monorepo
+  - bibtex:
+      bib_file: "docs/publications.bib"
+markdown_extensions:
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
