@@ -6,8 +6,9 @@ repo_name: 'PyEarth'
 repo_url: 'https://github.com/ai4earth/classes/pyearth'
 nav:
     - Overview: README.md
-    - Download seismic data: obspy/seismic_waveform.ipynb
-    - Realtime data streaming: obspy/animation_seedlink.ipynb
+    - Obspy:
+      - Download seismic data: obspy/seismic_waveform.ipynb
+      - Realtime data streaming: obspy/animation_seedlink.ipynb
 theme:
   name: 'material'
 plugins:
