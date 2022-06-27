@@ -72,6 +72,7 @@ plugins:
   # - minify:
   #     minify_html: true
   - mkdocs-jupyter:
+      ignore_h1_titles: True
       ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
   - monorepo
   - bibtex:
