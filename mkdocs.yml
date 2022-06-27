@@ -1,11 +1,11 @@
-site_name: "AI4Earth"
-site_url: "https://ai4earth.github.io/"
+site_name: "AI4EPS"
+site_url: "https://ai4eps.github.io/"
 site_author: "Weiqiang Zhu"
 site_description: ""
 
 # Repository
-repo_name: "AI4Earth"
-repo_url: "https://github.com/ai4earth"
+repo_name: "AI4EPS"
+repo_url: "https://github.com/ai4eps"
 
 # Page tree
 nav:
