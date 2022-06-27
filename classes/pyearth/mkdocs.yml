@@ -4,7 +4,7 @@ site_author: 'Weiqiang Zhu'
 repo_name: 'PyEarth'
 repo_url: 'https://github.com/ai4earth/classes/pyearth'
 nav:
-    # - Overview: README.md
+    - Overview: README.md
     - Obspy:
       - Install packages: obspy/install.md
       - Download seismic data: obspy/seismic_waveform.ipynb

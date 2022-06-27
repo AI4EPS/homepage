@@ -22,3 +22,10 @@ or
 ```bash
 conda install obspy -c conda-forge
 ```
+
+## Other packages
+
+- [cartopy](https://scitools.org.uk/cartopy/docs/latest/gallery/index.html) for plotting geospatial data 
+```bash
+conda install cartopy -c conda-forge
+```
