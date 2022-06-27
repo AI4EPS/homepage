@@ -14,3 +14,9 @@
 	path = QuakeFlow
 	url = https://github.com/wayneweiqiang/QuakeFlow.git
     branch = master
+[submodule "ADSeismic.jl"]
+	path = ADSeismic.jl
+	url = git@github.com:kailaix/ADSeismic.jl.git
+[submodule "ADEikonal.jl"]
+	path = ADEikonal.jl
+	url = git@github.com:ai4earth/ADEikonal.jl.git
