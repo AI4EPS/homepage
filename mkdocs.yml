@@ -40,11 +40,13 @@ theme:
   language: en
   features:
     - content.code.annotate
-    - content.tabs.link
+    # - content.tabs.link
+    - content.tooltips
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
     # - navigation.instant
+    # - navigation.prune
     # - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
@@ -53,20 +55,8 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
+    # - toc.follow
     # - toc.integrate
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-    - scheme: slate
-      primary: red
-      accent: red
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -76,6 +66,11 @@ theme:
 
 plugins:
   - search
+  # - redirects:
+  #     redirect_maps:
+  #       changelog/insiders.md: insiders/changelog.md
+  # - minify:
+  #     minify_html: true
   - mkdocs-jupyter:
       ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
   - monorepo
