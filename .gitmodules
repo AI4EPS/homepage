@@ -20,5 +20,5 @@
     branch = master
 [submodule "ADEikonal.jl"]
 	path = ADEikonal.jl
-	url = git@github.com:ai4earth/ADEikonal.jl.git
+	url = git@github.com:ai4eps/ADEikonal.jl.git
     branch = master
