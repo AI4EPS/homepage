@@ -5,8 +5,7 @@ site_description: ""
 
 # Repository
 repo_name: "AI4Earth"
-repo_url: "https://github.com/ai4earth.github.io"
-edit_uri: ""
+repo_url: "https://github.com/ai4earth"
 
 # Page tree
 nav:
