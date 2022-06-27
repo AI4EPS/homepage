@@ -1,20 +1,25 @@
 site_name: "AI4Earth"
-site_url: "https://ai4earth.github.io/HomePage/"
+site_url: "https://ai4earth.github.io/"
 site_author: "Weiqiang Zhu"
 site_description: ""
 
 # Repository
 repo_name: "GitHub"
-repo_url: "https://github.com/AI4Earth"
+repo_url: "https://github.com/ai4earth.github.io"
 edit_uri: ""
 
 # Page tree
 nav:
   - Home: README.md
-  - DeepDenoiser: '!include ./DeepDenoiser/mkdocs.yml'
-  - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
-  - GaMMA: '!include ./GaMMA/mkdocs.yml'
-  - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
+  - Research: 
+    - DeepDenoiser: '!include ./DeepDenoiser/mkdocs.yml'
+    - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
+    - GaMMA: '!include ./GaMMA/mkdocs.yml'
+    - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
+  - Teaching
+  - Publication
+  - CV
+
 
 # Configuration
 theme:
