@@ -17,6 +17,8 @@
 [submodule "ADSeismic.jl"]
 	path = ADSeismic.jl
 	url = git@github.com:kailaix/ADSeismic.jl.git
+    branch = master
 [submodule "ADEikonal.jl"]
 	path = ADEikonal.jl
 	url = git@github.com:ai4earth/ADEikonal.jl.git
+    branch = master
