@@ -1,0 +1,13 @@
+site_name: "PyEarth"
+site_description: 'PyEarth'
+site_author: 'Weiqiang Zhu'
+docs_dir: ./
+repo_name: 'PyEarth'
+repo_url: 'https://github.com/ai4earth/classes/pyearth'
+nav:
+    - Overview: README.md
+    - Obspy: obspy/seismic_waveform.ipynb
+theme:
+  name: 'material'
+plugins:
+  - mkdocs-jupyter
