@@ -20,6 +20,7 @@ nav:
   - Teaching: 
     - Teaching.md
     - PyEarth: '!include ./classes/pyearth/mkdocs.yml'
+    - ML4Earth: '!include ./classes/ml4earth/mkdocs.yml'
   - Publication: Publication.md
   - CV: CV.pdf
 

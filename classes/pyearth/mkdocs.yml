@@ -2,7 +2,7 @@ site_name: "PyEarth"
 site_description: 'PyEarth'
 site_author: 'Weiqiang Zhu'
 repo_name: 'PyEarth'
-repo_url: 'https://github.com/ai4earth/classes/pyearth'
+repo_url: 'https://github.com/ai4eps/classes/pyearth'
 nav:
     - Overview: README.md
     - Obspy:
