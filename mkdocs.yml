@@ -11,18 +11,18 @@ repo_url: "https://github.com/ai4eps"
 nav:
   - Home: README.md
   - Research: 
-    - Research.md
+    - research.md
     - QuakeFlow: '!include ./QuakeFlow/mkdocs.yml'
     - DeepDenoiser: '!include ./DeepDenoiser/mkdocs.yml'
     - PhaseNet: '!include ./PhaseNet/mkdocs.yml'
     - GaMMA: '!include ./GaMMA/mkdocs.yml'
     - ADSeismic: '!include ./ADSeismic.jl/mkdocs.yml'
   - Teaching: 
-    - Teaching.md
+    - teaching.md
     - PyEarth: '!include ./classes/pyearth/mkdocs.yml'
     - ML4Earth: '!include ./classes/ml4earth/mkdocs.yml'
-  - Publication: Publication.md
-  - CV: CV.pdf
+  - Publication: publication.md
+  - CV: cv.pdf
 
 
 # Configuration
