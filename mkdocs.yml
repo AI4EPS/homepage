@@ -78,6 +78,12 @@ plugins:
   - monorepo
   - bibtex:
       bib_file: "docs/publications.bib"
+  - redirects:
+      redirect_maps:
+        'quakeflow': 'https://ai4eps.github.io/QuakeFlow' 
+        'phasenet': 'https://ai4eps.github.io/PhaseNet'
+        'gamma': 'https://ai4eps.github.io/GaMMA'
+        'adseismic': 'https://ai4eps.github.io/ADSeismic'
 
 markdown_extensions:
   - footnotes
