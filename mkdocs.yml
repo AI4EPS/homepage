@@ -81,9 +81,12 @@ plugins:
   - redirects:
       redirect_maps:
         'quakeflow': 'https://ai4eps.github.io/QuakeFlow' 
+        'deepdenoiser': 'https://ai4eps.github.io/DeepDenoiser' 
         'phasenet': 'https://ai4eps.github.io/PhaseNet'
         'gamma': 'https://ai4eps.github.io/GaMMA'
         'adseismic': 'https://ai4eps.github.io/ADSeismic'
+        'pyearth': 'https://ai4eps.github.io/PyEarth'
+        'ml4earth': 'https://ai4eps.github.io/ML4Earth'
 
 markdown_extensions:
   - footnotes
