@@ -12,6 +12,7 @@ nav:
       - Signal processing: obspy/signal_processing.ipynb
     - Earthquake:
       - Earthquake detection: earthquake/detection.ipynb
+      - Earthquake statistics: earthquake/statistics.ipynb
     - Projection: projection.ipynb
 theme:
   name: 'material'
