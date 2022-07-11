@@ -2,7 +2,7 @@
 
 In this class, we will learn to use Obspy to access and analyze seismic waveforms. 
 
-We will use **[Anaconda](https://www.anaconda.com/)** to set up the python environment, which comes with many common python packages.
+We will use **[Anaconda](https://www.anaconda.com/)** to set up the python environment, which comes with many commonly used python packages.
 
 ## [Anaconda](https://www.anaconda.com/)
 
