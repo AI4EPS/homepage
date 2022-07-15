@@ -28,6 +28,7 @@ nav:
 # Configuration
 theme:
   name: "material"
+  logo: assets/logo_eps.png
 
   # Static files
   static_templates:
