@@ -99,6 +99,8 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
+  generator: false
   analytics:
     provider: google
     property: G-5P3JS5EJW8
+
