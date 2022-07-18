@@ -13,7 +13,8 @@ nav:
     - Earthquake:
       - Earthquake detection: earthquake/detection.ipynb
       - Earthquake statistics: earthquake/statistics.ipynb
-    - Projection: projection.ipynb
+    - Visualization: 
+      - Projection: visualization/projection.ipynb
 theme:
   name: 'material'
 plugins:
