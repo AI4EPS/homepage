@@ -105,3 +105,5 @@ extra:
     provider: google
     property: G-5P3JS5EJW8
 
+extra_css:
+  - extra.css
