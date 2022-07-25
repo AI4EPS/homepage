@@ -37,7 +37,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- “unit”: microstrain/s (str)
 		- “das_array”: ridgecrest (str)
 
-## Phase picks format in the phase_picks folder):
+## Phase pick format in the phase_picks folder:
 
 Fhe file name should be the same as the hdf5 file. We recommand use comma (,) as the delimiter of the CSV file. 
 
