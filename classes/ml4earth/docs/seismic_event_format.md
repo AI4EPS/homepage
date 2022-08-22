@@ -4,7 +4,7 @@
 
 ## Folder structure: 
 
-- /kuafu/SeismicEventData/Ridgecrest
+- /SeismicEventData/Ridgecrest
 	- waveform.h5
 	- phase_picks.csv
 	- stations.json
@@ -68,17 +68,19 @@ The phase_pick.csv file lists the attrs information of h5 files, which makes it 
 
 The stations.json file contains station location information
 
+```json
 {
-"CI.CCC..BH": {
-    "longitude": -117.36453,
-    "latitude": 35.52495,
-    "elevation_km": 0.67,
-    "component": ["E","N","Z"],
-    "response": [627368000.0,627368000.0,627368000.0],
-    "unit": "m/s"
-  },
-.... (next station)
+	"CI.CCC..BH": {
+		"longitude": -117.36453,
+		"latitude": 35.52495,
+		"elevation_km": 0.67,
+		"component": ["E","N","Z"],
+		"response": [627368000.0,627368000.0,627368000.0],
+		"unit": "m/s"
+		},
+	.... (next station)
 }
+```
 
 ## catalog.csv format:
 

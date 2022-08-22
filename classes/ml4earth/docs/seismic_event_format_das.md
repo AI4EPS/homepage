@@ -4,7 +4,7 @@
 
 ## Folder structure: 
 
-- /kuafu/EventData/Ridgecrest
+- /EventData/Ridgecrest
 	- data folder:
 		- 38443183.h5
 		- ...
