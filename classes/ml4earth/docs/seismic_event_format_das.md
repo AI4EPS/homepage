@@ -11,11 +11,11 @@
 	- phase_picks folder:
 		- 38443183.csv
 		- ...
-	- catalog.csv
 	- das_info.csv
+	- catalog.csv
 	- meta_info.txt
 
-## Waveform format in the data folder:
+## Waveform format in the *data* folder:
 
 For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering.
 
@@ -37,7 +37,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- “unit”: microstrain/s (str)
 		- “das_array”: ridgecrest (str)
 
-## Phase pick format in the phase_picks folder:
+## Phase pick format in the *phase_picks* folder:
 
 Fhe file name should be the same as the hdf5 file. We recommand use comma (,) as the delimiter of the CSV file. 
 
@@ -46,15 +46,7 @@ Fhe file name should be the same as the hdf5 file. We recommand use comma (,) as
 - dtype: int32,int32,str,float32,str
 	- e.g.:1000,3000,2019-07-04T17:33:520000+00:00,0.98,P
 
-## catalog.csv format:
-
-The cataloa.csv file lists the attrs information of h5 files, which makes it easy to select proper training data. We recommand use comma (,) as the delimiter of the CSV file. 
-
-- Headers: event_id,event_time, latitude, longitude,depth_km,magnitude,magnitude_type,source
-- dtype: str,str,float,float,float,float,str,str
-	- e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,mw,CI
-
-## das_info.csv format:
+## *das_info.csv* format:
 
 The das_info file has the location information of the DAS array. We recommand use comma (,) as the delimiter of the CSV file. 
 
@@ -62,7 +54,15 @@ The das_info file has the location information of the DAS array. We recommand us
 - dtype: int32,float,float,float
 	- e.g.: 1,35.695,-117.494,121.1
 
-## meta_info.txt format
+## *catalog.csv* format:
+
+The cataloa.csv file lists the attrs information of h5 files, which makes it easy to select proper training data. We recommand use comma (,) as the delimiter of the CSV file. 
+
+- Headers: event_id,event_time, latitude, longitude,depth_km,magnitude,magnitude_type,source
+- dtype: str,str,float,float,float,float,str,str
+	- e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,mw,CI
+
+## *meta_info.txt* format
 
 This file contains other useful information about the dataset
 
