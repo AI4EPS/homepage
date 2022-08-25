@@ -49,7 +49,8 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "phase_type": [P,S,…] (list of str)
 		- "phase_index": [3000,3023,…] (list of int)
 		- "phase_time": [2022-04-26T13:50:65.160000+00:00, … ] (list of str)
-	
+		- "event_id": [38443183,38443183,] (list of str; multiple events in a window)
+		
 	- "38443183/..." (next station)
 	
 	- ... (next group)
