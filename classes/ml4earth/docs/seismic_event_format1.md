@@ -11,7 +11,7 @@
 	- catalog.csv
 	- meta_info.txt
 
-## waveform.h5 format:
+## *waveform.h5* format:
 
 For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering.
 
@@ -57,7 +57,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 	
 [^1]: which data point in the event origin time)
 
-## phase_picks.csv format:
+## *phase_picks.csv* format:
 
 The phase_pick.csv file lists the attrs information of h5 files, which makes it easy to select training data. We recommand use comma (,) as the delimiter of the CSV file. 
 
@@ -65,7 +65,7 @@ The phase_pick.csv file lists the attrs information of h5 files, which makes it 
 - dtype: str,str,int,str,float,str
   - e.g.:38443183,CI.RJOB..EH,3000,2019-07-04T17:33:520000+00:00,0.98,P
 
-## stations.json format:
+## *stations.json* format:
 
 The stations.json file contains station location information
 
@@ -83,7 +83,7 @@ The stations.json file contains station location information
 }
 ```
 
-## catalog.csv format:
+## *catalog.csv* format:
 
 The catalog.csv file contains earthquake event information
 
@@ -91,7 +91,7 @@ The catalog.csv file contains earthquake event information
 - dtype: str,str,float,float,float,float,str,str
   - e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,mw,CI
 
-## meta_info.txt format
+## *meta_info.txt* format
 
 This file contains other useful information about the dataset
 

@@ -63,7 +63,7 @@ Fhe file name should be the same as the hdf5 file. We recommand use comma (,) as
 - dtype: str,int32,str,float32,str
   - e.g.:CI.RJOB..EH,,3000,2019-07-04T17:33:520000+00:00,0.98,P
 
-## stations.json format:
+## *stations.json* format:
 
 The stations.json file contains station location information
 
@@ -81,7 +81,7 @@ The stations.json file contains station location information
 }
 ```
 
-## catalog.csv format:
+## *catalog.csv* format:
 
 The catalog.csv file contains earthquake event information
 
@@ -89,7 +89,7 @@ The catalog.csv file contains earthquake event information
 - dtype: str,str,float,float,float,float,str,str
   - e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,mw,CI
 
-## meta_info.txt format
+## *meta_info.txt* format
 
 This file contains other useful information about the dataset
 
