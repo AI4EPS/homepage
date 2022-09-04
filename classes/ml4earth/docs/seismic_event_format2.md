@@ -6,11 +6,11 @@
 
 - /SeismicEventData/Ridgecrest
 	- data folder:
-	  - 38443183.h5
-	  - ...
+		- 38443183.h5
+		- ...
 	- phase_picks.csv
-	  - 38443183.csv
-	  - ...
+		- 38443183.csv
+		- ...
 	- stations.json
 	- catalog.csv
 	- meta_info.txt
@@ -24,26 +24,26 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 	- "data".attrs:
 		- "event_id": 38443183 (str)
 		- "event_time": 2019-07-04T17:33:490000+00:00 (str)
-		- "event_time_index"[^1]: 2518 (int)
-		- "event_latitude": 35.705 (float)
-		- "event_longitude": -117.504 (float)
-		- "event_depth_km": 10.5 (float)
-		- "event_magnitude": 6.4 (float)
-		- "event_magnitude_type": Mw (str)
+		- "time_index"[^1]: 2518 (int)
+		- "latitude": 35.705 (float)
+		- "longitude": -117.504 (float)
+		- "depth_km": 10.5 (float)
+		- "magnitude": 6.4 (float)
+		- "magnitude_type": mw (str)
 		- "source": CI (str)
 	- "data/CI.RJOB..EH":  (dataset; shape: nt$\times$3, unit: μm/s; float32)
 	- "data/CI.RJOB..EH".attrs: 
 		- "network": CI (str)
 		- "station": RJOB (str)
 		- "location": "" (str)
+		- "latitude": 35.705 (float)
+		- "longitude": -117.504 (float)
+		- "elevation_m": 10.0 (float)
 		- "component": [E,N,Z] (list of str)
 		- "begin_time": 2019-07-04T17:33:190000+00:00 (str)
 		- "end_time": 2019-07-04T17:34:190000+00:00 (str)
 		- "distance_km": 19.2 (float32)
 		- "azimuth": 35.3 (float32)
-		- "station_latitude": 35.705 (float)
-		- "station_longitude": -117.504 (float)
-		- "station_elevation_m": 10.0 (float)
 		- "dt_s": 0.01 (float)
 		- "unit": um/s (str)
 		- "snr": [1.1,2.3,2.0] (list of float)
@@ -54,13 +54,14 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 	
 [^1]: which data point in the event origin time)
 
-## phase_picks.csv format:
+## Phase pick format in the *phase_picks* folder:
 
-The phase_pick.csv file lists the attrs information of h5 files, which makes it easy to select training data. We recommand use comma (,) as the delimiter of the CSV file. 
+Fhe file name should be the same as the hdf5 file. We recommand use comma (,) as the delimiter of the CSV file. 
 
-- Headers: event_id,station_id,phase_index,phase_time,phase_score,phase_type
-- dtype: str,str,int,str,float,str
-  - e.g.:38443183,CI.RJOB..EH,3000,2019-07-04T17:33:520000+00:00,0.98,P
+- File name:  ci38443183.csv
+- Headers: station_id,phase_index,phase_time,phase_score,phase_type
+- dtype: str,int32,str,float32,str
+  - e.g.:CI.RJOB..EH,,3000,2019-07-04T17:33:520000+00:00,0.98,P
 
 ## stations.json format:
 
