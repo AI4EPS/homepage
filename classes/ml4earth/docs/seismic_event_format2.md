@@ -31,7 +31,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "magnitude": 6.4 (float)
 		- "magnitude_type": mw (str)
 		- "source": CI (str)
-	- "data/CI.RJOB..EH":  (dataset; shape: nt$\times$3, unit: μm/s; float32)
+	- "data/CI.RJOB..EH":  (dataset; shape: nt$\times$3; unit: μm/s; float32)
 	- "data/CI.RJOB..EH".attrs: 
 		- "network": CI (str)
 		- "station": RJOB (str)
@@ -87,7 +87,7 @@ The catalog.csv file contains earthquake event information
 
 - Headers: event_id,time, latitude, longitude,depth_km,magnitude,magnitude_type,source
 - dtype: str,str,float,float,float,float,str,str
-  - e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,Mw,CI
+  - e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,mw,CI
 
 ## meta_info.txt format
 

@@ -20,7 +20,7 @@
 For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering.
 
 - File name: 38443183.h5
-	- data: nt $\times$ nch (float32, unit: microstrain rate)
+	- data: nt $\times$ nch (float32, unit: microstrain rate; float32)
 	- data.attrs: 
 		- “event_id”: 38443183 (str)
 		- “event_time”: 2019-07-04T17:33:490000+00:00 (str)
