@@ -6,8 +6,9 @@ repo_url: 'https://github.com/ai4eps/classes/ml4earth'
 nav:
     - Overview: README.md
     - Standard Formats:
-      - Seismic Data: seismic_event_format.md
-      - DAS Data: seismic_event_format_das.md
+      - Seismic Data (one file): seismic_event_format1.md
+      - Seismic Data (one event per file): seismic_event_format2.md
+      - DAS Data (one event per file): seismic_event_format_das.md
 theme:
   name: 'material'
 plugins:

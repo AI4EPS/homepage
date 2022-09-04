@@ -11,7 +11,7 @@
 	- catalog.csv
 	- meta_info.txt
 
-## Waveform format in the data folder:
+## waveform.h5 format:
 
 For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering.
 
