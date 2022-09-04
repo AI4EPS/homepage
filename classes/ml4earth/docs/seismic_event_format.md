@@ -74,7 +74,7 @@ The stations.json file contains station location information
 	"CI.CCC..BH": {
 		"longitude": -117.36453,
 		"latitude": 35.52495,
-		"elevation_km": 0.67,
+		"elevation_m": 670,
 		"component": ["E","N","Z"],
 		"response": [627368000.0,627368000.0,627368000.0],
 		"unit": "m/s"
