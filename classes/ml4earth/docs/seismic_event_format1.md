@@ -17,7 +17,6 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 
 - File name: waveform.h5
 	- "38443183": (group)
-	
 	- "38443183".attrs:
 		- "event_id": 38443183 (str)
 		- "event_time": 2019-07-04T17:33:490000+00:00 (str)
@@ -28,34 +27,33 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "magnitude": 6.4 (float)
 		- "magnitude_type": mw (str)
 		- "source": CI (str)
-		
 	- "38443183/CI.RJOB..EH":  (dataset; shape: nt$\times$3, unit: μm/s; float32)
-	
 	- "38443183/CI.RJOB..EH".attrs: 
 		- "network": CI (str)
 		- "station": RJOB (str)
 		- "location": "" (str)
+		- "latitude": 35.705 (float)
+		- "longitude": -117.504 (float)
+		- "elevation_m": 10.0 (float）
+		- “local_depth_m”[^2]: -3.0 (float
 		- "component": [E,N,Z] (list of str)
 		- "begin_time": 2019-07-04T17:33:190000+00:00 (str)
 		- "end_time": 2019-07-04T17:34:190000+00:00 (str)
 		- "distance_km": 19.2 (float32)
 		- "azimuth": 35.3 (float32)
-		- "latitude": 35.705 (float)
-		- "longitude": -117.504 (float)
-		- "elevation_m": 10.0 (float)
+		- "back_azimuth": 152.1 (float32)
 		- "dt_s": 0.01 (float)
-		- "unit": um/s (str)
+		- "unit": 1e-6m/s (str)
 		- "snr": [1.1,2.3,2.0] (list of float)
 		- "phase_type": [P,S,…] (list of str)
 		- "phase_index": [3000,3023,…] (list of int)
 		- "phase_time": [2022-04-26T13:50:65.160000+00:00, … ] (list of str)
 		- "event_id": [38443183,38443183,] (list of str; multiple events in a window)
-		
 	- "38443183/..." (next station)
-	
 	- ... (next group)
 	
 [^1]: which data point in the event origin time)
+[^2]: the depth of borehole data
 
 ## *phase_picks.csv* format:
 

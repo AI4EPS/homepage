@@ -39,13 +39,15 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "latitude": 35.705 (float)
 		- "longitude": -117.504 (float)
 		- "elevation_m": 10.0 (float)
+		- “local_depth_m”[^2]: -3.0 (float)
 		- "component": [E,N,Z] (list of str)
 		- "begin_time": 2019-07-04T17:33:190000+00:00 (str)
 		- "end_time": 2019-07-04T17:34:190000+00:00 (str)
 		- "distance_km": 19.2 (float32)
 		- "azimuth": 35.3 (float32)
+		- "back_azimuth": 152.1 (float32)
 		- "dt_s": 0.01 (float)
-		- "unit": um/s (str)
+		- "unit": 1e-6m/s (str)
 		- "snr": [1.1,2.3,2.0] (list of float)
 		- "phase_type": [P,S,…] (list of str)
 		- "phase_index": [3000,3023,…] (list of int)
@@ -53,6 +55,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "event_id": [38443183,38443183,] (list of str; multiple events in a window)
 	
 [^1]: which data point in the event origin time)
+[^2]: the depth of borehole data
 
 ## Phase pick format in the *phase_picks* folder:
 

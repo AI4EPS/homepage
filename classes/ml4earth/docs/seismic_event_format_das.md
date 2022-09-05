@@ -34,7 +34,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- “source”: CI (str)
 		- “dt_s”: 0.01 (float)
 		- “dx_m”: 8 (float)
-		- “unit”: microstrain/s (str)
+		- “unit”: microstrain rate (str)
 		- “das_array”: ridgecrest (str)
 
 ## Phase pick format in the *phase_picks* folder:
