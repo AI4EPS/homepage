@@ -17,7 +17,7 @@
 
 ## Waveform format in the *data* folder:
 
-For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering.
+For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering. In the dataset we are using, we put the first P pick of all stations at 30s and cut a window size of 90s. This convection can be changed according to different seismic networks.
 
 - File name: 38443183.h5
 	- "data": (group)
@@ -54,7 +54,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "phase_time": [2022-04-26T13:50:65.160000+00:00, … ] (list of str)
 		- "event_id": [38443183,38443183,] (list of str; multiple events in a window)
 	
-[^1]: which data point in the event origin time)
+[^1]: which data point in the event origin time
 [^2]: the depth of borehole data
 
 ## Phase pick format in the *phase_picks* folder:

@@ -17,7 +17,7 @@
 
 ## Waveform format in the *data* folder:
 
-For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering.
+For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering. In the dataset we are using, we put the event original time at 30s and cut a window size of 120s. This convection can be changed according to different DAS arrys and earthquake distributions.
 
 - File name: 38443183.h5
 	- data: nt $\times$ nch (float32, unit: microstrain rate; float32)
