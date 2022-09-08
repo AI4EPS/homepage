@@ -44,16 +44,18 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "back_azimuth": 152.1 (float32)
 		- "dt_s": 0.01 (float)
 		- "unit": 1e-6m/s (str)
-		- "snr": [1.1,2.3,2.0] (list of float)
-		- "phase_type": [P,S,…] (list of str)
-		- "phase_index": [3000,3023,…] (list of int)
+		- "snr": [1.1, 2.3, 2.0] (list of float)
+		- "phase_type": [P, S, …] (list of str)
+		- "phase_index"[^3]: [3000, 3023, …] (list of int)
+		- "phase_score": [1.0, 0.9, …] (list of float)
 		- "phase_time": [2022-04-26T13:50:65.160000+00:00, … ] (list of str)
-		- "event_id": [38443183,38443183,] (list of str; multiple events in a window)
+		- "event_id": [38443183, 38443183, ...] (list of str; multiple events in a window)
 	- "38443183/..." (next station)
 	- ... (next group)
 	
 [^1]: which data point in the event origin time
 [^2]: the depth of borehole data
+[^3]: which data point is the picked phase time
 
 ## *phase_picks.csv* format:
 
