@@ -19,17 +19,17 @@
 
 ### Deep Learning:
 - Neural network models: 
-  - Convolutional Neural Network
-  - Recurrent Neural Network
-  - Transformer Model
-  - Graph Neural Network
+	- Convolutional Neural Network
+	- Recurrent Neural Network
+	- Transformer Model
+	- Graph Neural Network
 - Classification problem:
-  - Case study: Earthquake detection
-  - Case study: Earthquake/explosion discrimination 
+	- Case study: Earthquake detection
+	- Case study: Earthquake/explosion discrimination 
 - Regression problem:
-  - Case study: Ground motion prediction
+	- Case study: Ground motion prediction
 - Semantic segmentation problem:
-  - Case study: Seismic phase picking
+	- Case study: Seismic phase picking
 - Generative models:
 	- Case study: Synthesizing seismic waveforms
 
