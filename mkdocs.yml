@@ -68,6 +68,7 @@ theme:
 
 plugins:
   - search
+  - autorefs
   # - redirects:
   #     redirect_maps:
   #       changelog/insiders.md: insiders/changelog.md
