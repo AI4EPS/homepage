@@ -5,7 +5,8 @@ site_description: ""
 
 # Repository
 repo_name: "AI4EPS"
-repo_url: "https://github.com/ai4eps"
+repo_url: "https://github.com/ai4eps/"
+edit_uri: "/ai4eps.github.io/edit/master/docs/"
 
 # Page tree
 nav:

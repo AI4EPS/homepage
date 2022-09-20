@@ -2,7 +2,9 @@ site_name: "ML4Earth"
 site_description: 'Machine Learning for Earth Science'
 site_author: 'Weiqiang Zhu'
 repo_name: 'ML4Earth'
-repo_url: 'https://github.com/ai4eps/classes/ml4earth'
+# repo_url: 'https://github.com/ai4eps'
+# edit_url: 'https://github.com/ai4eps/ai4eps.github.io/edit/master/classes/ml4earth/docs'
+edit_url: '/ai4eps.github.io/edit/master/classes/ml4earth/docs/'
 nav:
     - Overview: README.md
     - Syllabus: syllabus.md
