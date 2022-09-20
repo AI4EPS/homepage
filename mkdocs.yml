@@ -106,8 +106,8 @@ extra:
   analytics:
     provider: google
     property: G-5P3JS5EJW8
-  analytics:
-    provider: clustrmaps
+  # analytics:
+  #   provider: clustrmaps
 
 extra_css:
   - extra.css
