@@ -2,13 +2,10 @@ site_name: "AI4EPS"
 site_url: "https://ai4eps.github.io/"
 site_author: "Weiqiang Zhu"
 site_description: ""
-
-# Repository
 repo_name: "AI4EPS"
 repo_url: "https://github.com/ai4eps/ai4eps.github.io/"
 # edit_uri: "/edit/master/docs/"
 
-# Page tree
 nav:
   - Home: README.md
   - Research: 
@@ -25,22 +22,14 @@ nav:
   - Publication: publication.md
   - CV: cv.pdf
 
-
-# Configuration
 theme:
   name: "material"
   custom_dir: overrides
   logo: assets/logo_eps.png
-
-  # Static files
   static_templates:
     - 404.html
-
-  # Don't include MkDocs' JavaScript
   include_search_page: false
   search_index_only: true
-
-  # Default values, taken from mkdocs_theme.yml
   language: en
   features:
     - content.code.annotate
@@ -70,28 +59,23 @@ theme:
 
 plugins:
   - search
-  - autorefs
-  # - redirects:
-  #     redirect_maps:
-  #       changelog/insiders.md: insiders/changelog.md
-  # - minify:
-  #     minify_html: true
+  # - autorefs
   - mkdocs-jupyter:
-      ignore_h1_titles: True
-      include_source: True
+      ignore_h1_titles: true
+      # include_source: true
       ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
   - monorepo
   - bibtex:
       bib_file: "docs/publications.bib"
   - redirects:
       redirect_maps:
-        'quakeflow': 'https://ai4eps.github.io/QuakeFlow' 
-        'deepdenoiser': 'https://ai4eps.github.io/DeepDenoiser' 
-        'phasenet': 'https://ai4eps.github.io/PhaseNet'
-        'gamma': 'https://ai4eps.github.io/GaMMA'
-        'adseismic': 'https://ai4eps.github.io/ADSeismic'
-        'pyearth': 'https://ai4eps.github.io/PyEarth'
-        'ml4earth': 'https://ai4eps.github.io/ML4Earth'
+        'quakeflow.md': 'https://ai4eps.github.io/QuakeFlow' 
+        'deepdenoiser.md': 'https://ai4eps.github.io/DeepDenoiser' 
+        'phasenet.md': 'https://ai4eps.github.io/PhaseNet'
+        'gamma.md': 'https://ai4eps.github.io/GaMMA'
+        'adseismic.md': 'https://ai4eps.github.io/ADSeismic'
+        'pyearth.md': 'https://ai4eps.github.io/PyEarth'
+        'ml4earth.md': 'https://ai4eps.github.io/ML4Earth'
 
 markdown_extensions:
   - footnotes
