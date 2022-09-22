@@ -1,5 +1,6 @@
 [Google Scholar Page](https://scholar.google.com/citations?user=ApsNeMkAAAAJ&hl=en)
 
+- Zhu, W., Hou, A. B., Yang, R., Datta, A., Mousavi, S. M., Ellsworth, W. L., & Beroza, G. C. (2022). QuakeFlow: A Scalable Machine-learning-based Earthquake Monitoring Workflow with Cloud Computing. Geophysical Journal International.
 - Zhu, W., Tai, K. S., Mousavi, S. M., Bailis, P., & Beroza, G. C. (2022). An end-to-end earthquake detection method for joint phase picking and association using deep learning. Journal of Geophysical Research: Solid Earth.
 - Zhu, W., McBrearty, I. W., Mousavi, S. M., Ellsworth, W. L., & Beroza, G. C. (2022). Earthquake phase association using a bayesian gaussian mixture model. Journal of Geophysical Research: Solid Earth.
 - Zhu, W., Xu, K., Darve, E., & Beroza, G. C. (2021). A General Approach to Seismic Inversion with Automatic Differentiation. Computers & Geosciences.
