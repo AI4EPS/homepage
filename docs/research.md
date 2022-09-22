@@ -7,3 +7,5 @@ My research focuses on understanding earthquake physics and statistics by applyi
 ## Earthquake Simulation and Seismic Inversion for Understanding Earthquake Physics
 - Applying earthquake simulation to analyze multiphysics couplings within fault zones such as fluid, permeability, friction, and other mechanical properties.
 - Applying automatic differentiation to improve geophysical inversion and constrain key physical parameters such as earthquake source parameters and the Earth’s interior structures.
+
+![](https://github.com/AI4EPS/ai4eps.github.io/blob/master/docs/assets/defense_flyer_zhuwq.png?raw=true)
