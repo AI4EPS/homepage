@@ -15,7 +15,7 @@ Email: zhuwq@berkeley.edu
 
 
 ## News
-[05/2022] I will be joining the Earth & Planetary Science of University of California, Berkeley as an Assistant Professor starting from July 2023. I am looking for self-motivated Ph.D. students and PostDoc fellows to join my research group. Candidates interested in earthquake science and machine learning are particularly encouraged to apply. 
+[05/2022] I will be joining the Department of Earth & Planetary Science at University of California, Berkeley as an Assistant Professor starting from July 2023. I am looking for self-motivated Ph.D. students and PostDoc fellows to join my research group. Candidates interested in earthquake science and machine learning are particularly encouraged to apply. 
 
 ## Education
 
