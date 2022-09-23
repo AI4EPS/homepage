@@ -7,9 +7,9 @@ hide:
 
 ## Weiqiang Zhu
 
-Incoming Assistant Professor (starting 07/2023) 
+[Incoming Assistant Professor](https://www.eps.berkeley.edu/directory/faculty) (starting 07/2023)
 
-[Earth & Planetary Science, University of California, Berkeley](https://www.eps.berkeley.edu)
+[Earth & Planetary Science]((https://www.eps.berkeley.edu), [University of California, Berkeley](https://www.berkeley.edu)
 
 Email: zhuwq@berkeley.edu
 
