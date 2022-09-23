@@ -9,7 +9,7 @@ hide:
 
 [Incoming Assistant Professor](https://www.eps.berkeley.edu/directory/faculty) (starting 07/2023)
 
-[Earth & Planetary Science]((https://www.eps.berkeley.edu), [University of California, Berkeley](https://www.berkeley.edu)
+[Earth & Planetary Science](https://www.eps.berkeley.edu), [University of California, Berkeley](https://www.berkeley.edu)
 
 Email: zhuwq@berkeley.edu
 
