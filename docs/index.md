@@ -25,7 +25,7 @@ Email: zhuwq@berkeley.edu
 - B.S. Geophysics, Peking University, 2009-2013
 
 ## **Experience**
-- Starting 07/2022, Assistant Professor, University of California, Berkeley
+- Starting 07/2023, Assistant Professor, University of California, Berkeley
 - 10/2021 – Present, Director’s Postdoctoral Fellow, California Institute of Technology
 - 06/2019 – 09/2019, Research Intern, Google LLC
 - 09/2016 – 06/2021, Graduate Researcher, Stanford University
