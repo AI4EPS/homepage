@@ -1,3 +1,5 @@
+![](https://github.com/AI4EPS/ai4eps.github.io/blob/master/docs/assets/defense_flyer_zhuwq.png?raw=true)
+
 My research focuses on understanding earthquake physics and statistics by applying cutting-edge artificial intelligence and scientific computing methods to gain new insights from large seismic datasets.
 
 ## Machine Learning/Deep Learning for Geophysical Signal Discovery
@@ -8,4 +10,3 @@ My research focuses on understanding earthquake physics and statistics by applyi
 - Applying earthquake simulation to analyze multiphysics couplings within fault zones such as fluid, permeability, friction, and other mechanical properties.
 - Applying automatic differentiation to improve geophysical inversion and constrain key physical parameters such as earthquake source parameters and the Earth’s interior structures.
 
-![](https://github.com/AI4EPS/ai4eps.github.io/blob/master/docs/assets/defense_flyer_zhuwq.png?raw=true)
