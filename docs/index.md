@@ -3,7 +3,7 @@ hide:
     - navigation
 ---
 
-# [AI4EPS: Artificial Intelligence for Earth and Planetary Science](https://ai4eps.github.io)
+# **AI4EPS: Artificial Intelligence for Earth and Planetary Science**
 
 ## Weiqiang Zhu
 
