@@ -52,9 +52,5 @@ My research focuses on understanding earthquake physics and statistics by applyi
 - 2014, Outstanding Student Paper Award, Chinese Geophysical Society 
 - 2012, National Scholarship, Peking University 
 
-
-<!-- [![docs](https://github.com/AI4EPS/ai4eps.github.io/actions/workflows/docs.yml/badge.svg)](https://github.com/AI4EPS/ai4eps.github.io/actions/workflows/docs.yml)
-
-![](https://github.com/AI4EPS/ai4eps.github.io/blob/master/docs/assets/defense_flyer_zhuwq.png?raw=true)
-
- -->
+## **Outreach**
+- 06/2022 - 07/2002, Mentor for [Caltech Earthquake Fellows Program](http://www.seismolab.caltech.edu/eq_fellows.html) ([news](https://www.caltech.edu/about/news/caltech-earthquake-fellows))
