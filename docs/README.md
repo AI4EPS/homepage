@@ -6,6 +6,6 @@
 
 [![docs](https://github.com/AI4EPS/ai4eps.github.io/actions/workflows/docs.yml/badge.svg)](https://github.com/AI4EPS/ai4eps.github.io/actions/workflows/docs.yml)
 
-![](https://github.com/AI4EPS/ai4eps.github.io/blob/master/docs/assets/defense_flyer_zhuwq.png?raw=true)
+![](/assets/defense_flyer_zhuwq.png)
 
 Under development...
