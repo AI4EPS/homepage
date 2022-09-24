@@ -17,7 +17,7 @@
 ### 2020
 - **Zhu, W.**, Mousavi, S. M., & Beroza, G. C. (2020). Seismic Signal Augmentation to Improve Generalization of Deep Neural Networks. Advances in Geophysics.
 - **Zhu, W.**, Allison, K. L., Dunham, E. M., & Yang, Y. (2020). Fault Valving and Pore Pressure Evolution in Simulations of Earthquake Sequences and Aseismic Slip. Nature Communications.
-- Xu, K., **Zhu, W.**, & Darve, E. (2020). Distributed machine learning for computational engineering using mpi. arXiv preprint arXiv:2011.01349.
+- Xu, K., **Zhu, W.**, & Darve, E. (2020). Distributed machine learning for computational engineering using MPI. arXiv preprint.
 - Mousavi, S. M., Ellsworth, W. L., **Zhu, W.**, Chuang, L. Y., & Beroza, G. C. (2020). Earthquake transformer—an attentive deep-learning model for simultaneous earthquake detection and phase picking. Nature Communications.
 - Chai, C., Maceira, M., Santos-Villalobos, H. J., Venkatakrishnan, S. V., Schoenball, M., **Zhu, W.**, ... Team, E. C. (2020). Using a deep neural network and transfer learning to bridge scales for seismic phase picking. Geophysical Research Letters.
 - Liu, M., Zhang, M., **Zhu, W.**, Ellsworth, W. L., & Li, H. (2020). Rapid characterization of the july 2019 Ridgecrest, california, earthquake sequence from raw seismic data using machine-learning phase picker. Geophysical Research Letters.
@@ -25,7 +25,10 @@
 
 ### 2019
 - **Zhu, W.**, Mousavi, S. M., & Beroza, G. C. (2019). Seismic Signal Denoising and Decomposition using Deep Neural Networks. IEEE Transactions on Geoscience and Remote Sensing.
-- **Zhu, W.**, & Beroza, G. C. (2019). PhaseNet: a deep-neural-network-based seismic arrival-time picking method. Geophysical Journal International.
 - Mousavi, S. M., Sheng, Y., **Zhu, W.**, & Beroza, G. C. (2019). STanford EArthquake Dataset (STEAD): A global data set of seismic signals for AI. IEEE Access.
 - Mousavi, S. M., **Zhu, W.**, Ellsworth, W., & Beroza, G. (2019). Unsupervised clustering of seismic signals using deep convolutional autoencoders. IEEE Geoscience and Remote Sensing Letters.
 - Mousavi, S. M., **Zhu, W.**, Sheng, Y., & Beroza, G. C. (2019). CRED: A deep residual network of convolutional and recurrent units for earthquake signal detection. Scientific Reports.
+
+### 2018
+- **Zhu, W.**, & Beroza, G. C. (2018). PhaseNet: a deep-neural-network-based seismic arrival-time picking method. arXiv preprint.
+
