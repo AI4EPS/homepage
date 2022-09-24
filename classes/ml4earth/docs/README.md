@@ -1,1 +1,1 @@
-../README.md
+# Welcome to Machine Learning for Earth Science
