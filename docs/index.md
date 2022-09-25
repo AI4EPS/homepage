@@ -19,10 +19,10 @@ Email: zhuwq@berkeley.edu
 
 ## Education
 
-- Ph.D. Geophysics, Stanford University, 2016-2021
+- Ph.D., Geophysics, Stanford University, 2016-2021
 - Ph.D. Minor, Computer Science, Stanford University, 2016-2021
-- M.S. Geophysics, Peking University, 2014-2016
-- B.S. Geophysics, Peking University, 2009-2013
+- M.S., Geophysics, Peking University, 2014-2016
+- B.S., Geophysics, Peking University, 2009-2013
 
 ## Experience
 - Starting 07/2023, Assistant Professor, University of California, Berkeley
