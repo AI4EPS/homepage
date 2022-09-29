@@ -48,6 +48,10 @@
 
 ## Physics-constrained Learning
 
+### Physics-informed Neural Networks
+
+### Fourier Neural Networks
+
 ### Inverse Problem
 - Well-determined, under-determined, and over-determined inverse problems
 
