@@ -22,6 +22,7 @@ nav:
   - Publication: 
     - Publications: publication.md
     - Presentations: presentation.md 
+  - Contact: 'contact.md'
   # - CV: cv.pdf
 
 theme:
