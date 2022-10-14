@@ -1,9 +1,9 @@
 site_name: "AI4EPS"
-site_url: "https://ai4eps.github.io/"
+site_url: "https://ai4eps.github.io/homepage"
 site_author: "Weiqiang Zhu"
 site_description: ""
 repo_name: "AI4EPS"
-repo_url: "https://github.com/ai4eps/ai4eps.github.io/"
+repo_url: "https://github.com/ai4eps/homepage/"
 # edit_uri: "/edit/master/docs/"
 
 nav:
