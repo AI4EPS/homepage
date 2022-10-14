@@ -1,24 +1,24 @@
 [submodule "DeepDenoiser"]
-	path = DeepDenoiser
+	path = projects/DeepDenoiser
 	url = git@github.com:ai4eps/DeepDenoiser.git
     branch = master
 [submodule "PhaseNet"]
-	path = PhaseNet
+	path = projects/PhaseNet
 	url = git@github.com:ai4eps/PhaseNet.git
     branch = master
 [submodule "GaMMA"]
-	path = GaMMA
+	path = projects/GaMMA
 	url = git@github.com:ai4eps/GaMMA.git
     branch = master
 [submodule "QuakeFlow"]
-	path = QuakeFlow
+	path = projects/QuakeFlow
 	url = git@github.com:ai4eps/QuakeFlow.git
     branch = master
 [submodule "ADSeismic.jl"]
-	path = ADSeismic.jl
+	path = projects/ADSeismic.jl
 	url = git@github.com:kailaix/ADSeismic.jl.git
     branch = master
 [submodule "ADEikonal.jl"]
-	path = ADEikonal.jl
+	path = projects/ADEikonal.jl
 	url = git@github.com:ai4eps/ADEikonal.jl.git
     branch = master
