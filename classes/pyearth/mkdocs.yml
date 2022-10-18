@@ -12,6 +12,7 @@ nav:
     - Earthquake:
       - Earthquake detection: earthquake/detection.ipynb
       - Earthquake statistics: earthquake/statistics.ipynb
+      - Sorting earthquakes: earthquake/sorting.ipynb
     - Visualization: 
       - Projection: visualization/projection.ipynb
 theme:
