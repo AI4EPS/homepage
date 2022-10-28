@@ -17,7 +17,7 @@
 - Gradient descent optimization; Quasi-Newton method (e.g., BFGS);
 	- Case study: Earthquake location
 
-### Deep Learning
+## Deep Learning
 - Neural network models
 	- Convolutional Neural Network
 	- Recurrent Neural Network
