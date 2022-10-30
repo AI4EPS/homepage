@@ -1,12 +1,13 @@
 # Class Syllabus
 
-## Seismic Dataset
+## Seismic Dataset and Visualization
 
 - Obspy, FDSN, Seedlink
-
-## Visualization
-
 - Matplotlib, PyGMT, Plotly
+
+## Signal Processing
+
+- Numpy, Scipy, Pytorch
 
 ## Earthquake Detection
 
