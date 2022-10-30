@@ -17,7 +17,7 @@ nav:
     - ADSeismic: '!include ./projects/ADSeismic.jl/mkdocs.yml'
   - Teaching: 
     - Teaching: 'teaching.md'
-    - PyEarth: '!include ./classes/pyearth/mkdocs.yml'
+    - Seismology: '!include ./classes/seismology/mkdocs.yml'
     - ML4Earth: '!include ./classes/ml4earth/mkdocs.yml'
   - Publication: 
     - Publications: publication.md
@@ -77,8 +77,6 @@ plugins:
         'phasenet.md': 'https://ai4eps.github.io/PhaseNet'
         'gamma.md': 'https://ai4eps.github.io/GaMMA'
         'adseismic.md': 'https://ai4eps.github.io/ADSeismic'
-        'pyearth.md': 'https://ai4eps.github.io/PyEarth'
-        'ml4earth.md': 'https://ai4eps.github.io/ML4Earth'
 
 markdown_extensions:
   - footnotes

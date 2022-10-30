@@ -1,1 +1,2 @@
-# Welcome to PyEarth
+# Welcome to Observational Seismology
+

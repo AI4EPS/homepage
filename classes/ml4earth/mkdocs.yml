@@ -1,7 +1,7 @@
-site_name: "ML4Earth"
+site_name: "ml4earth"
 site_description: 'Machine Learning for Earth Science'
 site_author: 'Weiqiang Zhu'
-repo_name: 'ML4Earth'
+# repo_name: 'ml4earth'
 # repo_url: 'https://github.com/ai4eps'
 # edit_url: 'https://github.com/ai4eps/ai4eps.github.io/edit/master/classes/ml4earth/docs'
 # edit_url: '/edit/master/classes/ml4earth/docs/'

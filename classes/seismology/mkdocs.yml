@@ -1,9 +1,10 @@
-site_name: "PyEarth"
-site_description: 'PyEarth'
+site_name: "seismology"
+site_description: 'Observational Seismology'
 site_author: 'Weiqiang Zhu'
-repo_name: 'PyEarth'
+# repo_name: 'seismology'
 nav:
     - Overview: README.md
+    - Syllabus: syllabus.md
     - Obspy:
       - Install packages: obspy/install.md
       - Download seismic data: obspy/seismic_waveform.ipynb
