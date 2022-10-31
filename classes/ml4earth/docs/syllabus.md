@@ -50,7 +50,7 @@
 
 ### Physics-informed Neural Networks
 
-### Fourier Neural Networks
+### Fourier Neural Operator
 
 ### Inverse Problem
 - Well-determined, under-determined, and over-determined inverse problems
