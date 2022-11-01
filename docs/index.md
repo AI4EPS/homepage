@@ -5,7 +5,9 @@ hide:
 
 # **AI4EPS: Artificial Intelligence for Earth and Planetary Science**
 
-### Weiqiang Zhu
+<img align="right" width="150" height="150" src="assets/photo.jpg">
+
+### Weiqiang Zhu 
 
 [Incoming Assistant Professor](https://www.eps.berkeley.edu/directory/faculty) (starting 07/2023)
 
