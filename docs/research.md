@@ -1,4 +1,4 @@
-![](/assets/defense_flyer_zhuwq.png)
+![](assets/defense_flyer_zhuwq.png)
 
 My research focuses on understanding earthquake physics and statistics by applying cutting-edge artificial intelligence and scientific computing methods to gain new insights from large seismic datasets.
 
