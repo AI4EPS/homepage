@@ -1,7 +1,7 @@
 
 ### [Observational Seismology](../seismology)
 
-### [ML4Earth](../ml4eath)
+### [ML4Earth](../ml4earth)
 
 ### Playground
 
