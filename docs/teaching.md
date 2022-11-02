@@ -5,6 +5,6 @@
 
 ### Playground
 
-[Jupyterhub](http://class.quakeflow.com:8000/): [http://class.quakeflow.com](http://class.quakeflow.com:8000/)
+[Jupyterhub](https://datahub.berkeley.edu/hub/home): [https://datahub.berkeley.edu](https://datahub.berkeley.edu/hub/home)
 
 [Colab](https://colab.research.google.com/): [https://colab.research.google.com/](https://colab.research.google.com/)
