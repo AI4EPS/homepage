@@ -27,7 +27,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "magnitude": 6.4 (float)
 		- "magnitude_type": mw (str)
 		- "source": CI (str)
-	- "38443183/CI.RJOB..EH":  (dataset; shape: nt$\times$3, unit: μm/s; float32)
+	- "38443183/CI.RJOB..EH":  (dataset; shape: 3$\times$nt, unit: μm/s; float32)
 	- "38443183/CI.RJOB..EH".attrs: 
 		- "network": CI (str)
 		- "station": RJOB (str)
@@ -43,12 +43,13 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "azimuth": 35.3 (float32)
 		- "back_azimuth": 152.1 (float32)
 		- "dt_s": 0.01 (float)
-		- "unit": 1e-6m/s (str)
+		- "unit": 1e-6 m/s (str)
 		- "snr": [1.1, 2.3, 2.0] (list of float)
 		- "phase_type": [P, S, …] (list of str)
 		- "phase_index"[^3]: [3000, 3023, …] (list of int)
 		- "phase_score": [1.0, 0.9, …] (list of float)
 		- "phase_time": [2022-04-26T13:50:65.160000+00:00, … ] (list of str)
+		- "phase_polarity": [U, D, N, …][^4] (list of str)
 		- "event_id": [38443183, 38443183, ...] (list of str; multiple events in a window)
 	- "38443183/..." (next station)
 	- ... (next group)
@@ -56,6 +57,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 [^1]: which data point in the event origin time
 [^2]: the depth of borehole data
 [^3]: which data point is the picked phase time
+[^4]: U: upgoing; D: downgoing; N: unknown
 
 ## *phase_picks.csv* format:
 
