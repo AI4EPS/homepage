@@ -35,9 +35,6 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- “dt_s”: 0.01 (float)
 		- “dx_m”: 8 (float)
 		- “unit”: microstrain/s (str)
-		- “das_array”: ridgecrest_quantx[^1] (str)
-
-[^1]: the location and instrument information of the DAS array
 
 ## Phase pick format in the *phase_picks* folder:
 
@@ -70,15 +67,19 @@ This file contains other useful information about the dataset
 
 e.g.:
 
-Author: Weiqiang Zhu
+DAS location: ridgecrest
+
+DAS interrogator: quantx
+
+DAS manufacturer: optasense
 
 Earthquake number: 145483
 
 Time range: 2019-06-01T00:00:00.000000+00:00 - 2020-06-01T00:00:00.000000+00:00
 
-Spatial range: 2 degree from (-117.504, 35.705)
+Spatial range: (minlatitude, maxlatitude, minlongitude, maxlongitude) = (-122 -112, 30, 40)
 
-Magnitude range: 0.0-8.0
+Magnitude range: (minmagnitude, maxmagnitude) = (-1.0, 8.0)
 
 Catalog source: SCEDC
 
