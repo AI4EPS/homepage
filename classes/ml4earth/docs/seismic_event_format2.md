@@ -29,7 +29,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "longitude": -117.504 (float)
 		- "depth_km": 10.5 (float)
 		- "magnitude": 6.4 (float)
-		- "magnitude_type": mw (str)
+		- "magnitude_type": Mw (str)
 		- "source": CI (str)
 	- "data/CI.RJOB..EH":  (dataset; shape: 3$\times$nt; unit: μm/s; float32)
 	- "data/CI.RJOB..EH".attrs: 

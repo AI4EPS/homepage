@@ -21,7 +21,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 
 - File name: 38443183.h5
 	- data: nch $\times$ nt (float32, unit: microstrain/s; float32)
-	- data.attrs: 
+	- data.attrs:
 		- “event_id”: 38443183 (str)
 		- “event_time”: 2019-07-04T17:33:490000+00:00 (str)
 		- “begin_time”: 2019-07-04T17:33:190000+00:00 (str)
@@ -30,12 +30,14 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- “longitude”: -117.504 (float)
 		- “depth_km”: 10.5 (float)
 		- “magnitude”: 6.4 (float)
-		- “magnitude_type”: mw (str)
+		- “magnitude_type”: Mw (str)
 		- “source”: CI (str)
 		- “dt_s”: 0.01 (float)
 		- “dx_m”: 8 (float)
 		- “unit”: microstrain/s (str)
-		- “das_array”: ridgecrest (str)
+		- “das_array”: ridgecrest_quantx[^1] (str)
+
+[^1]: the location and instrument information of the DAS array
 
 ## Phase pick format in the *phase_picks* folder:
 
