@@ -57,7 +57,7 @@
 
 ### Baysesian Inference
 - Uncertainty Quantification
-- Markov chain Monte Carlo (MCMC)
+- Markov Chain Monte Carlo (MCMC)
 - Variational Inference
 	- Gaussian variational inference
 	- Stein variational inference

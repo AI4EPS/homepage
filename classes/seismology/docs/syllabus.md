@@ -32,7 +32,7 @@
 
 ## Phase Polarity and Focal Mechanism
 
-- PhaseNet-Polarity
+- PhaseNet-Polarity, HASH
 
 ## Earthquake Magnitude
 
