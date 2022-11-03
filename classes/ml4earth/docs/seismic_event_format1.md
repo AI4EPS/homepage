@@ -103,7 +103,7 @@ Earthquake number: 145483
 
 Time range: 2019-06-01T00:00:00.000000+00:00 - 2020-06-01T00:00:00.000000+00:00
 
-Spatial range: (minlatitude, maxlatitude, minlongitude, maxlongitude) = (-122 -112, 30, 40)
+Spatial range: (min_latitude, max_latitude, min_longitude, max_longitude) = (-122 -112, 30, 40)
 
-Magnitude range: (minmagnitude, maxmagnitude) = (-1.0, 8.0)
+Magnitude range: (-1.0, 8.0)
 
