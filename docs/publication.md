@@ -9,6 +9,7 @@
 - Datta, A., Wu, D. J., **Zhu, W.**, Cai, M., & Ellsworth, W. L. (2022). Deepshake: Shaking intensity prediction using deep spatiotemporal RNNs for earthquake early warning. Seismological Society of America.
 
 ### 2021
+- **Zhu, W.** (2021). Ph.D. Thesis: Applications of Deep Learning in Seismology. [pdf](https://1drv.ms/b/s!AuyqwNjN-DpngQ4_BfvUR67NjRFk?e=UjDwT2)
 - **Zhu, W.**, Xu, K., Darve, E., & Beroza, G. C. (2021). A General Approach to Seismic Inversion with Automatic Differentiation. Computers & Geosciences.
 - **Zhu, W.**, Xu, K., Darve, E., Biondi, B., & Beroza, G. C. (2021). Integrating deep neural networks with full-waveform inversion: Reparametrization, regularization, and uncertainty quantification. Geophysics.
 - Retailleau, L., Saurel, J.-M., **Zhu, W.**, Satriano, C., Beroza, G. C., Issartel, S., ... Team, O. (2021). PhaseWorm: A real-time machine-learning-based algorithm for volcano-tectonic earthquake monitoring. Seismological Research Letters.
