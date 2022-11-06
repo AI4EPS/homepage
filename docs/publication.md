@@ -15,7 +15,7 @@
 - Tan, Y. J., Waldhauser, F., Ellsworth, W. L., Zhang, M., **Zhu, W.**, Michele, M., ... Segou, M. (2021). Machine-learning-based high-resolution earthquake catalog reveals how complex fault structures were activated during the 2016–2017 central italy sequence. The Seismic Record.
 
 ### 2020
-- **Zhu, W.**, Mousavi, S. M., & Beroza, G. C. (2020). Seismic Signal Augmentation to Improve Generalization of Deep Neural Networks. Advances in Geophysics.
+- **Zhu, W.**, Mousavi, S. M., & Beroza, G. C. (2020). Seismic Signal Augmentation to Improve Generalization of Deep Neural Networks. Advances in Geophysics. [pdf](https://1drv.ms/b/s!AuyqwNjN-DpngQ0KqNGC3Ylxk9tV?e=j2uXLg)
 - **Zhu, W.**, Allison, K. L., Dunham, E. M., & Yang, Y. (2020). Fault Valving and Pore Pressure Evolution in Simulations of Earthquake Sequences and Aseismic Slip. Nature Communications.
 - Xu, K., **Zhu, W.**, & Darve, E. (2020). Distributed machine learning for computational engineering using MPI. arXiv preprint.
 - Mousavi, S. M., Ellsworth, W. L., **Zhu, W.**, Chuang, L. Y., & Beroza, G. C. (2020). Earthquake transformer—an attentive deep-learning model for simultaneous earthquake detection and phase picking. Nature Communications.
