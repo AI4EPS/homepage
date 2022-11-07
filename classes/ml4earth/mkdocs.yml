@@ -12,6 +12,7 @@ nav:
       - Seismic Data (one single file): seismic_event_format1.md
       - Seismic Data (one event per file): seismic_event_format2.md
       - DAS Data (one event per file): seismic_event_format_das.md
+      - DAS Template: seismic_template_format_das.md
 theme:
   name: 'material'
 plugins:
