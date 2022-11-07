@@ -59,7 +59,7 @@ The cataloa.csv file lists the attrs information of h5 files, which makes it eas
 
 - Headers: event_id,event_time, latitude, longitude,depth_km,magnitude,magnitude_type,source
 - dtype: str,str,float,float,float,float,str,str
-	- e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,mw,CI
+	- e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,Mw,CI
 
 ## *meta_info.txt* format
 
