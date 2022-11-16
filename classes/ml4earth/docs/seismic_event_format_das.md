@@ -24,6 +24,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 	- data.attrs:
 		- “event_id”: 38443183 (str)
 		- “event_time”: 2019-07-04T17:33:490000+00:00 (str)
+		- "event_time_index"[^1]: 2518 (int)
 		- “begin_time”: 2019-07-04T17:33:190000+00:00 (str)
 		- “end_time”: 2019-07-04T17:34:190000+00:00 (str)
 		- “latitude”: 35.705 (float)
@@ -35,6 +36,8 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- “dt_s”: 0.01 (float)
 		- “dx_m”: 8 (float)
 		- “unit”: microstrain/s (str)
+
+[^1]: which data point in the event origin time
 
 ## Phase pick format in the *phase_picks* folder:
 
