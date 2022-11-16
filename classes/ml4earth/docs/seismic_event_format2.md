@@ -24,12 +24,12 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 	- "data".attrs:
 		- "event_id": 38443183 (str)
 		- "event_time": 2019-07-04T17:33:490000+00:00 (str)
+		- "event_time_index"[^1]: 2518 (int)
 		- "begin_time": 2019-07-04T17:33:190000+00:00 (str)
 		- "end_time": 2019-07-04T17:34:190000+00:00 (str)
 		- "time_reference": 2019-07-04T17:33:490000+00:00 (str)
 		- "time_before": 30 (float32)
 		- "time_after": 60 (float32)
-		- "time_index"[^1]: 2518 (int)
 		- "latitude": 35.705 (float)
 		- "longitude": -117.504 (float)
 		- "depth_km": 10.5 (float)
