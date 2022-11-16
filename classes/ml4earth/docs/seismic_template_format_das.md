@@ -4,8 +4,8 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 
 File name: 38443183.h5
 
-- "template": (group)
-- "template".attrs:
+- "data": (group)
+- "data".attrs:
 	- “event_id”: 38443183 (str)
 	- “event_time”: 2019-07-04T17:33:490000+00:00 (str)
 	- “latitude”: 35.705 (float)
@@ -14,13 +14,14 @@ File name: 38443183.h5
 	- “magnitude”: 6.4 (float)
 	- “magnitude_type”: Mw (str)
 	- “source”: CI (str)
-- "template/P": (group)
+- "data/P": (group)
 	- "data": (dataset)
 	- "data".attrs:
 		- "nt": 400 (int)
 		- "nx": 1250 (int)
 		- "dt_s": 0.01 (float)
 		- "dx_m": 8 (float)
+		- “time_reference”: 2019-07-04T17:35:160000+00:00 (str)
 		- "time_before": 2 (int)
 		- "time_after": 2 (int)
 		- "unit": microstrain/s (str)
@@ -30,5 +31,5 @@ File name: 38443183.h5
 	- "travel_time".attrs:
 		- "type": 'phasenet' or 1D model name e.g., MAM (str)
 		- "tref": the minimal UTCTime of travel times (srt)
-- "template/S": (same formart for S phase) 
-- "template/event": (same formart for the whole event waveform)
+- "data/S": (same formart for S phase) 
+- "data/event": (same formart for the whole event waveform)
