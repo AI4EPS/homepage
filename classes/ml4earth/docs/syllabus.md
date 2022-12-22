@@ -10,6 +10,7 @@
 	- Case study: Gutenberg-Richter law and Omori’s law
 - Support Vector Machine
 - Decision Trees and Boosting
+- Model evaluation, Precision-Recall, ROC, AUC 
 - Bias, variance, and regularization
 
 ### Non-linear Optimization
