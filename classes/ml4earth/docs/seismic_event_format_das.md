@@ -6,10 +6,10 @@
 
 - /DASEventData/Ridgecrest
 	- data folder:
-		- 38443183.h5
+		- ci38443183.h5
 		- ...
 	- phase_picks folder:
-		- 38443183.csv
+		- ci38443183.csv
 		- ...
 	- das_info.csv
 	- catalog.csv
@@ -22,20 +22,20 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 - File name: 38443183.h5
 	- data: nch $\times$ nt (float32, unit: microstrain/s; float32)
 	- data.attrs:
-		- “event_id”: 38443183 (str)
+		- “event_id”: ci38443183 (str)
 		- “event_time”: 2019-07-04T17:33:490000+00:00 (str)
 		- "event_time_index"[^1]: 2518 (int)
 		- “begin_time”: 2019-07-04T17:33:190000+00:00 (str)
-		- “end_time”: 2019-07-04T17:34:190000+00:00 (str)
+		- “end_time”: 2019-07-04T17:35:190000+00:00 (str)
 		- “latitude”: 35.705 (float)
 		- “longitude”: -117.504 (float)
 		- “depth_km”: 10.5 (float)
 		- “magnitude”: 6.4 (float)
 		- “magnitude_type”: Mw (str)
-		- “source”: CI (str)
 		- “dt_s”: 0.01 (float)
 		- “dx_m”: 8 (float)
 		- “unit”: microstrain/s (str)
+		- “source”: CI (str)
 
 [^1]: which data point in the event origin time
 
@@ -43,7 +43,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 
 Fhe file name should be the same as the hdf5 file. We recommand use comma (,) as the delimiter of the CSV file. 
 
-- File name:  ci38443183.csv
+- File name: ci38443183.csv
 - Headers: channel_index,phase_index,phase_time,phase_score,phase_type
 - dtype: int32,int32,str,float32,str
 	- e.g.:1000,3000,2019-07-04T17:33:520000+00:00,0.98,P
@@ -62,7 +62,7 @@ The cataloa.csv file lists the attrs information of h5 files, which makes it eas
 
 - Headers: event_id,event_time, latitude, longitude,depth_km,magnitude,magnitude_type,source
 - dtype: str,str,float,float,float,float,str,str
-	- e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,Mw,CI
+	- e.g.: ci38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,Mw,CI
 
 ## *meta_info.txt* format
 
