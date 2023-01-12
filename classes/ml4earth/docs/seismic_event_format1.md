@@ -13,34 +13,31 @@
 
 ## *waveform.h5* format:
 
-For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering. In the dataset we are using, we put the first P pick of all stations at 30s and cut a window size of 90s. This convection can be changed according to different seismic networks.
+For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering. In the dataset we are using, we put the first P pick of all stations at 30s and cut a window size of 120s. This convection can be changed according to different seismic networks.
 
 - File name: waveform.h5
-	- "38443183": (group)
-	- "38443183".attrs:
-		- "event_id": 38443183 (str)
+	- "ci38443183": (group)
+	- "ci38443183".attrs:
+		- "event_id": ci38443183 (str)
 		- "event_time": 2019-07-04T17:33:490000+00:00 (str)
 		- "event_time_index"[^1]: 2518 (int)
 		- "begin_time": 2019-07-04T17:33:190000+00:00 (str)
 		- "end_time": 2019-07-04T17:34:190000+00:00 (str)
-		- "time_reference": 2019-07-04T17:33:490000+00:00 (str)
-		- "time_before": 30 (float32)
-		- "time_after": 60 (float32)
 		- "latitude": 35.705 (float)
 		- "longitude": -117.504 (float)
 		- "depth_km": 10.5 (float)
 		- "magnitude": 6.4 (float)
 		- "magnitude_type": Mw (str)
 		- "source": CI (str)
-	- "38443183/CI.RJOB..EH":  (dataset; shape: 3$\times$nt, unit: μm/s; float32)
-	- "38443183/CI.RJOB..EH".attrs: 
+	- "ci38443183/CI.RJOB..EH":  (dataset; shape: 3$\times$nt, unit: μm/s; float32)
+	- "ci38443183/CI.RJOB..EH".attrs: 
 		- "network": CI (str)
 		- "station": RJOB (str)
 		- "location": "" (str)
 		- "latitude": 35.705 (float)
 		- "longitude": -117.504 (float)
 		- "elevation_m": 10.0 (float）
-		- “local_depth_m”[^2]: -3.0 (float
+		- “local_depth_m”[^2]: -3.0 (float)
 		- "component": [E,N,Z] (list of str)
 		- "distance_km": 19.2 (float32)
 		- "azimuth": 35.3 (float32)
@@ -58,7 +55,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 	- ... (next group)
 	
 [^1]: which data point in the event origin time
-[^2]: the depth of borehole data
+[^2]: the depth of borehole data to the surface
 [^3]: which data point is the picked phase time
 [^4]: U: upgoing; D: downgoing; N: unknown
 
@@ -66,9 +63,9 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 
 The phase_pick.csv file lists the attrs information of h5 files, which makes it easy to select training data. We recommand use comma (,) as the delimiter of the CSV file. 
 
-- Headers: event_id,station_id,phase_index,phase_time,phase_score,phase_type
-- dtype: str,str,int,str,float,str
-  - e.g.:38443183,CI.RJOB..EH,3000,2019-07-04T17:33:520000+00:00,0.98,P
+- Headers: event_id,station_id,phase_index,phase_time,phase_score,phase_type,phase_polarity
+- dtype: str,str,int,str,float,str,str
+  - e.g.:ci38443183,CI.RJOB..EH,3000,2019-07-04T17:33:520000+00:00,0.98,P,U
 
 ## *stations.json* format:
 
@@ -80,8 +77,9 @@ The stations.json file contains station location information
 		"longitude": -117.36453,
 		"latitude": 35.52495,
 		"elevation_m": 670,
+		“local_depth_m”: -3.0,
 		"component": ["E","N","Z"],
-		"response": [627368000.0,627368000.0,627368000.0],
+		"response": [627368000.0, 627368000.0, 627368000.0],
 		"unit": "m/s"
 		},
 	.... (next station)
@@ -94,7 +92,7 @@ The catalog.csv file contains earthquake event information
 
 - Headers: event_id,time, latitude, longitude,depth_km,magnitude,magnitude_type,source
 - dtype: str,str,float,float,float,float,str,str
-  - e.g.:38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,Mw,CI
+  - e.g.:ci38443183,2019-07-04T17:33:490000+00:00,35.705,-117.504,10.5,6.4,Mw,CI
 
 ## *meta_info.txt* format
 
