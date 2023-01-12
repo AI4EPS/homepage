@@ -79,7 +79,7 @@ The stations.json file contains station location information
 		"elevation_m": 670,
 		"local_depth_m": -3.0,
 		"component": ["E","N","Z"],
-		"response": [627368000.0, 627368000.0, 627368000.0],
+		"sensitivity": [627368000.0, 627368000.0, 627368000.0],
 		"unit": "m/s"
 		},
 	.... (next station)
