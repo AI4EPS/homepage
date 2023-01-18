@@ -38,6 +38,7 @@ theme:
     - content.code.annotate
     # - content.tabs.link
     - content.tooltips
+    - content.action.edit
     # - header.autohide
     - navigation.expand
     - navigation.indexes
