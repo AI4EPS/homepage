@@ -5,17 +5,13 @@
 - Obspy, FDSN, Seedlink
 - Matplotlib, PyGMT, Plotly
 
-## Signal Processing
+<!-- ## Signal Processing
 
-- Numpy, Scipy, Pytorch
+- Numpy, Scipy, Pytorch -->
 
-## Earthquake Detection
+## Phase Detection & Picking
 
-- STA/LTA
-
-## Phase Arrival-time Picking
-
-- PhaseNet
+- STA/LTA, PhaseNet
 
 ## Phase Association
 

@@ -5,6 +5,7 @@ site_author: 'Weiqiang Zhu'
 nav:
     - Overview: README.md
     - Syllabus: syllabus.md
+    - Introduction: 00_Introduction.md
     - Obspy:
       - Install packages: obspy/install.md
       - Download seismic data: obspy/seismic_waveform.ipynb
