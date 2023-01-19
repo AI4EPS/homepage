@@ -10,18 +10,25 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
-          submodules: recursive
-      # - uses: actions/setup-python@v2
+          submodules: true
+
+      # - uses: actions/setup-python@v4
       #   with:
       #     python-version: 3.x
       # - run: pip install mkdocs-material mkdocs-jupyter mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
       # - run: mkdocs gh-deploy --force
+
       - uses: conda-incubator/setup-miniconda@v2
         with:
+          python-version: 3.8
           miniconda-version: "latest"
-      - run: conda install jinja2
-      - run: conda install mkdocs mkdocs-material mkdocs-jupyter mkdocs-exclude mkdocs-autorefs -c conda-forge
-      - run: $CONDA/bin/pip install mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
-      - run: $CONDA/bin/mkdocs gh-deploy --force
+          activate-environment: mkdocs
+          environment-file: .github/environment.yml
+
+      - name: mkdocs
+        shell: bash -el {0}
+        run: |
+          pip install mkdocs-autorefs mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
+          mkdocs gh-deploy --force
