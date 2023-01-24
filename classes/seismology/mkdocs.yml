@@ -8,6 +8,7 @@ nav:
     - Introduction: 00_Introduction.md
     - Obspy:
       - Install packages: obspy/install.md
+      - Download catalog: obspy/download_catalog.ipynb
       - Download seismic data: obspy/seismic_waveform.ipynb
       - Realtime data streaming: obspy/animation_seedlink.ipynb
       - Signal processing: obspy/signal_processing.ipynb
