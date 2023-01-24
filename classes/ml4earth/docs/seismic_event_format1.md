@@ -50,8 +50,8 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "phase_score": [1.0, 0.9, …] (list of float)
 		- "phase_time": [2022-04-26T13:50:65.160000+00:00, … ] (list of str)
 		- "phase_polarity": [U, D, N, …][^4] (list of str)
-		- "event_id": [38443183, 38443183, ...] (list of str; multiple events in a window)
-	- "38443183/..." (next station)
+		- "event_id": [ci38443183, ci38443183, ...] (list of str; multiple events in a window)
+	- "ci38443183/..." (next station)
 	- ... (next group)
 	
 [^1]: which data point in the event origin time

@@ -19,10 +19,10 @@
 
 For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthquake.usgs.gov/earthquakes/eventpage/ci38443183/executive) as an example. We recommand to store raw data without preprocessing such as filtering. In the dataset we are using, we put the first P pick of all stations at 30s and cut a window size of 120s. This convection can be changed according to different seismic networks.
 
-- File name: 38443183.h5
+- File name: ci38443183.h5
 	- "data": (group)
 	- "data".attrs:
-		- "event_id": 38443183 (str)
+		- "event_id": ci38443183 (str)
 		- "event_time": 2019-07-04T17:33:490000+00:00 (str)
 		- "event_time_index"[^1]: 2518 (int)
 		- "begin_time": 2019-07-04T17:33:190000+00:00 (str)
@@ -54,7 +54,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "phase_score": [1.0, 0.9, …] (list of float)
 		- "phase_time": [2022-04-26T13:50:65.160000+00:00, … ] (list of str)
 		- "phase_polarity": [U, D, N, …][^4] (list of str)
-		- "event_id": [38443183, 38443183, ...] (list of str; multiple events in a window)
+		- "event_id": [ci38443183, ci38443183, ...] (list of str; multiple events in a window)
 	
 [^1]: which data point in the event origin time
 [^2]: the depth of borehole data
