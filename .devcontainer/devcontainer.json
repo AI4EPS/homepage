@@ -1,12 +1,10 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "image": "mcr.microsoft.com/vscode/devcontainers/miniconda",
   "features": {
   },
-  "hostRequirements": {
-    "cpus": 2
-  },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "updateContentCommand": "conda install -y numpy scipy pandas matplotlib jupyter nb_conda tqdm seaborn && conda install -y pytorch torchvision torchaudio cpuonly -c pytorch  && conda install -y -c conda-forge obspy cartopy",
+  // "updateContentCommand": "conda env update -n base -f environment.yml",
   "postCreateCommand": "",
   "customizations": {
     "codespaces": {
