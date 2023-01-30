@@ -2,11 +2,11 @@
 marp: true
 ---
 
-# Introduction to Seismology and Machine Learning
+# Introduction to Observational Seismology and Machine Learning
 
 ---
 
-# Goals of this course
+# Things to learn in this course
 
 1. Familiarizing with basic tasks in seismology
 2. Learning the state-of-the-art machine learning methods for solving seismic problems
@@ -33,13 +33,30 @@ marp: true
 
 ---
 
+## Before an earthquake
+
+- Eathquake Hazard Map
+![width:700px](https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/side_image/public/thumbnails/image/2018nshm-longterm.jpg?itok=6tMRRjk3)
+
+---
+
+- Simulating earthquake scenarios
+[Hayward Fault Scenarios](https://earthquake.usgs.gov/education/shakingsimulations/hayward/)
+![width:700px](https://earthquake.usgs.gov/education/shakingsimulations/hayward/images/tn-HaywardM72_SanPabloBayEp.jpg)
+
+---
+
+[![]()](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+
+---
+
 # How can we better monitor earthquakes?
 
 ## Instrument
 
-- Dense seismic network
-- New sensors, such nodes and DAS (Distributed Acoustic Sensing)
-- Remote sensing, LiDAR, etc.
+1) Dense seismic network
+2) New sensors, such nodes and DAS (Distributed Acoustic Sensing)
+3) Remote sensing, LiDAR, etc.
 
 ## Algorithm
 
@@ -58,4 +75,10 @@ Deep Learning (Deep Nerual Networks) is a new paradigm of software development
 ---
 
 # Combining seismology and machine learning
+
+* Neural Networks
+* Automatic Differentiation
+* Optimization
+
+---
 
