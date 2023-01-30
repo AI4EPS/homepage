@@ -44,6 +44,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- “local_depth_m”[^2]: -3.0 (float)
 		- "component": [E,N,Z] (list of str)
 		- "distance_km": 19.2 (float32)
+		- "takeoff_angle": 12.0 (float32)
 		- "azimuth": 35.3 (float32)
 		- "back_azimuth": 152.1 (float32)
 		- "dt_s": 0.01 (float)
