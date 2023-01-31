@@ -23,6 +23,7 @@ import functools
 import multiprocessing as mp
 from tqdm import tqdm
 import time
+import random
 
 # %%
 def parse_pick(pick, type='pick'):
@@ -65,14 +66,16 @@ def download_catalog(event_id, event_path, phase_path, raw_event_path, raw_phase
 
     if (event_path/f'{event_id}.json').exists():
         print(f"{event_id}.json already exists")
-        return
+        return 0
 
     try:
         detail = get_event_by_id(event_id, includesuperseded=True)
+        print(f"vv Success: {event_id}")
     except Exception as e:
-        print(f"{event_id}: {e}")
-        # time.sleep(1)
-        return
+        print(f"xx Failed: {event_id}")
+        # print(f"{e}")
+        time.sleep(1)
+        return -1
 
     # tires = 0
     # max_tires = 10
@@ -97,7 +100,13 @@ def download_catalog(event_id, event_path, phase_path, raw_event_path, raw_phase
     # %%
     pick_df = []
 
-    origins_phase = detail.getProducts('phase-data', source="all")
+    try:
+        origins_phase = detail.getProducts('phase-data', source="all")
+    except Exception as e:
+        print(f"xx Failed: {event_id} {e}")
+        # print(f"{e}")
+        time.sleep(1)
+        return -1
     # for origin in origins_phase:
     #     for k in origin.properties:
     #         print(k, origin[k])
@@ -140,7 +149,17 @@ def download_catalog(event_id, event_path, phase_path, raw_event_path, raw_phase
                     add_pick(pick_dict, pick)
         pick_df.append(pd.DataFrame.from_dict(pick_dict, orient='index'))
 
-    pick_df = pd.concat(pick_df)
+    if len(pick_df) == 0:
+        print(f"xx Failed to download picks: {event_id}")
+        return -1
+
+    try:
+        pick_df = pd.concat(pick_df)
+    except Exception as e:
+        print(f"xx Failed to download picks: {event_id}")
+        time.sleep(1)
+        return -1
+
     pick_df.sort_values(by=["network","station","location","channel","phase_type"], inplace=True)
 
     # %%
@@ -185,6 +204,8 @@ def download_catalog(event_id, event_path, phase_path, raw_event_path, raw_phase
 
     # time.sleep(1)
 
+    return 0
+
 # %%
 
 if __name__ == "__main__":
@@ -210,14 +231,16 @@ if __name__ == "__main__":
     with open("event_id.json", "r") as f:
         tmp = json.load(f)
     event_ids = ["nc"+tmp[k] for k in tmp]
-    # event_ids = sorted(event_ids)[::-1]
+    event_ids = sorted(event_ids)[::-1]
     
     download_catalog_ = functools.partial(download_catalog, phase_path=phase_path, event_path=event_path, raw_event_path=raw_event_path, raw_phase_path=raw_phase_path)
     # download_catalog_(event_id)
 
     for _ in range(10):
-        for event_id in tqdm(event_ids):
-            download_catalog_(event_id)
+        random.shuffle(event_ids)
+        for event_id in tqdm(event_ids, mininterval=100):
+            download_catalog(event_id, phase_path=phase_path, event_path=event_path, raw_event_path=raw_event_path, raw_phase_path=raw_phase_path)
+        #   download_catalog_(event_id)
         #     break
 
     # ncpu = mp.cpu_count()
