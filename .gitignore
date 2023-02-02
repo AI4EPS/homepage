@@ -2,3 +2,6 @@ site
 
 # powerpoint 
 ~$*
+
+# mac
+.DS_Store
