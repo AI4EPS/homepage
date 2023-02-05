@@ -16,6 +16,7 @@ nav:
       - Earthquake detection: earthquake/detection.ipynb
       - Earthquake location: earthquake/location.ipynb
       - Focal mechanism: earthquake/focal_mechanism.ipynb
+      - Phase travel time: earthquake/travel_time.ipynb
       - Earthquake statistics: earthquake/statistics.ipynb
       - Sorting earthquakes: earthquake/sorting.ipynb
     - Visualization: 
