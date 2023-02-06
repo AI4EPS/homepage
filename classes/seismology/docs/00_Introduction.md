@@ -2,23 +2,28 @@
 marp: true
 ---
 
-# Introduction to Observational Seismology and Machine Learning
+# Introduction to Observational Seismology
+# -- Machine Learning for Seismology
 
 ---
 
 # Things to learn in this course
 
-1. Familiarizing with basic tasks in seismology
-2. Learning the state-of-the-art machine learning methods for solving seismic problems
-3. Practicing processing seismic data, build seismic catalogs, and analyze seismicity
+1. Familiarize with basic tasks in seismology
+2. Learn the state-of-the-art machine learning methods for solving these seismic tasks
+3. Practice processing seismic data, building seismic catalogs, and analyzing seismicity
 
 ---
 
 # Why do we study seismology?
 
-- Monitoring earthquakes and prevent damage
+- Monitoring earthquakes and mitigate damage
+
+- Understand earthquake source physics
 
 - Understanding the Earth's structure
+
+- Applying seismology to environmental science, planetary science, climate science, etc.
 
 ---
 
@@ -54,11 +59,13 @@ marp: true
 
 ## Instrument
 
-1) Dense seismic network
-2) New sensors, such nodes and DAS (Distributed Acoustic Sensing)
+1) Dense seismic networks
+2) New sensors, such as Broadband seismometer, nodes, and DAS (Distributed Acoustic Sensing)
 3) Remote sensing, LiDAR, etc.
 
 ## Algorithm
+
+- Many signal processing algorithms, such as, template matching, cross-correlation, filtering, etc.
 
 - Machine learning, in particular, deep learning
 
@@ -74,7 +81,7 @@ Deep Learning (Deep Nerual Networks) is a new paradigm of software development
 
 ---
 
-# Combining seismology and machine learning
+# Applications of deep learning in seismology
 
 * Neural Networks
 * Automatic Differentiation
