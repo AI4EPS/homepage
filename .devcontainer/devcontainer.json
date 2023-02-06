@@ -9,10 +9,8 @@
     "customizations": {
       "codespaces": {
         "openFiles": [
-            "/workspaces/homepage/classes/seismology/docs/00_Introduction.md"
-        ],
-        "openFolders": [
-          "/workspaces/homepage/classes/seismology/docs"
+            "classes/seismology/docs/00_Introduction.md",
+            "classes/seismology/docs/01_Seismic_Dataset.md"
         ]
       },
       "vscode": {
