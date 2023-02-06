@@ -155,15 +155,12 @@ def download_catalog(event_id, event_path, phase_path, raw_event_path, raw_phase
 
     try:
         pick_df = pd.concat(pick_df)
+        pick_df.sort_values(by=["network","station","location","channel","phase_type"], inplace=True)
+        pick_df.to_csv(phase_path/f'{event_id}.csv', index=False)
     except Exception as e:
         print(f"xx Failed to download picks: {event_id}")
         time.sleep(1)
         return -1
-
-    pick_df.sort_values(by=["network","station","location","channel","phase_type"], inplace=True)
-
-    # %%
-    pick_df.to_csv(phase_path/f'{event_id}.csv', index=False)
 
     # %%
     event_dict = {}
