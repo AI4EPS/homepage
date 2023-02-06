@@ -3,7 +3,7 @@ marp: true
 ---
 
 # Introduction to Observational Seismology
-# -- Machine Learning for Seismology
+# Machine Learning Seismology
 
 ---
 
