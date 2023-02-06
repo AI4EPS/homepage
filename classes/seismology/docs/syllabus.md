@@ -9,9 +9,13 @@
 
 - Numpy, Scipy, Pytorch -->
 
+## Event detection
+
+- STA/LTA, Template Matching
+
 ## Phase Detection & Picking
 
-- STA/LTA, PhaseNet
+- PhaseNet
 
 ## Phase Association
 
@@ -28,7 +32,7 @@
 
 ## Phase Polarity and Focal Mechanism
 
-- PhaseNet-Polarity, HASH
+- PhaseNet-Polarity, SVM-Polarity
 
 ## Earthquake Magnitude
 
