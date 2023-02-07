@@ -60,7 +60,7 @@ marp: true
 ## Instrument
 
 1) Dense seismic networks
-2) New sensors, such as Broadband seismometer, nodes, and DAS (Distributed Acoustic Sensing)
+2) New sensors, such as, broadband seismometer, nodal array, and DAS (Distributed Acoustic Sensing)
 3) Remote sensing, LiDAR, etc.
 
 ## Algorithm
