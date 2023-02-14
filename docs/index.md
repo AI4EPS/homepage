@@ -29,7 +29,7 @@ Email: zhuwq@berkeley.edu
 
 	- Thesis: [Applications of Deep Learning in Seismology](https://www.researchgate.net/publication/362235113_Applications_of_Deep_Learning_in_Seismology)
 
-	- Advisor: [*Greg Beroza*](https://earth.stanford.edu/people/greg-beroza](https://profiles.stanford.edu/gregory-beroza)
+	- Advisor: [*Greg Beroza*](https://profiles.stanford.edu/gregory-beroza)
 
 - Ph.D. Minor, Computer Science, Stanford University, 2016-2021
 - M.S., Geophysics, Peking University, 2013-2016
