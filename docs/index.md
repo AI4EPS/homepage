@@ -13,6 +13,10 @@ hide:
 
 [Earth & Planetary Science](https://www.eps.berkeley.edu), [University of California, Berkeley](https://www.berkeley.edu)
 
+[Berkeley Seismology Lab](https://seismo.berkeley.edu/)
+
+[Berkeley Institute for Data Science](https://data.berkeley.edu/)
+
 Email: zhuwq@berkeley.edu
 
 
@@ -22,6 +26,11 @@ Email: zhuwq@berkeley.edu
 ## Education
 
 - Ph.D., Geophysics, Stanford University, 2016-2021
+
+	- Thesis: [Applications of Deep Learning in Seismology](https://www.researchgate.net/publication/362235113_Applications_of_Deep_Learning_in_Seismology)
+
+	- Advisor: [*Greg Beroza*](https://profiles.stanford.edu/gregory-beroza)
+
 - Ph.D. Minor, Computer Science, Stanford University, 2016-2021
 - M.S., Geophysics, Peking University, 2013-2016
 - B.S., Geophysics, Peking University, 2009-2013
