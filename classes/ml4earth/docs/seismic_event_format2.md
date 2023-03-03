@@ -1,4 +1,4 @@
-# Standard Event Format for Seismic Data
+# Standard Event Format for Seismic Event Data
 
 
 

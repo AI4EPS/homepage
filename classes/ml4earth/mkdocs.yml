@@ -9,10 +9,11 @@ nav:
     - Overview: README.md
     - Syllabus: syllabus.md
     - Standard Formats:
-      - Seismic Data (one single file): seismic_event_format1.md
-      - Seismic Data (one event per file): seismic_event_format2.md
-      - DAS Data (one event per file): seismic_event_format_das.md
-      - DAS Template: seismic_template_format_das.md
+      - Seismic Event Data (one single file): seismic_event_format1.md
+      - Seismic Event Data (one event per file): seismic_event_format2.md
+      - Seismic Event Template (one single file): seismic_template_format.md
+      - DAS Event Data (one event per file): seismic_event_format_das.md
+      - DAS Event Template: seismic_template_format_das.md
 theme:
   name: 'material'
 plugins:
