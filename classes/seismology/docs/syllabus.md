@@ -1,11 +1,11 @@
 # Class Syllabus
 
-## Seismic waves
+## Seismic Waves
 
 - Stress and strain constitutive relationship
 - Wave equations
 
-## Seismic data
+## Seismic Data
 
 - Obspy, FDSN, Seedlink
 - Matplotlib, PyGMT, Plotly
@@ -14,7 +14,7 @@
 
 - Numpy, Scipy, Pytorch -->
 
-## Event detection
+## Event Detection
 
 - STA/LTA, Template Matching
 
