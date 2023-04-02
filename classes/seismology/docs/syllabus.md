@@ -5,7 +5,7 @@
 - Stress and strain constitutive relationship
 - Wave equations
 
-## Seismic Dataset and Visualization
+## Seismic data
 
 - Obspy, FDSN, Seedlink
 - Matplotlib, PyGMT, Plotly
