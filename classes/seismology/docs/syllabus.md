@@ -1,5 +1,10 @@
 # Class Syllabus
 
+## Seismic waves
+
+- Stress and strain constitutive relationship
+- Wave equations
+
 ## Seismic Dataset and Visualization
 
 - Obspy, FDSN, Seedlink
