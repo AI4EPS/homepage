@@ -9,7 +9,7 @@ hide:
 
 ### Weiqiang Zhu 
 
-[Incoming Assistant Professor](https://www.eps.berkeley.edu/directory/faculty)
+[Assistant Professor](https://www.eps.berkeley.edu/directory/faculty)
 
 [Earth & Planetary Science](https://www.eps.berkeley.edu), [University of California, Berkeley](https://www.berkeley.edu)
 
