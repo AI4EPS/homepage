@@ -1,5 +1,5 @@
 
-### [Observational Seismology](../seismology)
+### [Observational Seismology](../eps207-observational-seismology/)
 
 ### [ML4Earth](../ml4earth)
 
