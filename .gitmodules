@@ -24,4 +24,5 @@
     branch = master
 [submodule "classes/seismology"]
 	path = classes/seismology
-	url = git@github.com:AI4EPS/EPS207_Observational_Seismology.git
+	url = git@github.com:ai4eps/EPS207_Observational_Seismology.git
+    branch = main
