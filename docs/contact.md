@@ -8,11 +8,11 @@ The application deadline of the Ph.D. program of EPS for the 2024-2025 academic 
 
 GRE scores are optional. International applicants from countries where English is not the official language are required to take the Test of English as a Foreign Language (TOEFL). 
 
-Please find more information in this [EPS webpage](http://eps.berkeley.edu/graduate/admissions)
+Please find more information in this [EPS webpage](https://eps.berkeley.edu/admissions)
 
 Other links about EPS and Berkeley:
 
-- [http://eps.berkeley.edu/graduate-students](http://eps.berkeley.edu/graduate-students)
+- [http://eps.berkeley.edu/graduate-students](https://eps.berkeley.edu/student-resources/graduate-students)
 - [https://grad.berkeley.edu/admissions/steps-to-apply](https://grad.berkeley.edu/admissions/steps-to-apply)
 
 ## Postdoc
