@@ -4,7 +4,7 @@ If you are interested in exploring the interdisciplinary field of seismology and
 
 ## Ph.D. program
 
-The application deadline of the Ph.D. program of EPS for the 2023-2024 academic year is December 1, 2022.
+The application deadline of the Ph.D. program of EPS for the 2024-2025 academic year is December 4, 2022.
 
 GRE scores are optional. International applicants from countries where English is not the official language are required to take the Test of English as a Foreign Language (TOEFL). 
 
