@@ -4,7 +4,7 @@
 
 ## Folder structure: 
 
-- /DASEventData/Ridgecrest
+- /DASEventData/
 	- data folder:
 		- ci38443183.h5
 		- ...
