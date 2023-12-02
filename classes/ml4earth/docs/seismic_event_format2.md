@@ -4,7 +4,7 @@
 
 ## Folder structure: 
 
-- /SeismicEventData/Ridgecrest
+- /SeismicEventData/
 	- data folder:
 		- ci38443183.h5
 		- ...
