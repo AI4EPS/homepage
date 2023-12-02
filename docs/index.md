@@ -9,7 +9,7 @@ hide:
 
 ### Weiqiang Zhu 
 
-[Assistant Professor]([https://www.eps.berkeley.edu/directory/faculty](https://eps.berkeley.edu/people/weiqiang-zhu)) ([CV](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/AI4EPS/homepage/3ca4586a14724bca313080b4e1f62c0b4a841e38/docs/cv.pdf))
+[Assistant Professor](https://eps.berkeley.edu/people/weiqiang-zhu) ([CV](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/AI4EPS/homepage/3ca4586a14724bca313080b4e1f62c0b4a841e38/docs/cv.pdf))
 
 [Earth & Planetary Science](https://www.eps.berkeley.edu), [University of California, Berkeley](https://www.berkeley.edu)
 
