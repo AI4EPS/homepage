@@ -2,7 +2,7 @@
 
 ## Folder structure: 
 
-- /SeismicEventData/Ridgecrest
+- /SeismicEventData/
 	- waveform.h5
 	- phase_picks.csv
 	- stations.json
