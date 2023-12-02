@@ -1,4 +1,4 @@
-# Standard Event Format for Seismic Event Data
+# Standard Format for Seismic Event Data
 
 ## Folder structure: 
 
