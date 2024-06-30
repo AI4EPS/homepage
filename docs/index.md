@@ -3,7 +3,7 @@ hide:
     - navigation
 ---
 
-# **AI4EPS: Artificial Intelligence for Earth and Planetary Science**
+# **AI4EPS: Artificial Intelligence (AI) for Earth and Planetary Science (EPS)**
 
 <img align="right" width="150" height="150" src="assets/photo.jpg">
 
