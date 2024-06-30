@@ -1,0 +1,1204 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Weiqiang Zhu">
+      
+      
+        <link rel="canonical" href="https://ai4eps.github.io/homepage/eps207-observational-seismology/lectures/07_statistics/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+    
+    
+      
+        <title>07 statistics - AI4EPS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-5P3JS5EJW8"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-5P3JS5EJW8",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-5P3JS5EJW8",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#earthquake-statistics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AI4EPS" class="md-header__button md-logo" aria-label="AI4EPS" data-md-component="logo">
+      
+  <img src="../../../assets/logo_eps.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI4EPS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              07 statistics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ai4eps/homepage/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI4EPS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../research/" class="md-tabs__link">
+          
+  
+    
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../teaching/" class="md-tabs__link">
+          
+  
+    
+  
+  Teaching
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../publication/" class="md-tabs__link">
+          
+  
+    
+  
+  Publication
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../contact/" class="md-tabs__link">
+        
+  
+    
+  
+  Contact
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AI4EPS" class="md-nav__button md-logo" aria-label="AI4EPS" data-md-component="logo">
+      
+  <img src="../../../assets/logo_eps.png" alt="logo">
+
+    </a>
+    AI4EPS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ai4eps/homepage/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI4EPS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../research/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Research
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../teaching/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Teaching
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../publication/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Publication
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-source-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Source Parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#statistical-relationship-between-source-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statistical relationship between source parameters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-gutenberg-richter-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Gutenberg-Richter Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-gutenberg-richter-law_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Gutenberg-Richter Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-gutenberg-richter-law_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Gutenberg-Richter Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-controls-the-slop-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      What controls the slop \(b\)?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temporal-variation-of-b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temporal variation of \(b\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temporal-variation-of-b_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temporal variation of \(b\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-magnitude-completeness-m_c" class="md-nav__link">
+    <span class="md-ellipsis">
+      The magnitude completeness (\(M_c\))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#omori-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      Omori Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-modified-omori-law" class="md-nav__link">
+    <span class="md-ellipsis">
+      A modified Omori Law
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-decay-rate-p" class="md-nav__link">
+    <span class="md-ellipsis">
+      The decay rate \(p\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-aftershock-productivity-k" class="md-nav__link">
+    <span class="md-ellipsis">
+      The aftershock productivity \(K\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-about-for-foreshocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      How about for foreshocks?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-epidemic-type-aftershock-sequence-etas-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Epidemic Type Aftershock Sequence (ETAS) model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-etas-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The ETAS model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#incorporate-spatial-triggering-into-etas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incorporate spatial triggering into ETAS
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-models-on-aftershocks-spatial-distribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical models on aftershocks spatial distribution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coulomb-failure-stress-cfs-static-triggering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coulomb failure stress (CFS) (Static triggering)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coulomb-failure-stress-cfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coulomb failure stress (CFS)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-triggering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic triggering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-triggering_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic triggering
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-swarms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake swarms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spatial-temporal-evolution-patterns-of-swarms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spatial-temporal evolution patterns of swarms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-learning-for-earthquake-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deep learning for earthquake statistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-learning-for-earthquake-statistics_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deep learning for earthquake statistics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deep-learning-for-earthquake-statistics_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deep learning for earthquake statistics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/AI4EPS/EPS207_Observational_Seismology/blob/main/docs/lectures/07_statistics.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<style>
+img + br + em {
+    font-style: normal;
+    display: inherit;
+    text-align: right;
+    font-size: 70%;
+}
+</style>
+
+<h1 id="earthquake-statistics">Earthquake Statistics</h1>
+<p>Class project datasets:</p>
+<ul>
+<li>
+<p><a href="https://pubs.geoscienceworld.org/ssa/srl/article/93/4/2377/613344/Nodal-Seismic-Experiment-at-the-Berkeley-Section">Nodal Seismic Experiment at the Berkeley Section of the Hayward Fault</a> (Taka'aki et al. 2022)</p>
+</li>
+<li>
+<p>An island on Mid-Atlantic Ridge: <a href="http://ds.iris.edu/gmap/#maxlat=73.3732&amp;maxlon=-1.582&amp;minlat=68.7841&amp;minlon=-15.1596&amp;network=*&amp;drawingmode=box&amp;planet=earth">Networks</a>, <a href="https://nnsn.geo.uib.no/nnsn/#/">Seismicity</a></p>
+</li>
+<li>
+<p><a href="https://earthquake.usgs.gov/earthquakes/map/?extent=30.25907,-128.67188&amp;extent=42.65012,-109.51172&amp;range=month&amp;magnitude=all&amp;listOnlyShown=true&amp;settings=true">California</a></p>
+</li>
+</ul>
+<hr />
+<style scoped>
+section {
+  padding: 0px;
+}
+</style>
+
+<p><img alt="width:1250px" src="../assets/deep_learning_earthquake_monitoring.png" /></p>
+<hr />
+<h3 id="earthquake-source-parameters">Earthquake Source Parameters</h3>
+<ul>
+<li>Magnitude</li>
+<li>Origin time</li>
+<li>Location</li>
+<li>Focal mechanism</li>
+<li>Stress drop</li>
+<li>Energy</li>
+<li>Frequency</li>
+<li>...</li>
+</ul>
+<hr />
+<h3 id="statistical-relationship-between-source-parameters">Statistical relationship between source parameters</h3>
+<p><a href="https://en.wikipedia.org/wiki/Aftershock">wiki</a>
+- Gutenberg-Richter Law (1944)
+- Omori Law (1894)
+- Båth's Law (1965)
+- The Epidemic Type Aftershock Sequence (ETAS) model (1988)
+- ...</p>
+<hr />
+<h3 id="the-gutenberg-richter-law">The Gutenberg-Richter Law</h3>
+<p>$$
+N=10^{a-b M}
+$$
+Where:
+- <span class="arithmatex">\(N\)</span> is the number of events greater or equal to <span class="arithmatex">\(M\)</span>
+- <span class="arithmatex">\(M\)</span> is magnitude
+- <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are constants</p>
+<hr />
+<h3 id="the-gutenberg-richter-law_1">The Gutenberg-Richter Law</h3>
+<p><img alt="bg right:60% h:600" src="../assets/Hutton2010.png" /></p>
+<!-- footer: (Hutton et al. 2010) -->
+
+<hr />
+<h3 id="the-gutenberg-richter-law_2">The Gutenberg-Richter Law</h3>
+<p><img alt="h:500" src="../assets/Ross2019.png" /></p>
+<!-- footer: (Ross et al. 2019) -->
+
+<hr />
+<h3 id="what-controls-the-slop-b">What controls the slop <span class="arithmatex">\(b\)</span>?</h3>
+<p><img alt="h:500" src="../assets/Scholz1968.png" /></p>
+<!-- footer: (Scholz 1968) -->
+
+<hr />
+<h3 id="temporal-variation-of-b">Temporal variation of <span class="arithmatex">\(b\)</span></h3>
+<p><img alt="w:1200" src="../assets/Gulia_Wiemer_2019.png" /></p>
+<!-- footer: (Gulia and Wiemer 2019) -->
+
+<hr />
+<h3 id="temporal-variation-of-b_1">Temporal variation of <span class="arithmatex">\(b\)</span></h3>
+<p><img alt="w:1200" src="../assets/Gulia_Wiemer_2019_c.png" /></p>
+<hr />
+<h3 id="the-magnitude-completeness-m_c">The magnitude completeness (<span class="arithmatex">\(M_c\)</span>)</h3>
+<p>What affects the magnitude completeness?</p>
+<ul>
+<li>Station coverage</li>
+<li>Background noise</li>
+<li>Detection algorithms</li>
+<li>...</li>
+</ul>
+<p><img alt="bg right h:500" src="../assets/Hutton2010.png" /></p>
+<!-- footer: (Hutton et al. 2010) -->
+
+<hr />
+<p><img alt="h:600" src="../assets/Hutton2010b.png" /></p>
+<!-- footer: (Hutton et al. 2010) -->
+
+<hr />
+<h3 id="omori-law">Omori Law</h3>
+<p>$$
+n(t) = \frac{K}{c+t}
+$$
+The number of events <span class="arithmatex">\(n(t)\)</span> in time <span class="arithmatex">\(t\)</span> after the mainshock</p>
+<p><img alt="bg right:60% h:500" src="https://static.temblor.net/wp-content/uploads/2019/10/fig_OmoriPlot.jpg" /></p>
+<!-- footer: (Omori 1894) -->
+<hr />
+<h3 id="a-modified-omori-law">A modified Omori Law</h3>
+<p>$$
+n(t) = \frac{K}{(c+t)^p}
+$$
+𝐾: productivity of aftershocks
+𝑝: decay rate
+c: delay time</p>
+<p><img alt="bg right:50% w:500" src="../assets/Ogata1983.png" /></p>
+<!-- footer: (Ogata 1983) -->
+
+<hr />
+<h3 id="the-decay-rate-p">The decay rate <span class="arithmatex">\(p\)</span></h3>
+<ul>
+<li><span class="arithmatex">\(p \sim 1.1\)</span></li>
+<li>valid for a long time range</li>
+<li>independent of magnitude</li>
+</ul>
+<!-- ![bg left:10% w:420](./assets/Utsu1995.png) -->
+<p><img alt="bg right:50% w:450" src="../assets/Utsu2002b.png" /></p>
+<!-- footer: (Utsu 2002) -->
+
+<hr />
+<h3 id="the-aftershock-productivity-k">The aftershock productivity <span class="arithmatex">\(K\)</span></h3>
+<ul>
+<li>Combined with the Gutenberg-Richter law</li>
+</ul>
+<div class="arithmatex">\[
+K = K_0 10^{b (M_{main} - M)}
+\]</div>
+<div class="arithmatex">\[
+n(t, M) = \frac{10^{a + b (M_{main} - M)}}{(c+t)^p}
+\]</div>
+<p><img alt="bg right:50% w:500" src="../assets/Ogata1983.png" /></p>
+<!-- footer: (Reasenberg and Jones 1989) -->
+
+<hr />
+<h3 id="how-about-for-foreshocks">How about for foreshocks?</h3>
+<ul>
+<li>
+<p>Inverse Omori law <span class="arithmatex">\(n(t) \propto t^p\)</span></p>
+</li>
+<li>
+<p>but individual sequences rarely display this behavior</p>
+</li>
+</ul>
+<p><img alt="bg right:60% w:700" src="../assets/Jones_Molnar_1979.png" /></p>
+<!-- footer: (Jones and Molnar 1979) -->
+
+<hr />
+<style scoped>
+section {
+  font-size: 33px;
+}
+</style>
+
+<h3 id="the-epidemic-type-aftershock-sequence-etas-model">The Epidemic Type Aftershock Sequence (ETAS) model</h3>
+<p>$$
+% g\left(t-t_i, M ; \theta\right)=\frac{K \cdot \exp \left(\beta\left(M-M_c\right)\right)}{\left(t-t_i+c\right)^p}
+\lambda(t)=\mu+\sum_{t_i&lt;t} K \cdot \exp \left(\beta\left(M-M_c\right)\right) \cdot\left(t-t_i+c\right)^{-p}
+$$
+- <span class="arithmatex">\(\mu\)</span> is the background rate
+- <span class="arithmatex">\(K\)</span> is the productivity
+- <span class="arithmatex">\(M_c\)</span> is the magnitude completeness
+- <span class="arithmatex">\(p\)</span> is the decay rate
+- <span class="arithmatex">\(c\)</span> is the delay time
+- <span class="arithmatex">\(\beta\)</span> is the magnitude scaling
+- <span class="arithmatex">\(t_i\)</span> is the occurrence times of previous earthquakes.</p>
+<!-- footer: (Ogata 1988) -->
+<hr />
+<h3 id="the-etas-model">The ETAS model</h3>
+<ul>
+<li>Modeling earthquake activity of a Poissonian background and a cluster process</li>
+<li>Analyzing “background” or “clustered” events</li>
+<li>Most widely used model for earthquake forecasting</li>
+</ul>
+<p><img alt="bg right:50% h:700" src="../assets/Utsu1995c.png" /></p>
+<!-- footer: (Utsu et al. 1995) -->
+
+<hr />
+<h3 id="incorporate-spatial-triggering-into-etas">Incorporate spatial triggering into ETAS</h3>
+<div class="arithmatex">\[
+\lambda(x, y, t \mid \mathcal{H})=\mu+\sum_{t_i&lt;t} \frac{K \cdot \exp \left(\beta\left(M-M_c\right)\right)}{\left(t-t_i+c\right)^p} \cdot \frac{1}{\left(x^2+y^2+d\right)^q}
+\]</div>
+<ul>
+<li><span class="arithmatex">\(q\)</span>: the spatial decay rate of intensity following an event</li>
+</ul>
+<!-- footer: (Ogata 1998) -->
+<hr />
+<style scoped>
+section {
+  column-count: 2;
+}
+h3 {
+  column-span: all;
+}
+p {
+  margin: 0;
+}
+</style>
+
+<h3 id="physical-models-on-aftershocks-spatial-distribution">Physical models on aftershocks spatial distribution</h3>
+<p><img alt="h:500" src="../assets/King1994b.png" />
+<img alt="h:500" src="../assets/King1994c.png" /></p>
+<!-- footer: (King et al 1994) -->
+
+<hr />
+<h3 id="coulomb-failure-stress-cfs-static-triggering">Coulomb failure stress (CFS) (Static triggering)</h3>
+<p>$$
+\Delta \sigma_f=\Delta \tau+\mu\left(\Delta \sigma_n+\Delta p\right)
+$$
+<span class="arithmatex">\(\Delta \tau\)</span> : change in shear stress
+<span class="arithmatex">\(\Delta \sigma_n\)</span> : change in normal stress (positive for tension)
+<span class="arithmatex">\(\Delta p\)</span> : change in pore pressure
+<span class="arithmatex">\(\mu\)</span> : friction coefficient</p>
+<!-- footer: (Stein and Lisowski 1983) -->
+
+<hr />
+<h3 id="coulomb-failure-stress-cfs">Coulomb failure stress (CFS)</h3>
+<p><img alt="bg right:58% h:700" src="../assets/King1994.png" /></p>
+<!-- footer: (King et al 1994) -->
+
+<hr />
+<h3 id="dynamic-triggering">Dynamic triggering</h3>
+<p><img alt="h:500" src="../assets/Hill1993.png" /></p>
+<!-- footer: (Hill et al. 1993) -->
+
+<hr />
+<h3 id="dynamic-triggering_1">Dynamic triggering</h3>
+<p><img alt="h:500" src="../assets/Hill1993b.png" /></p>
+<!-- footer: (Hill et al. 1993) -->
+
+<hr />
+<h3 id="earthquake-swarms">Earthquake swarms</h3>
+<p>“[a sequence] where the number and the magnitude of earthquakes gradually increase with time, and then decreases after a certain period. There is no single predominant principal earthquake” - Mogi (1963)</p>
+<p><img alt="bg right:50% h:700" src="../assets/Mogi_1963.png" /></p>
+<!-- footer: "" -->
+
+<!-- ### Clustering analysis of earthquakes
+
+![w:1100](./assets/Zaliapin_BenZion_2013.png) -->
+
+<hr />
+<style scoped>
+section {
+  column-count: 2;
+}
+h3 {
+  column-span: all;
+}
+p {
+  margin: 0;
+}
+</style>
+
+<p><strong>2012 Brawley,CA swarm</strong>
+<img alt="h:500" src="../assets/Hauksson2013.png" /></p>
+<p><img alt="h:500" src="../assets/Hauksson2013b.png" /></p>
+<!-- footer: (Hauksson et al. 2013) -->
+
+<hr />
+<p><strong>2016 Cahuilla,CA swarm</strong></p>
+<p><img alt="bg right:70% h:700" src="../assets/ross2020.png" /></p>
+<!-- footer: (Ross et al. 2020) -->
+
+<hr />
+<p><strong>2018 Pahala,Hawaii swarm</strong></p>
+<p><img alt="width:900px" src="../assets/Screenshot%202023-10-15%20at%2023.54.40.png" /></p>
+<p><img alt="" src="https://caltech-prod.s3.amazonaws.com/main/images/image001_oV7aIUL.max-500x500.gif" /></p>
+<!-- footer: (Wilding et al. 2020) -->
+
+<hr />
+<p><strong>2018 Pahala,Hawaii swarm</strong></p>
+<p><img alt="width:600px" src="../assets/Screenshot%202023-10-15%20at%2023.57.09.png" />
+<img alt="bg right:45% w:500" src="https://caltech-prod.s3.amazonaws.com/main/images/image001_oV7aIUL.max-500x500.gif" /></p>
+<!-- footer: (Wilding et al. 2020) -->
+
+<hr />
+<h3 id="spatial-temporal-evolution-patterns-of-swarms">Spatial-temporal evolution patterns of swarms</h3>
+<ul>
+<li>
+<p>Migration distance vs. time</p>
+<ul>
+<li><span class="arithmatex">\(R \propto t^{\alpha}\)</span>, <span class="arithmatex">\(\alpha \sim 0.5, 1\)</span></li>
+<li><span class="arithmatex">\(R \propto \log(t)\)</span></li>
+</ul>
+</li>
+<li>
+<p>Migration speeds</p>
+<ul>
+<li>m/day to km/hour</li>
+</ul>
+</li>
+<li>
+<p>Similarity to induced seismicity</p>
+</li>
+</ul>
+<!-- **Aggregating 18 swarms in southen California**
+
+![](./assets/chen2012b.png) -->
+
+<!-- footer: "" -->
+
+<hr />
+<h3 id="deep-learning-for-earthquake-statistics">Deep learning for earthquake statistics</h3>
+<p><img alt="h:450" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-018-0438-y/MediaObjects/41586_2018_438_Fig1_HTML.png?as=webp" /></p>
+<!-- footer: "Deep learning of aftershock patterns following large earthquakes, Devries et al. 2018" -->
+
+<hr />
+<h3 id="deep-learning-for-earthquake-statistics_1">Deep learning for earthquake statistics</h3>
+<p><img alt="h:450" src="https://agupubs.onlinelibrary.wiley.com/cms/asset/48ea117d-e133-4392-af90-24f6ab568f0f/grl66186-fig-0001-m.jpg" /></p>
+<!-- footer: "Using Deep Learning for Flexible and Scalable Earthquake Forecasting, Kelian et al. 2023" -->
+
+<hr />
+<h3 id="deep-learning-for-earthquake-statistics_2">Deep learning for earthquake statistics</h3>
+<p><img alt="h:450" src="https://agupubs.onlinelibrary.wiley.com/cms/asset/c5f0feda-4d47-4257-920a-62cc3dc44cca/grl66186-fig-0002-m.jpg" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tooltips", "content.action.edit", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
