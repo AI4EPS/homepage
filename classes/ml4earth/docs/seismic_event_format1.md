@@ -56,7 +56,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
    		- "s_phase_time": "2022-04-26T13:50:65.390000+00:00" (str)
    		- "p_phase_polarity": U (str)
 		- "s_phase_polarity": N (str)
-    		- "p_phase_source": automatic (str)
+		- "p_phase_source": automatic (str)
 		- "s_phase_source": manual (str)
 		- "phase_type": [P, S, …] (list of str)
 		- "phase_index"[^4]: [3000, 3023, …] (list of int)
