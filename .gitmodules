@@ -29,3 +29,6 @@
 [submodule "classes/pyearth"]
 	path = classes/pyearth
 	url = https://github.com/AI4EPS/EPS88_PyEarth.git
+[submodule "projects/Catalog"]
+	path = projects/Catalog
+	url = https://github.com/AI4EPS/Earthquake-Deep-Catalog.git
