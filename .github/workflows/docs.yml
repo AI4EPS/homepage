@@ -12,8 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           lfs: true
+          fetch-depth: 0
 
       - run: git lfs fetch --all
 
