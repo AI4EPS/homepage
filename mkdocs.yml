@@ -85,7 +85,7 @@ plugins:
         'phasenet.md': 'https://ai4eps.github.io/PhaseNet'
         'gamma.md': 'https://ai4eps.github.io/GaMMA'
         'adseismic.md': 'https://ai4eps.github.io/ADSeismic'
-        'catalog.md': 'https://ai4eps.github.io/DeepEarthquakeCatalog/'
+        'catalog.md': 'https://ai4eps.github.io/Earthquake-Deep-Catalog/'
 
 markdown_extensions:
   - footnotes
