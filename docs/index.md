@@ -68,4 +68,4 @@ My research focuses on understanding earthquake physics and statistics by applyi
 <!-- ## Outreach
 - 06/2022 - 07/2002, Mentor for [Caltech Earthquake Fellows Program](http://www.seismolab.caltech.edu/eq_fellows.html) ([news](https://www.caltech.edu/about/news/caltech-earthquake-fellows)) -->
 
-[![Views](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fai4eps.github.io%2Fhomepage%2F&label=views&labelColor=%23d9e3f0&countColor=%23263759)](https://visitorbadge.io/status?path=https%3A%2F%2Fai4eps.github.io%2Fhomepage%2F&style=flat)
+[![Views](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fai4eps.github.io%2Fhomepage%2F&label=views&labelColor=%23d9e3f0&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fai4eps.github.io%2Fhomepage%2F)
