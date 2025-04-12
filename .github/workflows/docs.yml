@@ -16,8 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # lfs: true
           submodules: true
+          lfs: false
           # fetch-depth: 0
 
       # - run: |
