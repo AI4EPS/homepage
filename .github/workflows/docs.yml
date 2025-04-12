@@ -8,21 +8,32 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true
-          # lfs: true
-          # fetch-depth: 0
-
-      # - run: git lfs fetch --all
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
       - run: pip install mkdocs-material mkdocs-jupyter mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        # If you're changing the branch from main,
+        # also change the `main` in `refs/heads/main`
+        # below accordingly.
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
 
       # - uses: conda-incubator/setup-miniconda@v3
       #   with:
