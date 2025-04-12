@@ -17,38 +17,23 @@ jobs:
       - uses: actions/checkout@v4
         with:
           lfs: true
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
 
       - run: |
-          git lfs install
-          git lfs pull
+          git lfs install --system --skip-repo 
+          git lfs pull 
 
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+
       - run: pip install mkdocs-material mkdocs-jupyter mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
+
       - run: mkdocs build
 
       - uses: peaceiris/actions-gh-pages@v4
-        # If you're changing the branch from main,
-        # also change the `main` in `refs/heads/main`
-        # below accordingly.
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
-          force_orphan: true
-
-      # - uses: conda-incubator/setup-miniconda@v3
-      #   with:
-      #     python-version: 3.8
-      #     miniconda-version: "latest"
-      #     activate-environment: mkdocs
-      #     environment-file: .github/environment.yml
-
-      # - name: mkdocs
-      #   shell: bash -el {0}
-      #   run: |
-      #     pip install mkdocs-autorefs mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
-      #     mkdocs gh-deploy --force
