@@ -16,8 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          lfs: true
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - run: |
+          git lfs install
+          git lfs pull
 
       - uses: actions/setup-python@v5
         with:
@@ -25,15 +30,15 @@ jobs:
       - run: pip install mkdocs-material mkdocs-jupyter mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
       - run: mkdocs build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - uses: peaceiris/actions-gh-pages@v4
         # If you're changing the branch from main,
         # also change the `main` in `refs/heads/main`
         # below accordingly.
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          force_orphan: true
 
       # - uses: conda-incubator/setup-miniconda@v3
       #   with:
