@@ -16,13 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          lfs: true
+          # lfs: true
           submodules: true
-          fetch-depth: 0
+          # fetch-depth: 0
 
-      - run: |
-          git lfs install --system --skip-repo 
-          git lfs pull 
+      # - run: |
+      #     git lfs install
+      #     git lfs pull 
 
       - uses: actions/setup-python@v5
         with:
