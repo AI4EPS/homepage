@@ -35,7 +35,7 @@
 	url = https://github.com/AI4EPS/Earthquake-Deep-Catalog.git
 	branch = main
 [submodule "projects/Workshop"]
-	path = projects/Workshop
+	path = classes/workshop
 	url = https://github.com/AI4EPS/Earthquake_Catalog_Workshop.git
 	branch = main
 [submodule "projects/ADLoc"]
