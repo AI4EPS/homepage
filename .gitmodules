@@ -1,0 +1,43 @@
+[submodule "DeepDenoiser"]
+	path = projects/DeepDenoiser
+	url = https://github.com/AI4EPS/DeepDenoiser.git
+    branch = main
+[submodule "PhaseNet"]
+	path = projects/PhaseNet
+	url = https://github.com/AI4EPS/PhaseNet.git
+    branch = main
+[submodule "GaMMA"]
+	path = projects/GaMMA
+	url = https://github.com/AI4EPS/GaMMA.git
+    branch = main
+[submodule "QuakeFlow"]
+	path = projects/QuakeFlow
+	url = https://github.com/AI4EPS/QuakeFlow.git
+    branch = main
+[submodule "ADSeismic.jl"]
+	path = projects/ADSeismic.jl
+	url = git@github.com:AI4EPS/ADSeismic.jl.git
+    branch = main
+[submodule "ADTomo.jl"]
+	path = projects/ADTomo.jl
+	url = https://github.com/AI4EPS/ADTomo.jl.git
+    branch = main
+[submodule "classes/seismology"]
+	path = classes/seismology
+	url = https://github.com/AI4EPS/EPS207_Observational_Seismology.git
+    branch = main
+[submodule "classes/pyearth"]
+	path = classes/pyearth
+	url = https://github.com/AI4EPS/EPS88_PyEarth.git
+    branch = main
+[submodule "projects/Catalog"]
+	path = projects/Catalog
+	url = https://github.com/AI4EPS/Earthquake-Deep-Catalog.git
+    branch = main
+[submodule "projects/Workshop"]
+	path = projects/Workshop
+	url = https://github.com/AI4EPS/Earthquake_Catalog_Workshop.git
+    branch = main
+[submodule "projects/ADLoc"]
+	path = projects/ADLoc
+	url = https://github.com/AI4EPS/ADLoc.git

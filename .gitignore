@@ -1,0 +1,11 @@
+site
+
+# powerpoint 
+~$*
+
+# mac
+.DS_Store
+classes/seismology/docs/obspy/event/
+classes/seismology/docs/obspy/phase/
+classes/seismology/docs/obspy/raw_event/
+classes/seismology/docs/obspy/raw_phase/

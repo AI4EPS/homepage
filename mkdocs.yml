@@ -1,0 +1,110 @@
+site_name: "AI4EPS"
+site_url: "https://ai4eps.github.io/homepage"
+site_author: "Weiqiang Zhu"
+site_description: ""
+repo_name: "AI4EPS"
+repo_url: "https://github.com/ai4eps/homepage/"
+
+nav:
+  - Home: 'index.md'
+  - Research: 
+    - Research: 'research.md'
+    - QuakeFlow: '!include ./projects/QuakeFlow/mkdocs.yml'
+    - DeepDenoiser: '!include ./projects/DeepDenoiser/mkdocs.yml'
+    - PhaseNet: '!include ./projects/PhaseNet/mkdocs.yml'
+    - GaMMA: '!include ./projects/GaMMA/mkdocs.yml'
+    - ADSeismic: '!include ./projects/ADSeismic.jl/mkdocs.yml'
+    - Deep Catalog: '!include ./projects/Catalog/mkdocs.yml'
+  - Teaching: 
+    - Teaching: 'teaching.md'
+    - Seismology: '!include ./classes/seismology/mkdocs.yml'
+    - PyEarth: '!include ./classes/pyearth/mkdocs.yml'
+    - ML4Earth: '!include ./classes/ml4earth/mkdocs.yml'
+  - Publication: 
+    - Publications: publication.md
+    - Presentations: presentation.md 
+  - Contact: 'contact.md'
+
+theme:
+  name: "material"
+  custom_dir: overrides
+  logo: assets/logo_eps.png
+  static_templates:
+    - 404.html
+  include_search_page: false
+  search_index_only: true
+  language: en
+  features:
+    # - announce.dismiss
+    - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    # - content.tooltips
+    # - header.autohide
+    - navigation.expand
+    # - navigation.footer
+    # - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
+plugins:
+  - search
+  # - autorefs
+  - mkdocs-jupyter:
+      ignore_h1_titles: true
+      # include_source: true
+      ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
+  - monorepo
+  - bibtex:
+      bib_file: "docs/publications.bib"
+  - redirects:
+      redirect_maps:
+        'quakeflow.md': 'https://ai4eps.github.io/QuakeFlow' 
+        'deepdenoiser.md': 'https://ai4eps.github.io/DeepDenoiser' 
+        'phasenet.md': 'https://ai4eps.github.io/PhaseNet'
+        'gamma.md': 'https://ai4eps.github.io/GaMMA'
+        'adseismic.md': 'https://ai4eps.github.io/ADSeismic'
+        'catalog.md': 'https://ai4eps.github.io/Earthquake-Deep-Catalog'
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-5P3JS5EJW8
+  # analytics:
+  #   provider: clustrmaps
+
+extra_css:
+  - extra.css

@@ -1,0 +1,5 @@
+- Collecte the dataset; host the dataset on *HuggingFace Datasets*
+- Develop the neural network model using **pytorch**; Use **wandb** to track model training; Scale up training and tuning hyper-parameters using **torchrun** on cloud;
+- Build a **gradio** app for streaming inference; Host the app on *HuggingFace Spaces*; Write a demo using **gradio_client** for API calls
+- Containerize the model using **docker** for batch inference; Intergrate the model into **QuakeFlow** using *Kubeflow Pipelines*
+- Test the model on multiple earthquake sequences
