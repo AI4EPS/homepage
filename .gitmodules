@@ -38,3 +38,9 @@
 	path = projects/Workshop
 	url = https://github.com/AI4EPS/Earthquake_Catalog_Workshop.git
     branch = main
+[submodule "projects/CEED"]
+	path = projects/CEED
+	url = https://huggingface.co/datasets/AI4EPS/CEED
+[submodule "projects/ADLoc"]
+	path = projects/ADLoc
+	url = https://github.com/AI4EPS/ADLoc.git
