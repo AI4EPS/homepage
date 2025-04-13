@@ -14,8 +14,8 @@ nav:
     - PhaseNet: '!include ./projects/PhaseNet/mkdocs.yml'
     - GaMMA: '!include ./projects/GaMMA/mkdocs.yml'
     - ADSeismic: '!include ./projects/ADSeismic.jl/mkdocs.yml'
-    - ADLoc:
-    - ADTomo:
+    # - ADLoc:
+    # - ADTomo:
     - Deep Catalog: '!include ./projects/Catalog/mkdocs.yml'
   - Teaching: 
     - Teaching: 'teaching.md'
