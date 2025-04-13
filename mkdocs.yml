@@ -4,7 +4,7 @@ site_author: "Weiqiang Zhu"
 site_description: ""
 repo_name: "AI4EPS"
 repo_url: "https://github.com/ai4eps/homepage/"
-edit_url: ./edit/main/docs
+edit_url: blob/main/docs/
 
 nav:
   - Home: 'index.md'
