@@ -31,13 +31,13 @@ jobs:
       - run: pip install mkdocs-material mkdocs-jupyter mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
 
       - run: |
-          mkdir -p earthquake-catalog-workshop/introduction && wget -O earthquake-catalog-workshop/introduction/SSA25_catalog_workshop_intro.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_intro.pdf
-          mkdir -p earthquake-catalog-workshop/seismic_network && wget -O earthquake-catalog-workshop/seismic_network/SSA25_catalog_workshop_RSNs.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_RSNs.pdf
-          # wget -O earthquake-catalog-workshop/seismic_network/tutorials.md https://raw.githubusercontent.com/SCEDC/tutorials/refs/heads/main/README.md
-          mkdir -p earthquake-catalog-workshop/machine_learning && wget -O earthquake-catalog-workshop/machine_learning/SSA25_catalog_workshop_machine_learning.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_machine_learning.pdf
-          mkdir -p earthquake-catalog-workshop/template_matching && wget -O earthquake-catalog-workshop/template_matching/SSA25_catalog_workshop_template_matching.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_template_matching.pdf
-          mkdir -p earthquake-catalog-workshop/catalog_analysis && wget -O earthquake-catalog-workshop/catalog_analysis/SSA25_catalog_workshop_quality.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_quality.pdf
-          mkdir -p earthquake-catalog-workshop/conclusion && wget -O earthquake-catalog-workshop/conclusion/SSA25_catalog_workshop_conclusion.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_conclusion.pdf
+          mkdir -p docs/earthquake-catalog-workshop/introduction && wget -O docs/earthquake-catalog-workshop/introduction/SSA25_catalog_workshop_intro.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_intro.pdf
+          mkdir -p docs/earthquake-catalog-workshop/seismic_network && wget -O docs/earthquake-catalog-workshop/seismic_network/SSA25_catalog_workshop_RSNs.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_RSNs.pdf
+          # wget -O docs/earthquake-catalog-workshop/seismic_network/tutorials.md https://raw.githubusercontent.com/SCEDC/tutorials/refs/heads/main/README.md
+          mkdir -p docs/earthquake-catalog-workshop/machine_learning && wget -O docs/earthquake-catalog-workshop/machine_learning/SSA25_catalog_workshop_machine_learning.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_machine_learning.pdf
+          mkdir -p docs/earthquake-catalog-workshop/template_matching && wget -O docs/earthquake-catalog-workshop/template_matching/SSA25_catalog_workshop_template_matching.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_template_matching.pdf
+          mkdir -p docs/earthquake-catalog-workshop/catalog_analysis && wget -O docs/earthquake-catalog-workshop/catalog_analysis/SSA25_catalog_workshop_quality.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_quality.pdf
+          mkdir -p docs/earthquake-catalog-workshop/conclusion && wget -O docs/earthquake-catalog-workshop/conclusion/SSA25_catalog_workshop_conclusion.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_conclusion.pdf
 
       - run: mkdocs gh-deploy --force
 
