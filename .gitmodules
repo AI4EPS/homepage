@@ -16,7 +16,7 @@
     branch = master
 [submodule "ADSeismic.jl"]
 	path = projects/ADSeismic.jl
-	url = https://github.com/kailaix/ADSeismic.jl.git
+	url = git@github.com:AI4EPS/ADSeismic.jl.git
     branch = master
 [submodule "ADEikonal.jl"]
 	path = projects/ADEikonal.jl
