@@ -14,15 +14,15 @@ nav:
     - PhaseNet: '!include ./projects/PhaseNet/mkdocs.yml'
     - GaMMA: '!include ./projects/GaMMA/mkdocs.yml'
     - ADSeismic: '!include ./projects/ADSeismic.jl/mkdocs.yml'
-    - ADLoc
-    - ADTomo
+    - ADLoc:
+    - ADTomo:
     - Deep Catalog: '!include ./projects/Catalog/mkdocs.yml'
   - Teaching: 
     - Teaching: 'teaching.md'
     - Seismology: '!include ./classes/seismology/mkdocs.yml'
     - PyEarth: '!include ./classes/pyearth/mkdocs.yml'
     - ML4Earth: '!include ./classes/ml4earth/mkdocs.yml'
-    - Workshop: '!include ./classes/Workshop/mkdocs.yml'
+    - Workshop: '!include ./classes/workshop/mkdocs.yml'
   - Publication: 
     - Publications: publication.md
     - Presentations: presentation.md 
