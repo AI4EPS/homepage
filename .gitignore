@@ -9,3 +9,5 @@ classes/seismology/docs/obspy/event/
 classes/seismology/docs/obspy/phase/
 classes/seismology/docs/obspy/raw_event/
 classes/seismology/docs/obspy/raw_phase/
+docs/earthquake-catalog-workshop/**/*.pdf
+earthquake-catalog-workshop/**/*.pdf

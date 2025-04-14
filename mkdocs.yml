@@ -31,47 +31,13 @@ nav:
 
 theme:
   name: "material"
-  custom_dir: overrides
   logo: assets/logo_eps.png
-  static_templates:
-    - 404.html
-  include_search_page: false
-  search_index_only: true
-  language: en
   features:
-    # - announce.dismiss
-    - content.action.edit
-    # - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    # - content.code.select
-    # - content.footnote.tooltips
-    # - content.tabs.link
-    # - content.tooltips
-    # - header.autohide
     - navigation.expand
-    # - navigation.footer
-    # - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.prune
     - navigation.sections
-    - navigation.tabs
-    # - navigation.tabs.sticky
+    # - navigation.tabs
     - navigation.top
     - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-    # - toc.integrate
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
 
 plugins:
   - search
@@ -80,8 +46,6 @@ plugins:
       ignore_h1_titles: true
       # include_source: true
       allow_errors: true
-      include_requirejs: true
-      custom_mathjax_url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
       ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
   - monorepo
   - bibtex:
@@ -101,9 +65,12 @@ markdown_extensions:
       generic: true
 
 extra_javascript:
-  - javascripts/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 extra:
   generator: false
