@@ -39,6 +39,8 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - content.code.annotate
+    - content.action.edit
 
 plugins:
   - search
