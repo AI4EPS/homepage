@@ -1,6 +1,10 @@
 
 ### [Observational Seismology](../eps207-observational-seismology/)
 
+### [Earthquake Catalog Workshop](../earthquake-catalog-workshop)
+
+### [PyEarth: A Python Introduction to Earth Science](../eps88-pyearth-a-python-introduction-to-earth-science/)
+
 ### [ML4Earth](../ml4earth)
 
 ### Playground
