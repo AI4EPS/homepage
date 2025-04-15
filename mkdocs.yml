@@ -35,7 +35,7 @@ theme:
   features:
     - navigation.expand
     - navigation.sections
-    # - navigation.tabs
+    - navigation.tabs
     - navigation.top
     - navigation.tracking
 
