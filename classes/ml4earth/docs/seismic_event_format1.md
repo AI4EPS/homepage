@@ -30,7 +30,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "nt": 12000 (int)
    		- "nx"[^2]: 15 (int)
 		- "source": CI (str)
-	- "ci38443183/CI.RJOB..EH":  (dataset; shape: 3$\times$nt, unit: μm/s; float32)
+	- "ci38443183/CI.RJOB..EH":  (dataset; shape: 3 x nt, unit: μm/s; float32)
 	- "ci38443183/CI.RJOB..EH".attrs: 
 		- "network": CI (str)
 		- "station": RJOB (str)
