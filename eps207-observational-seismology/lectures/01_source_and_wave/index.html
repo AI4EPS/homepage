@@ -1,0 +1,5009 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Weiqiang Zhu">
+      
+      
+        <link rel="canonical" href="https://ai4eps.github.io/homepage/eps207-observational-seismology/lectures/01_source_and_wave/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+    
+    
+      
+        <title>Earthquake Source and Seismic Wave - AI4EPS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-5P3JS5EJW8"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-5P3JS5EJW8",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-5P3JS5EJW8",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#earthquake-source-and-seismic-wave" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="AI4EPS" class="md-header__button md-logo" aria-label="AI4EPS" data-md-component="logo">
+      
+  <img src="../../../assets/logo_eps.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI4EPS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Earthquake Source and Seismic Wave
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ai4eps/homepage/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI4EPS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../research/" class="md-tabs__link">
+          
+  
+  
+  Research
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../teaching/" class="md-tabs__link">
+          
+  
+  
+  Teaching
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../publication/" class="md-tabs__link">
+          
+  
+  
+  Publication
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../contact/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Contact
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AI4EPS" class="md-nav__button md-logo" aria-label="AI4EPS" data-md-component="logo">
+      
+  <img src="../../../assets/logo_eps.png" alt="logo">
+
+    </a>
+    AI4EPS
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ai4eps/homepage/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    AI4EPS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Research
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Research
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Research
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    QuakeFlow
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            QuakeFlow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../QuakeFlow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../QuakeFlow/kubeflow/workflow.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pipeline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../QuakeFlow/data_format/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Standard Formats
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    DeepDenoiser
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            DeepDenoiser
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DeepDenoiser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DeepDenoiser/example_interactive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../DeepDenoiser/example_batch_prediction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Batch Prediction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PhaseNet
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            PhaseNet
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../PhaseNet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../PhaseNet/example_fastapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactive Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../PhaseNet/example_batch_prediction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Batch Prediction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    GaMMA
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            GaMMA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../GaMMA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../GaMMA/example_phasenet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PhaseNet Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../GaMMA/example_seisbench/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seisbench Example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ADSeismic
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            ADSeismic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ADSeismic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Deep Catalog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Deep Catalog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-earthquake-catalog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_2" id="__nav_2_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hawaii
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hawaii
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-earthquake-catalog/catalogs/Hawaii/catalog.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Full catalog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-earthquake-catalog/catalogs/Hawaii-220181101-20220501/hypodd_cc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Small catalog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_3" id="__nav_2_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tonga
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tonga
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../deep-earthquake-catalog/catalogs/Tonga-OBS/catalog.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Catalog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Teaching
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Teaching
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../teaching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Seismology
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Seismology
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Notebooks
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Notebooks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/spring_slider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spring Slider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/wave_propagation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1D seismic wave
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2_3" id="__nav_3_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Obspy
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Obspy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/obspy_download_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Download Data
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/obspy_process_data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Signal Processing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/signal_processing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Signal Processing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/denoising/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Denoising
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/earthquake_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Earthquake Detection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/quakeflow_demo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Phase Picking and Association
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/earthquake_location/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Earthquake Location
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_focal_mechanism_and_momemt_tensor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Focal Mechanism and Moment Tensor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/focal_mechanism/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Focal Mechanism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codes/phasenet_das/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Phase Picking on DAS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PyEarth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            PyEarth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_2" id="__nav_3_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python Introduction
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Python Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/00_introduction_python101/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction & Python 101
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/01_numpy_pandas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Numpy & Pandas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/02_matplotlib_cartopy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Matplotlib & Cartopy & PyGMT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_3" id="__nav_3_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Supervised Learning
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Supervised Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/03_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regression1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/04_regression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Regression2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/05_classification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Classification1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/06_classification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Classification2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_4" id="__nav_3_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Unsupervised Learning
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Unsupervised Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/07_clustering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clustering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/08_probabilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Statistics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3_6" id="__nav_3_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Deep Learning
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Deep Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/09_neural_networks1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Neural Networks 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../eps88-pyearth-a-python-introduction-to-earth-science/lectures/10_neural_networks2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Neural Networks 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ML4Earth
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            ML4Earth
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml4earth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml4earth/syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4_3" id="__nav_3_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Standard Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Standard Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml4earth/seismic_event_format1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seismic Event Data (one single file)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml4earth/seismic_event_format2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seismic Event Data (one event per file)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml4earth/seismic_template_format/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seismic Event Template (one single file)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml4earth/seismic_event_format_das/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DAS Event Data (one event per file)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml4earth/seismic_template_format_das/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DAS Event Template
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Workshop
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Workshop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Regional Seismic Network
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Regional Seismic Network
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/seismic_network/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Slides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/seismic_network/tutorials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tutorials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_4" id="__nav_3_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Building Earthquake Catalog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Building Earthquake Catalog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_4_1" id="__nav_3_5_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Machine Learning
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Machine Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/machine_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Slides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/notebooks/quakeflow.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notebook
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5_4_2" id="__nav_3_5_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Template Matching
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Template Matching
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/template_matching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Slides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/notebooks/tm_one_template.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notebook1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/notebooks/tm_multiple_templates.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notebook2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/notebooks/tm_issues_w_detection_threshold.ipynb" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Notebook3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/catalog_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evaluating Earthquake Catalog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../earthquake-catalog-workshop/conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Conclusions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Publication
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Publication
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../publication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Publications
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../presentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-faults" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake faults
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-faults_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake faults
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-double-couple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake double couple
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment tensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-tensor_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment tensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-cmt-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global CMT catalog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beach-balls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beach balls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-tensor_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment tensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eigenvectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eigenvectors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-double-couple-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-double couple sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-double-couple-sources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-double couple sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-double-couple-sources_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-double couple sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-double-couple-sources_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-double couple sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#non-double-couple-sources_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Non-double couple sources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greens-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Green's function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greens-function_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Green's function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greens-function_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Green's function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#greens-function-moment-tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Green's function + Moment tensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiation-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiation patterns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiation-patterns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiation patterns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiation-patterns_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiation patterns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiation-patterns_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiation patterns
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-far-field-radiation-pattern-for-p-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      The far-ﬁeld radiation pattern for P-waves
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-far-field-radiation-pattern-for-s-waves" class="md-nav__link">
+    <span class="md-ellipsis">
+      The far-ﬁeld radiation pattern for S-waves
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#beach-balls_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beach balls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plotting-beach-balls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plotting beach balls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-basic-types-of-faulting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review: Basic types of faulting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-types-of-faulting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic types of faulting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      Body force
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-motion-polarity" class="md-nav__link">
+    <span class="md-ellipsis">
+      First-motion polarity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiation-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiation pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#radiation-pattern_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiation pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-focal-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Focal Mechanism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-focal-mechanism_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Focal Mechanism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-focal-mechanism_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Focal Mechanism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-focal-mechanism_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Focal Mechanism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-focal-mechanism_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Focal Mechanism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-focal-mechanism_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Focal Mechanism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pt-axes-vs-compressionaldilatational-quadrants" class="md-nav__link">
+    <span class="md-ellipsis">
+      P/T axes v.s. Compressional/Dilatational quadrants
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-tensor-and-beach-ball" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment tensor and Beach ball
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-tensor-and-radiation-pattern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment tensor and Radiation pattern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-tensor-decomposition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment tensor decomposition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnitude-m_0" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude \(M_0\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-dependent-seismic-moment-mt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-dependent seismic moment \(M(t)\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rupture-propagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rupture propagation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#far-field-the-apparent-rupture-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Far field the apparent rupture time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doppler-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Doppler effect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-apparent-rupture-duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      General apparent rupture duration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rupture-length" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rupture Length
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2004-sumatra-earthquake-directivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: 2004 Sumatra Earthquake Directivity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2004-sumatra-earthquake-directivity_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: 2004 Sumatra Earthquake Directivity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rupture-velocity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rupture velocity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-rupture-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake rupture simulation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-faults_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake faults
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-focal-mechanism_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Focal Mechanism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-tensor-decomposition_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment tensor decomposition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-rupture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake rupture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-magnitude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Magnitude
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#richter-magnitude-local-magnitude-m_l" class="md-nav__link">
+    <span class="md-ellipsis">
+      Richter Magnitude (Local magnitude \(M_L\))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#richter-magnitude-local-magnitude-m_l_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Richter Magnitude (Local magnitude \(M_L\))
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-earthquakes-body-wave-magnitude-m_b" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global earthquakes: body wave magnitude \(m_b\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#global-earthquakes-surface-wave-magnitude-m_s" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global earthquakes: surface wave magnitude \(M_s\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnitude-saturation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude saturation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-haskell-fault-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Haskell fault model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-spectra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source spectra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-spectra_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source spectra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-spectra_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source spectra
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-amplitude-spectrum-for-the-haskell-fault-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The amplitude spectrum for the Haskell fault model.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnitude-saturation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude saturation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moment-magnitude-m_w" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moment magnitude \(M_w\)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#magnitude-as-a-function-of-moment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Magnitude as a function of moment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-intensity-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      The intensity scale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-mercalli-intensity-scale-mmi" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Mercalli intensity scale (MMI)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jma-intensity-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      JMA intensity scale
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-earthquake-cycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Earthquake Cycle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Earthquake Cycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spring-block-model-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spring-block model (notebook)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spring-block-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spring-block model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#earthquake-recurrence-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake recurrence model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stress-drop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stress drop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#circular-crack-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Circular crack model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#far-field-seismic-pulse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Far-field seismic pulse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#far-field-seismic-pulse-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Far-field seismic pulse shape
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-similar-earthquake-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Similar Earthquake Scaling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-similar-earthquake-scaling_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Similar Earthquake Scaling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-similar-earthquake-scaling_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Similar Earthquake Scaling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-similar-earthquake-scaling_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-similar Earthquake Scaling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-similar-earthquake-scaling_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-similar Earthquake Scaling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brune-model-1970" class="md-nav__link">
+    <span class="md-ellipsis">
+      Brune model (1970)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#corner-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Corner frequency
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#far-field-seismic-pulse-shape_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Far-field seismic pulse shape
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Far-field seismic pulse shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#earthquake-energy-partitioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Energy Partitioning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#earthquake-energy-partitioning_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Energy Partitioning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#earthquake-scaling-static-and-dynamic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earthquake Scaling: static and dynamic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stess-and-radiated-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stess and Radiated Energy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radiation-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radiation efficiency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seismic-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seismic efficiency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apparent-stress-abercrombie-1995" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apparent Stress (Abercrombie, 1995)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apparent-stress-ide-and-beroza-2001" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apparent Stress (Ide and Beroza, 2001)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seismic-wave-propagation-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Seismic wave propagation (notebook)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/AI4EPS/EPS207_Observational_Seismology/blob/main/docs/lectures/01_source_and_wave.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="earthquake-source-and-seismic-wave">Earthquake Source and Seismic Wave</h1>
+<p>Textbooks: 
+Shearer, P. M. (2019). Introduction to seismology. Cambridge University Press.
+GEOPHYS 210: Earthquake Seismology by Eric Dunham
+Segall, P. (2010). Earthquake and volcano deformation. Princeton University Press.</p>
+<hr />
+<h3 id="earthquake-faults">Earthquake faults</h3>
+<p>Earthquakes may be idealized as movement across a planar fault of arbitrary orientation</p>
+<ul>
+<li>strike: <span class="arithmatex">\(\phi\)</span>, the azimuth of the fault from north where it intersects a horizontal surface
+<span class="arithmatex">\(0^\circ \leq \phi \leq 360^\circ\)</span></li>
+<li>dip: <span class="arithmatex">\(\delta\)</span>, the angle from the horizontal
+<span class="arithmatex">\(0^\circ \leq \delta \leq 90^\circ\)</span></li>
+<li>rake: <span class="arithmatex">\(\lambda\)</span>, the angle between the slip vector and the strike
+<span class="arithmatex">\(0^\circ \leq \lambda \leq 360^\circ\)</span></li>
+</ul>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319214522.png" /></p>
+<hr />
+<h3 id="earthquake-faults_1">Earthquake faults</h3>
+<p><strong>Thrust faulting</strong>: reverse faulting on faults with dip angles less than 45 
+<strong>Overthrust faults</strong>: Nearly horizontal thrust faults
+<strong>Strike-slip faulting</strong>: horizontal motion between the fault surfaces
+<strong>Dip-slip faulting</strong>: vertical motion
+<strong>Right-lateral strike–slip motion</strong>: standing on one side of a fault, sees the adjacent block move to the right
+<span class="arithmatex">\(\lambda = 0^\circ\)</span>: left-lateral faulting
+<span class="arithmatex">\(\lambda = 180^\circ\)</span>: right-lateral faulting
+The San Andreas Fault: Right-lateral fault</p>
+<p><img alt="bg right:30% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319215002.png" /></p>
+<hr />
+<h3 id="earthquake-double-couple">Earthquake double couple</h3>
+<ul>
+<li>An earthquake is usually modeled as slip on a fault, a discontinuity in displacement across an internal surface in the elastic media.</li>
+<li>Internal forces resulting from an explosion or stress release on a fault must act in opposing directions so as to conserve momentum.</li>
+<li>A force couple is a pair of opposing point forces separated by a small distance </li>
+<li>A double couple is a pair of complementary couples that produce no net torque</li>
+</ul>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250318122046.png" /></p>
+<hr />
+<h3 id="moment-tensor">Moment tensor</h3>
+<p>We define the force couple <span class="arithmatex">\(M_{ij}\)</span> as a pair of equal and opposite forces pointing in the <span class="arithmatex">\(i\)</span> direction and separated by a unit distance in the <span class="arithmatex">\(j\)</span> direction. </p>
+<p>The magnitude of <span class="arithmatex">\(M_{ij}\)</span> is the product of the force and the distance <span class="arithmatex">\(f \times d\)</span>.</p>
+<div class="arithmatex">\[
+M_{ij} = \begin{bmatrix}
+    M_{11} &amp; M_{12} &amp; M_{13} \\
+    M_{21} &amp; M_{22} &amp; M_{23} \\
+    M_{31} &amp; M_{32} &amp; M_{33}
+\end{bmatrix}
+\]</div>
+<p>The condition that angular momentum be conserved requires that is symmetric (e.g., <span class="arithmatex">\(M_{ij} = M_{ji}\)</span>).</p>
+<p><img alt="bg right:30% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250318122515.png" /></p>
+<hr />
+<h3 id="moment-tensor_1">Moment tensor</h3>
+<p>For example, right-lateral movement on a vertical fault oriented in the <span class="arithmatex">\(x_1\)</span> direction corresponds to the moment tensor representation</p>
+<div class="arithmatex">\[
+M = \begin{bmatrix}
+    M_{11} &amp; M_{12} &amp; M_{13} \\
+    M_{21} &amp; M_{22} &amp; M_{23} \\
+    M_{31} &amp; M_{32} &amp; M_{33}
+\end{bmatrix}
+= \begin{bmatrix}
+    0 &amp; M_0 &amp; 0 \\
+    M_0 &amp; 0 &amp; 0 \\
+    0 &amp; 0 &amp; 0
+\end{bmatrix}
+\]</div>
+<p>where <span class="arithmatex">\(M_0\)</span> is the scalar seismic moment: </p>
+<div class="arithmatex">\[
+M_0 = \mu d A
+\]</div>
+<p>where <span class="arithmatex">\(\mu\)</span> is the shear modulus, <span class="arithmatex">\(d\)</span> is the average fault displacement, and <span class="arithmatex">\(A\)</span> is the area of the fault.</p>
+<p>The units for <span class="arithmatex">\(M_0\)</span> are N<span class="arithmatex">\(\cdot\)</span>m (or dyne<span class="arithmatex">\(\cdot\)</span>cm), the same as for force couples.</p>
+<hr />
+<h3 id="global-cmt-catalog">Global CMT catalog</h3>
+<p><a href="https://www.globalcmt.org/">Global Centroid Moment Tensor</a></p>
+<p><img alt="height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319214231.png" /></p>
+<hr />
+<p><img alt="bg fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319224558.png" /></p>
+<hr />
+<h3 id="beach-balls">Beach balls</h3>
+<div style="display: flex; justify-content: space-between;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319224343.png" width="48%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319224401.png" width="48%">
+</div>
+
+<hr />
+<h3 id="moment-tensor_2">Moment tensor</h3>
+<p>Because <span class="arithmatex">\(M_{ij} = M_{ji}\)</span>, there are two fault planes that correspond to a double-couple model. 
+In general, there are two fault planes that are consistent with distant seismic observations in the double-couple model.
+<strong>The primary fault plane</strong>: The real fault plane
+<strong>The auxiliary fault plane</strong>: The other plane</p>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319220310.png" /></p>
+<hr />
+<h3 id="eigenvectors">Eigenvectors</h3>
+<p>The moment tensor <span class="arithmatex">\(M_{ij}\)</span> is a symmetric tensor, so it has three real eigenvalues and three orthogonal eigenvectors.</p>
+<p>Tension axis <span class="arithmatex">\(T\)</span>
+Pressure axis <span class="arithmatex">\(P\)</span></p>
+<p><img alt="bg right:60% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319220518.png" /></p>
+<hr />
+<h3 id="non-double-couple-sources">Non-double couple sources</h3>
+<p>Isotropic part of <span class="arithmatex">\(M\)</span>: <span class="arithmatex">\(M^{o} = \frac{1}{3} \text{tr}(M) I\)</span></p>
+<p>$$
+M^{o} = \begin{bmatrix}
+    M_{11} &amp; 0 &amp; 0 \
+    0 &amp; M_{22} &amp; 0 \
+    0 &amp; 0 &amp; M_{33}
+\end{bmatrix}
+$$
+where <span class="arithmatex">\(M_{11} = M_{22} = M_{33}\)</span></p>
+<p>Decomposing <span class="arithmatex">\(M\)</span> into isotropic and deviatoric parts: <span class="arithmatex">\(M = M^{o} + M'\)</span>
+where <span class="arithmatex">\(\text{tr}(M') = 0\)</span>, free from isotropic sources by may contain non-double couple sources</p>
+<hr />
+<h3 id="non-double-couple-sources_1">Non-double couple sources</h3>
+<p>Diagonalize <span class="arithmatex">\(M'\)</span> by rotating to coordinates of principal axes:</p>
+<p>$$
+M' = \begin{bmatrix}
+    \sigma_1 &amp; 0 &amp; 0 \
+    0 &amp; \sigma_2 &amp; 0 \
+    0 &amp; 0 &amp; \sigma_3
+\end{bmatrix}
+$$
+where <span class="arithmatex">\(\sigma_1 \geq \sigma_2 \geq \sigma_3\)</span>.</p>
+<p>Because <span class="arithmatex">\(tr(M') = 0\)</span>, <span class="arithmatex">\(\sigma_1 + \sigma_2 + \sigma_3 = 0\)</span>. 
+For a pure double couple source, <span class="arithmatex">\(\sigma_2 = 0\)</span> and <span class="arithmatex">\(\sigma_1 = -\sigma_3\)</span>.</p>
+<hr />
+<h3 id="non-double-couple-sources_2">Non-double couple sources</h3>
+<p>We can decompose <span class="arithmatex">\(M'\)</span> into a best-fitting double couple <span class="arithmatex">\(M^{DC}\)</span> and a non-double couple part <span class="arithmatex">\(M^{CLVD}\)</span>:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+M' &amp;= M^{DC} + M^{CLVD} \\
+&amp;= \begin{bmatrix}
+    (\sigma_1 - \sigma_3)/2 &amp; 0 &amp; 0 \\
+    0 &amp; 0 &amp; 0 \\
+    0 &amp; 0 &amp; -(\sigma_1 - \sigma_3)/2
+\end{bmatrix} 
++ \begin{bmatrix}
+    -\sigma_2/2 &amp; 0 &amp; 0 \\
+    0 &amp; \sigma_2 &amp; 0 \\
+    0 &amp; 0 &amp; -\sigma_2/2
+\end{bmatrix}
+\end{aligned}
+\]</div>
+<p>The complete decomposition of the original <span class="arithmatex">\(M\)</span> is:</p>
+<div class="arithmatex">\[
+M = M^{o} + M^{DC} + M^{CLVD}
+\]</div>
+<hr />
+<h3 id="non-double-couple-sources_3">Non-double couple sources</h3>
+<p>Example of the decomposition of a moment tensor into isotropic, best-ﬁtting double couple, and compensated linear vector dipole terms:</p>
+<p><img alt="height:300px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319222911.png" /></p>
+<p>The decomposition of <span class="arithmatex">\(M'\)</span> into <span class="arithmatex">\(M^{DC}\)</span> and <span class="arithmatex">\(M^{CLVD}\)</span> is unique because we have defined <span class="arithmatex">\(M^{DC}\)</span> as the best-fitting double couple, i.e., minimizing the CLVD part.</p>
+<hr />
+<h3 id="non-double-couple-sources_4">Non-double couple sources</h3>
+<p>A measure of the misﬁt between <span class="arithmatex">\(M'\)</span> and a pure double-couple source is provided by the ratio <span class="arithmatex">\(\sigma_2\)</span> to the remaining eigenvalue with the largest magnitude to the largest eigenvalue of <span class="arithmatex">\(M'\)</span></p>
+<div class="arithmatex">\[
+\epsilon = \frac{|\sigma_2|}{\max(|\sigma_1|, |\sigma_3|)}
+\]</div>
+<p><span class="arithmatex">\(\epsilon = 0\)</span>: pure double couple
+<span class="arithmatex">\(\epsilon = \pm 0.5\)</span>: close to pure CLVD</p>
+<p>Physically, non-double-couple components can arise from simultaneous faulting on faults of different orientations or on a curved fault surface.</p>
+<hr />
+<h3 id="greens-function">Green's function</h3>
+<p>Review:</p>
+<p>The momentum equation:</p>
+<div class="arithmatex">\[
+\rho \frac{\partial^2 u}{\partial t^2} = \partial_i \tau_{ij} + f_i
+\]</div>
+<p>The stress-strain relation:</p>
+<div class="arithmatex">\[
+\tau_{ij} = \lambda \delta_{ij} \partial_k u_k + 2 \mu \varepsilon_{ij}
+\]</div>
+<p>The strain:</p>
+<div class="arithmatex">\[
+\varepsilon_{ij} = \frac{1}{2} \left( \partial_i u_j + \partial_j u_i \right)
+\]</div>
+<hr />
+<h3 id="greens-function_1">Green's function</h3>
+<p>We consider a unit impulse source <span class="arithmatex">\(f_i(x_0, t_0) = \delta(t - t_0) \delta(x-x_0)\)</span> at point <span class="arithmatex">\(x_0\)</span> at time <span class="arithmatex">\(t_0\)</span>.</p>
+<p>The unit force function is a useful concept because more realistic sources can be described as a sum of these force vectors.</p>
+<p>For every <span class="arithmatex">\(f(x_0, t_0)\)</span>, there is a unique <span class="arithmatex">\(u(x, t)\)</span> that describes the Earth’s response, which could be computed if we knew the Earth’s structure to sufﬁcient accuracy.</p>
+<hr />
+<h3 id="greens-function_2">Green's function</h3>
+<p>We define the notation:</p>
+<p>$$
+u_i(x, t) =  G_{ij}(x, t; x_0, t_0) f_j(x_0, t_0)
+$$
+where <span class="arithmatex">\(G_{ij}\)</span> is the Green's function, <span class="arithmatex">\(u_i\)</span> is the displacement, and <span class="arithmatex">\(f_j\)</span> is the force.</p>
+<p>Assuming that <span class="arithmatex">\(G_{ij}\)</span> can be computed, the displacement resulting from any body force distribution can be computed as the sum or superposition of the solutions for the individual point sources.</p>
+<hr />
+<h3 id="greens-function-moment-tensor">Green's function + Moment tensor</h3>
+<p>The moment tensor provides a general representation of the internally generated forces that can act at a point in an elastic medium. Although it is an idealization, it has proven to be a good approximation for modeling the distant seismic response for sources that are small compared to the observed seismic wavelengths.</p>
+<p>So the displacement <span class="arithmatex">\(u_i\)</span> resulting from a force couple at <span class="arithmatex">\(x_0\)</span> is given by:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+u_i(x, t) &amp;= G_{ij}(x, t; x_0, t_0) f_j(x_0, t_0) - G_{ij}(x, t; x_0-\hat{d}, t_0) f_j(x_0, t_0) \\
+&amp;= \frac{\partial G_{ij}(x, t; x_0, t_0)}{\partial x_{0k}} \hat{d}_k f_j(x_0, t_0) \\
+u_i(x, t) &amp;= \frac{\partial G_{ij}(x, t; x_0, t_0)}{\partial x_{0k}} M_{jk}
+\end{aligned}
+\]</div>
+<hr />
+<h3 id="radiation-patterns">Radiation patterns</h3>
+<p>Solving for the Green's function is rather complicated. Here we consider the simple case of a spherical wavefront from an isotropic source.
+Review: The solution for the P-wave potential:
+$$
+\phi(r, t) = \frac{-f(t-r/\alpha)}{r}
+$$
+where <span class="arithmatex">\(\alpha\)</span> is the P-wave velocity, <span class="arithmatex">\(r\)</span> is the distance from the point source, and <span class="arithmatex">\(4\pi\delta(r)f(t)\)</span> is the source-time function.</p>
+<p>The displacement field = the gradient of the displacement potential:
+$$
+u(r, t) = \frac{\partial \phi(r, t)}{\partial r} = \frac{1}{r^2} f(t-r/\alpha) - \frac{1}{r} \frac{\partial f(t-r/\alpha)}{\partial r}
+$$</p>
+<hr />
+<h3 id="radiation-patterns_1">Radiation patterns</h3>
+<p>Define <span class="arithmatex">\(\tau = t - r/\alpha\)</span> as the delay time:
+$$
+\frac{\partial f(t-r/\alpha)}{\partial r} = \frac{\partial f(t-r/\alpha)}{\partial \tau} \frac{\partial \tau}{\partial r} = -\frac{1}{\alpha} \frac{\partial f(t - r/\alpha)}{\partial \tau} 
+$$
+So the displacement field is:
+$$
+u(r, t) = \frac{1}{r^2} f(t-r/\alpha) + \frac{1}{r\alpha} \frac{\partial f(t-r/\alpha)}{\partial \tau}
+$$ </p>
+<p>The first term decays as <span class="arithmatex">\(1/r^2\)</span>, and is called the near-field term, which represents the permanent static displacement due to the source
+The second term decays as <span class="arithmatex">\(1/r\)</span>, and is called the far-field term, which represents the dynamic response (the transient seismic waves radiated by the source that cause no permanent displacement)</p>
+<hr />
+<h3 id="radiation-patterns_2">Radiation patterns</h3>
+<div class="arithmatex">\[
+u(r, t) = \frac{1}{r^2} f(t-r/\alpha) + \frac{1}{r\alpha} \frac{\partial f(t-r/\alpha)}{\partial \tau}
+\]</div>
+<p>The first term decays as <span class="arithmatex">\(1/r^2\)</span>, and is called the near-field term, which represents the permanent static displacement due to the source</p>
+<p>The second term decays as <span class="arithmatex">\(1/r\)</span>, and is called the far-field term, which represents the dynamic response - the transient seismic waves radiated by the source. 
+These waves cause no permanent displacement, and their displacements are given by the first time derivative of the source-time function.</p>
+<hr />
+<h3 id="radiation-patterns_3">Radiation patterns</h3>
+<p>Most seismic observations are made at sufﬁcient distance from faults that only the far-ﬁeld terms are important.
+Consider the far-ﬁeld P-wave displacement for a double-couple source, assuming the fault is in the <span class="arithmatex">\(x_1, x_2\)</span> plane with motion in the <span class="arithmatex">\(x_1\)</span> direction:</p>
+<div class="arithmatex">\[\mathbf{u}^P=\frac{1}{4 \pi \rho \alpha^3} \sin 2 \theta \cos \phi \frac{1}{r} \dot{M}_0\left(t-\frac{r}{\alpha}\right) \hat{\mathbf{r}}\]</div>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319230031.png" /></p>
+<hr />
+<h3 id="the-far-field-radiation-pattern-for-p-waves">The far-ﬁeld radiation pattern for P-waves</h3>
+<ul>
+<li>The fault plane and the auxiliary fault plane form nodal lines of zero motion. </li>
+<li>The outward pointing vectors in the compressional quadrant. </li>
+<li>The inward pointing vectors in the dilatational quadrant. </li>
+<li>The tension (T axis) is in the middle of the compressional quadrant; </li>
+<li>The pressure (P axis) is in the middle of the dilatational quadrant.</li>
+</ul>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319230456.png" /></p>
+<hr />
+<h3 id="the-far-field-radiation-pattern-for-s-waves">The far-ﬁeld radiation pattern for S-waves</h3>
+<p>The far-ﬁeld S displacements:
+<span class="arithmatex">\(<span class="arithmatex">\(\mathbf{u}^S(\mathbf{x}, t)=\frac{1}{4 \pi \rho \beta^3}(\cos 2 \theta \cos \phi \hat{\boldsymbol{\theta}}-\cos \theta \sin \phi \hat{\boldsymbol{\phi}}) \frac{1}{r} \dot{M}_0\left(t-\frac{r}{\beta}\right)\)</span>\)</span>
+where <span class="arithmatex">\(\beta\)</span> is the S-wave velocity.</p>
+<p>There are no nodal planes, but there are nodal points. 
+S-wave polarities generally point toward the T axis and away from the P axis.</p>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319230620.png" /></p>
+<hr />
+<h3 id="beach-balls_1">Beach balls</h3>
+<div style="display: flex; justify-content: space-between;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319224343.png" width="48%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319224401.png" width="48%">
+</div>
+
+<hr />
+<h3 id="plotting-beach-balls">Plotting beach balls</h3>
+<p>Projection of the focal sphere onto an equal-area lower-hemisphere map.
+The numbers around the outside circle show the fault strike in degrees.
+The circles show fault dip angles with 0° dip (a horizontal fault) to 90° dip (a vertical fault).
+The curved line ABC shows the intersection of the fault with the focal sphere.</p>
+<p><img alt="bg right:50% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319231740.png" /></p>
+<hr />
+<h3 id="review-basic-types-of-faulting">Review: Basic types of faulting</h3>
+<p><img alt="height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/202503302341109.png" /></p>
+<hr />
+<h3 id="basic-types-of-faulting">Basic types of faulting</h3>
+<p><img alt="20250330233905 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330233905.png" /></p>
+<hr />
+<h3 id="body-force">Body force</h3>
+<p><img alt="bg right:65% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331193229.png" /></p>
+<hr />
+<h3 id="first-motion-polarity">First-motion polarity</h3>
+<p><img alt="20250330234223 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330234223.png" /></p>
+<hr />
+<h3 id="radiation-pattern">Radiation pattern</h3>
+<p><img alt="20250330234626 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330234626.png" /></p>
+<hr />
+<h3 id="radiation-pattern_1">Radiation pattern</h3>
+<p><img alt="20250330234649 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330234649.png" /></p>
+<hr />
+<h3 id="earthquake-focal-mechanism">Earthquake Focal Mechanism</h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235030.png" width="40%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331233446.png" width="58%">
+</div>
+
+<hr />
+<h3 id="earthquake-focal-mechanism_1">Earthquake Focal Mechanism</h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235030.png" width="40%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235229.png" width="48%">
+</div>
+
+<hr />
+<h3 id="earthquake-focal-mechanism_2">Earthquake Focal Mechanism</h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235139.png" width="58%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235405.png" width="35%">
+</div>
+
+<hr />
+<h3 id="earthquake-focal-mechanism_3">Earthquake Focal Mechanism</h3>
+<p><img alt="height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319231740.png" /></p>
+<hr />
+<h3 id="earthquake-focal-mechanism_4">Earthquake Focal Mechanism</h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235030.png" width="38%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235636.png" width="58%">
+</div>
+
+<hr />
+<h3 id="earthquake-focal-mechanism_5">Earthquake Focal Mechanism</h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235139.png" width="48%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235705.png" width="48%">
+</div>
+
+<hr />
+<h3 id="pt-axes-vs-compressionaldilatational-quadrants">P/T axes v.s. Compressional/Dilatational quadrants</h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235816.png" width="48%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330234223.png" width="48%">
+</div>
+
+<p>The Pressure/Tension (P/T) axes are defined inside the beach ball;
+The Compressional/Dilatational quadrants are defined outside the beach ball;</p>
+<p>The tension (T axis) is in the middle of the compressional quadrant;
+The pressure (P axis) is in the middle of the dilatational quadrant.</p>
+<hr />
+<h3 id="moment-tensor-and-beach-ball">Moment tensor and Beach ball</h3>
+<p><img alt="20250331000705 height:400px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331000705.png" />
+<img alt="bg right:60% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331000517.png" /></p>
+<hr />
+<h3 id="moment-tensor-and-radiation-pattern">Moment tensor and Radiation pattern</h3>
+<p><img alt="" src="https://raw.githubusercontent.com/zhuwq0/images/main/202503310036213.jpg" /></p>
+<hr />
+<h3 id="moment-tensor-decomposition">Moment tensor decomposition</h3>
+<p><img alt="bg right:60% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331003901.png" /></p>
+<hr />
+<h3 id="magnitude-m_0">Magnitude <span class="arithmatex">\(M_0\)</span></h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331234322.png" width="44%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331234224.png" width="44%">
+</div>
+
+<p>The magnitude of the equivalent body forces is <span class="arithmatex">\(M_0\)</span>
+The scalar seismic moment of the earthquake; units of dyn-cm, or N-m</p>
+<hr />
+<h3 id="time-dependent-seismic-moment-mt">Time-dependent seismic moment <span class="arithmatex">\(M(t)\)</span></h3>
+<p><strong>The Haskell source model</strong></p>
+<p><img alt="20250331234705 height:350px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331234705.png" /></p>
+<p>The rise time: <span class="arithmatex">\(\tau_r\)</span> describes the slip duration at any point on a fault.</p>
+<hr />
+<h3 id="rupture-propagation">Rupture propagation</h3>
+<p>For a long, narrow fault, we assume that the rupture propagates along the fault of length <span class="arithmatex">\(L\)</span> from left to right at a rupture velocity <span class="arithmatex">\(v_r\)</span>
+The total duration <span class="arithmatex">\(\tau_d\)</span> of the rupture is <span class="arithmatex">\(T = L/v_r\)</span></p>
+<p><img alt="20250331235148 height:350px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331235148.png" /></p>
+<hr />
+<h3 id="far-field-the-apparent-rupture-time">Far field the apparent rupture time</h3>
+<p><img alt="20250331235242 height:300px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331235242.png" /></p>
+<p>The apparent rupture duration time <span class="arithmatex">\(\tau_{\alpha}\)</span> for P-waves:
+Rupturing directly toward us: <span class="arithmatex">\(\tau_{\alpha}(\text{toward}) = L \left( \frac{1}{v_r} - \frac{1}{\alpha} \right)\)</span>
+Rupturing directly away from us: <span class="arithmatex">\(\tau_{\alpha}(\text{away}) = L \left( \frac{1}{v_r} + \frac{1}{\alpha} \right)\)</span></p>
+<hr />
+<h3 id="doppler-effect">Doppler effect</h3>
+<iframe width="100%" height="500px" src="https://www.youtube.com/embed/imoxDcn2Sgo?si=P_TER2KTW9rco1KS&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr />
+<h3 id="general-apparent-rupture-duration">General apparent rupture duration</h3>
+<p>The apparent rupture duration for a seismic phase with local horizontal phase velocity <span class="arithmatex">\(c\)</span> at the observing station as
+$$
+\tau_c(\theta) = L \left( \frac{1}{v_r} - \frac{\cos \theta}{c} \right)
+$$
+where <span class="arithmatex">\(\theta\)</span> is the station azimuth relative to the rupture direction. </p>
+<p>The changes in <span class="arithmatex">\(\tau_c\)</span> as a function of receiver location are termed directivity effects.</p>
+<hr />
+<h3 id="rupture-length">Rupture Length</h3>
+<p>Since <span class="arithmatex">\(\tau_\text{max} = L \left( \frac{1}{v_r} - \frac{1}{c} \right)\)</span> and <span class="arithmatex">\(\tau_\text{min} = L \left( \frac{1}{v_r} + \frac{1}{c} \right)\)</span>
+The rupture length <span class="arithmatex">\(L\)</span> is
+$$
+L = \frac{1}{2} (\tau_\text{max} - \tau_\text{min}){c}
+$$
+The true rupture duration is 
+$$
+\tau_d = L/v_r = \frac{1}{2} (\tau_\text{max} + \tau_\text{min})
+$$
+The average rupture velocity is
+$$
+v_r = L/\tau_d = \frac{\tau_\text{max} - \tau_\text{min}}{\tau_\text{max} + \tau_\text{min}} c
+$$</p>
+<hr />
+<h3 id="example-2004-sumatra-earthquake-directivity">Example: 2004 Sumatra Earthquake Directivity</h3>
+<p><img alt="20250401002059 height:400px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250401002059.png" />
+High-frequency (2–4 Hz) envelopes from teleseismic P-wave observations of the 2004 Sumatra earthquake.</p>
+<hr />
+<h3 id="example-2004-sumatra-earthquake-directivity_1">Example: 2004 Sumatra Earthquake Directivity</h3>
+<p><img alt="20250401002059 height:300px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250401002059.png" />
+We have <span class="arithmatex">\(\tau_{\text{min}} \simeq 400\)</span>s, <span class="arithmatex">\(\tau_{\text{max}} \simeq 600\)</span>; and assume <span class="arithmatex">\(c = 12.6 \text{ km/s}\)</span>, so:
+* <span class="arithmatex">\(L = \frac{1}{2} (\tau_\text{max} - \tau_\text{min}){c} = 1/2 \times 200 \times 12.6 = 1260\)</span> km
+* <span class="arithmatex">\(\tau_d = \frac{1}{2} (\tau_\text{max} + \tau_\text{min}) = 500\)</span> s
+* <span class="arithmatex">\(v_r = L/\tau_d = 1260/500 = 2.52\)</span> km/s</p>
+<hr />
+<h3 id="rupture-velocity">Rupture velocity</h3>
+<p>The rupture velocity is generally observed to be somewhat less than the shear-wave velocity for most earthquakes. 
+Anomalously fast ruptures sometimes exceed the local S-wave velocity and are termed supershear ruptures.</p>
+<hr />
+<h3 id="earthquake-rupture-simulation">Earthquake rupture simulation</h3>
+<video src="assets/rough_vy.mp4" controls width="80%"></video>
+<p><a href="https://pangea.stanford.edu/~edunham/publications.html">Eric Dunham</a></p>
+<hr />
+<h3 id="earthquake-faults_2">Earthquake faults</h3>
+<p>Earthquakes may be idealized as movement across a planar fault of arbitrary orientation</p>
+<ul>
+<li>strike: <span class="arithmatex">\(\phi\)</span>, the azimuth of the fault from north where it intersects a horizontal surface
+<span class="arithmatex">\(0^\circ \leq \phi \leq 360^\circ\)</span></li>
+<li>dip: <span class="arithmatex">\(\delta\)</span>, the angle from the horizontal
+<span class="arithmatex">\(0^\circ \leq \delta \leq 90^\circ\)</span></li>
+<li>rake: <span class="arithmatex">\(\lambda\)</span>, the angle between the slip vector and the strike
+<span class="arithmatex">\(0^\circ \leq \lambda \leq 360^\circ\)</span></li>
+</ul>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319214522.png" /></p>
+<hr />
+<h3 id="earthquake-focal-mechanism_6">Earthquake Focal Mechanism</h3>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250330235139.png" width="48%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250319231740.png" width="45%">
+</div>
+
+<hr />
+<h3 id="moment-tensor-decomposition_1">Moment tensor decomposition</h3>
+<p><img alt="height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331000517.png" />
+<img alt="bg right:50% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331003901.png" /></p>
+<hr />
+<h3 id="earthquake-rupture">Earthquake rupture</h3>
+<p><strong>The Haskell source model</strong></p>
+<p><span class="arithmatex">\(\tau_r\)</span>: the rise time, describes the slip duration at any point on a fault.
+<span class="arithmatex">\(\tau_d\)</span>: the duration of the rupture (<span class="arithmatex">\(L/v_r\)</span>)</p>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331234705.png" width="58%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331235148.png" width="38%">
+</div>
+
+<hr />
+<h3 id="earthquake-magnitude">Earthquake Magnitude</h3>
+<p>How to quantify the size of an earthquake?</p>
+<ul>
+<li>For historical reasons the most well-known measure of earthquake size is the  earthquake magnitude.</li>
+<li>Derived from the largest amplitude that is recorded on  seismograms.</li>
+<li>There are now many different types of magnitude  scales, but all are connected in some way to the earliest definitions of  magnitude.</li>
+</ul>
+<p><img alt="bg right:40% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250403091807.png" /></p>
+<hr />
+<h3 id="richter-magnitude-local-magnitude-m_l">Richter Magnitude (Local magnitude <span class="arithmatex">\(M_L\)</span>)</h3>
+<p>The original magnitude scale is based on the maximum amplitude recorded on a standard Wood-Anderson torsion seismograph.</p>
+<p>$$
+M_L = \log_{10} A(X) - \log_{10} A_0(X)
+$$
+<span class="arithmatex">\(A_0\)</span>: the amplitude of the reference event
+<span class="arithmatex">\(X\)</span>: the epicentral distance</p>
+<p><img alt="20250402232519 bg right:50% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250402232519.png" /></p>
+<hr />
+<h3 id="richter-magnitude-local-magnitude-m_l_1">Richter Magnitude (Local magnitude <span class="arithmatex">\(M_L\)</span>)</h3>
+<p>An approximate empirical formula has been derived for <span class="arithmatex">\(\log_{10} A_0(X)\)</span> at different ranges. 
+The local magnitude can be calculated by
+$$
+M_L = \log_{10} A(X) + 2.56 \log_{10} X - 1.67
+$$
+where <span class="arithmatex">\(A(X)\)</span> is the displacement amplitude in microns (10<span class="arithmatex">\(^{-6}\)</span> m) and X is in  kilometers.</p>
+<ul>
+<li>Events below about <span class="arithmatex">\(M_L 3\)</span> are generally not felt</li>
+<li>Significant damage to structures in California begins to  occur at about <span class="arithmatex">\(M_L 5.5\)</span></li>
+<li>A <span class="arithmatex">\(M_L 6.0\)</span> earthquake implies amplitude 100 times greater than a <span class="arithmatex">\(M_L 4.0\)</span> event.</li>
+</ul>
+<hr />
+<h3 id="global-earthquakes-body-wave-magnitude-m_b">Global earthquakes: body wave magnitude <span class="arithmatex">\(m_b\)</span></h3>
+<div class="arithmatex">\[
+m_b = \log_{10} (A/T) + Q(h, \Delta)
+\]</div>
+<p>where A is the ground displacement in microns, T is the dominant period of  the measured waves, <span class="arithmatex">\(\Delta\)</span> is the epicentral distance in degrees, and Q is an  empirical function of range and event depth h.</p>
+<ul>
+<li>Why <span class="arithmatex">\(A/T\)</span>?</li>
+<li>h?</li>
+</ul>
+<hr />
+<h3 id="global-earthquakes-surface-wave-magnitude-m_s">Global earthquakes: surface wave magnitude <span class="arithmatex">\(M_s\)</span></h3>
+<p>For Rayleigh waves on vertical instruments:
+$$
+M_s = \log_{10} (A/T) + 1.66 \log_{10} \Delta + 3.30
+$$</p>
+<p>Since the strongest Rayleigh wave arrivals are generally at a period of 20 s, this expression is  often written as
+$$
+M_s = \log_{10} A_{20} + 2.46 \log_{10} \Delta + 2.0
+$$</p>
+<ul>
+<li>Note that this equation is applicable only to shallow events</li>
+<li>surface wave amplitudes are greatly reduced for deep events.</li>
+</ul>
+<hr />
+<h3 id="magnitude-saturation">Magnitude saturation</h3>
+<p><img alt="bg right:70% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250402233819.png" /></p>
+<hr />
+<h3 id="the-haskell-fault-model">The Haskell fault model</h3>
+<p><img alt="20250331235242 height:250px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250331235242.png" /></p>
+<p><img alt="20250401002831 height:300px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250401002831.png" /></p>
+<hr />
+<h3 id="source-spectra">Source spectra</h3>
+<p>A boxcar pulse in the time domain produces a sinc function in  the frequency domain: <span class="arithmatex">\(\text{sinc}(x) = \frac{\sin(x)}{x}\)</span></p>
+<div style="display: flex; justify-content: center;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250401092155.png" width="68%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250403000646.png" width="30%">
+</div>
+
+<hr />
+<h3 id="source-spectra_1">Source spectra</h3>
+<p>The far-field amplitude spectrum for the Haskell fault model  may be expressed as</p>
+<div class="arithmatex">\[
+|A(\omega)|=g M_0\left|\operatorname{sinc}\left(\omega \tau_r / 2\right)\right|\left|\operatorname{sinc}\left(\omega \tau_d / 2\right)\right|,
+\]</div>
+<p>where <span class="arithmatex">\(g\)</span> is a scaling term that includes geometrical spreading, etc</p>
+<div class="arithmatex">\[
+\log |A(\omega)|=G+\log \left(M_0\right)+\log \left|\operatorname{sinc}\left(\omega \tau_r / 2\right)\right|+\log \left|\operatorname{sinc}\left(\omega \tau_d / 2\right)\right|
+\]</div>
+<p>where <span class="arithmatex">\(G=\log g\)</span>. </p>
+<hr />
+<h3 id="source-spectra_2">Source spectra</h3>
+<p>We can approximate <span class="arithmatex">\(\left|\operatorname{sinc} x\right| \simeq 1\)</span> for <span class="arithmatex">\(x&lt;1\)</span> and <span class="arithmatex">\(1/x\)</span> for <span class="arithmatex">\(x&gt;1\)</span></p>
+<div class="arithmatex">\[
+\log |A(\omega)|-G = \log \left(M_0\right)+\log \left|\operatorname{sinc}\left(\omega \tau_r / 2\right)\right|+\log \left|\operatorname{sinc}\left(\omega \tau_d / 2\right)\right|
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned} \log |A(\omega)|-G &amp; =\log M_0, &amp; &amp; \omega&lt;2 / \tau_d \\ &amp; =\log M_0-\log \frac{\tau_d}{2}-\log \omega, &amp; &amp; 2 / \tau_d&lt;\omega&lt;2 / \tau_r \\ &amp; =\log M_0-\log \frac{\tau_d \tau_r}{4}-2 \log \omega, &amp; &amp; 2 / \tau_r&lt;\omega\end{aligned}
+\]</div>
+<hr />
+<h3 id="the-amplitude-spectrum-for-the-haskell-fault-model">The amplitude spectrum for the Haskell fault model.</h3>
+<div class="arithmatex">\[
+\begin{aligned} \log |A(\omega)|-G &amp; =\log M_0, &amp; &amp; \omega&lt;2 / \tau_d \\ &amp; =\log M_0-\log \frac{\tau_d}{2}-\log \omega, &amp; &amp; 2 / \tau_d&lt;\omega&lt;2 / \tau_r \\ &amp; =\log M_0-\log \frac{\tau_d \tau_r}{4}-2 \log \omega, &amp; &amp; 2 / \tau_r&lt;\omega\end{aligned}
+\]</div>
+<p><img alt="bg right:55% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250401092815.png" /></p>
+<hr />
+<h3 id="magnitude-saturation_1">Magnitude saturation</h3>
+<p><img alt="bg right:70% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250402233819.png" /></p>
+<hr />
+<h3 id="moment-magnitude-m_w">Moment magnitude <span class="arithmatex">\(M_w\)</span></h3>
+<p>The saturation of the and scales for large events helped motivate  development of the moment magnitude <span class="arithmatex">\(M_w\)</span></p>
+<p>$$
+M_w = \frac{2}{3} (\log_{10} M_0 - 9.1)
+$$
+where is the moment measured in N-m.</p>
+<ul>
+<li>The advantage of the scale is that it is clearly related to a physical property of the source and it does not saturate for even the largest  earthquakes.</li>
+<li>One unit increase in <span class="arithmatex">\(M_w\)</span> corresponds to a <span class="arithmatex">\(10^{3/2} \approx 32\)</span> times increase in the moment.</li>
+<li>A <span class="arithmatex">\(M_w 7\)</span> earthquake releases about 1000 times more energy than a <span class="arithmatex">\(M_w 5\)</span> event.</li>
+</ul>
+<hr />
+<h3 id="magnitude-as-a-function-of-moment">Magnitude as a function of moment</h3>
+<p><img alt="20250402234333 height:450px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250402234333.png" /></p>
+<p><a href="https://www.usgs.gov/programs/earthquake-hazards/magnitude-types">USGS Magnitude Types</a>; <a href="https://earthquake.usgs.gov/earthquakes/eventpage/us7000pn9s/origin/magnitude">Latest earthquake</a></p>
+<hr />
+<p><img alt="20250402235133 bg fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250402235133.png" /></p>
+<hr />
+<p><img alt="20250402235213 bg fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250402235213.png" /></p>
+<hr />
+<h3 id="the-intensity-scale">The intensity scale</h3>
+<p>The local strength of ground shaking as determined by damage to  structures and the perceptions of people who experienced the earthquake.</p>
+<ul>
+<li>One earthquake can have different intensities at different locations.</li>
+</ul>
+<p><a href="https://earthquake.usgs.gov/earthquakes/map/?extent=26.07652,-136.80176&amp;extent=49.92294,-98.48145&amp;range=month&amp;listOnlyShown=true&amp;settings=true&amp;search=%7B%22name%22:%22Search%20Results%22,%22params%22:%7B%22starttime%22:%222020-12-02%2000:00:00%22,%22endtime%22:%222023-12-09%2023:59:59%22,%22maxlatitude%22:37.642,%22minlatitude%22:37.588,%22maxlongitude%22:-122.344,%22minlongitude%22:-122.412,%22orderby%22:%22time%22%7D%7D">USGS Latest Earthquakes</a></p>
+<hr />
+<h3 id="the-mercalli-intensity-scale-mmi">The Mercalli intensity scale (MMI)</h3>
+<p><img alt="20250403001052 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250403001052.png" /></p>
+<hr />
+<h3 id="jma-intensity-scale">JMA intensity scale</h3>
+<p><img alt="bg right:60% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/202504030012755.png" /></p>
+<hr />
+<h2 id="the-earthquake-cycle">The Earthquake Cycle</h2>
+<ul>
+<li>Elastic rebound</li>
+</ul>
+<p><img alt="w:1000px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250407142312.png" /></p>
+<hr />
+<h3 id="spring-block-model-notebook">Spring-block model (<a href="codes/spring_slider/">notebook</a>)</h3>
+<!-- ![height:600px](./assets/ElasticRebound.jpeg) -->
+<p><img alt="20250407155433 h:200px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250407155433.png" /></p>
+<p><img alt="spring slider h:300px" src="../assets/Screenshot%202023-08-23%20at%2022.53.46.png" /></p>
+<hr />
+<h3 id="spring-block-model">Spring-block model</h3>
+<video src="./assets/GIF_1-BlockEQMachine_Graph.mp4" controls width="80%"></video>
+
+<hr />
+<h2 id="earthquake-recurrence-model">Earthquake recurrence model</h2>
+<p><img alt="h:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250407155751.png" /></p>
+<hr />
+<h2 id="stress-drop">Stress drop</h2>
+<p>Moment <span class="arithmatex">\(M_0 = \mu A D\)</span></p>
+<p>Stress drop <span class="arithmatex">\(\Delta \sigma = \sigma_\text{final} - \sigma_\text{initial}\)</span></p>
+<p>large D <span class="arithmatex">\(\times\)</span> small A v.s. small D <span class="arithmatex">\(\times\)</span> large A? </p>
+<p><img alt="20250409232116 width:1100px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409232116.png" /></p>
+<hr />
+<h2 id="circular-crack-model">Circular crack model</h2>
+<p><img alt="20250409232316 width:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409232316.png" /></p>
+<p>Moment </p>
+<div class="arithmatex">\[M_0 = \mu A D = \mu \pi r^2 D\]</div>
+<p>Stress drop </p>
+<div class="arithmatex">\[\Delta \sigma = \frac{7 \pi \mu D}{16 r} = \frac{7 M_0}{16 r^3}\]</div>
+<hr />
+<h2 id="far-field-seismic-pulse">Far-field seismic pulse</h2>
+<p>Area under displacement pulse <span class="arithmatex">\(f(h\tau)\)</span> is related to seismic moment <span class="arithmatex">\(M_0\)</span></p>
+<p>Radiation patterns, e.g.:
+<span class="arithmatex">\(<span class="arithmatex">\(\mathbf{u}^P(t)=\frac{1}{4 \pi \rho \alpha^3} \sin 2 \theta \cos \phi \frac{1}{r} \dot{M}_0\left(t-\frac{r}{\alpha}\right) \hat{\mathbf{r}}\)</span>\)</span></p>
+<p><img alt="bg right:30% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409232744.png" /></p>
+<hr />
+<h2 id="far-field-seismic-pulse-shape">Far-field seismic pulse shape</h2>
+<p><img alt="20250409232944 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409233012.png" /></p>
+<hr />
+<h2 id="self-similar-earthquake-scaling">Self-Similar Earthquake Scaling</h2>
+<div style="display: flex; justify-content: space-between;">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409234621.png" width="48%">
+<img src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409234815.png" width="48%">
+</div>
+
+<p>Assuming dimensions are scaled proportionally, displacement D will increase by b</p>
+<hr />
+<h2 id="self-similar-earthquake-scaling_1">Self-Similar Earthquake Scaling</h2>
+<p><img alt="20250409234921 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409234921.png" /></p>
+<hr />
+<h2 id="self-similar-earthquake-scaling_2">Self-Similar Earthquake Scaling</h2>
+<p><img alt="20250403002414 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250403002414.png" /></p>
+<hr />
+<h2 id="self-similar-earthquake-scaling_3">Self-similar Earthquake Scaling</h2>
+<p>Are different sized events self-similar?</p>
+<ul>
+<li>
+<p>Self-similarity predicts smaller events are “shifted” versions of larger events.</p>
+</li>
+<li>
+<p>Following <span class="arithmatex">\(\omega^{-3}\)</span> for self-similarity</p>
+</li>
+</ul>
+<p><img alt="bg right:50% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409235704.png" /></p>
+<hr />
+<h2 id="self-similar-earthquake-scaling_4">Self-similar Earthquake Scaling</h2>
+<ul>
+<li>
+<p>Stacking spectra following <span class="arithmatex">\(\omega^{-3}\)</span>, spectral shapes are similar within uncertainties.</p>
+</li>
+<li>
+<p>Self-similarity implies that apparent stress is size independent</p>
+</li>
+</ul>
+<p><img alt="bg right:50% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409235858.png" /></p>
+<hr />
+<h2 id="brune-model-1970">Brune model (1970)</h2>
+<div class="arithmatex">\[u(f) = \frac{M_0}{1 + (f/f_c)^2}\]</div>
+<p>From model fit obtained:</p>
+<ul>
+<li>Corner frequency (<span class="arithmatex">\(f_c\)</span>)</li>
+<li>Radiated energy (<span class="arithmatex">\(E_s\)</span>)</li>
+</ul>
+<p><img alt="bg right:50% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250410000033.png" /></p>
+<hr />
+<h2 id="corner-frequency">Corner frequency</h2>
+<p><img alt="20250410000325 height:550px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250410000325.png" /></p>
+<hr />
+<h2 id="far-field-seismic-pulse-shape_1">Far-field seismic pulse shape</h2>
+<p><img alt="20250409232623 width:1000px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409232623.png" /></p>
+<hr />
+<h3 id="earthquake-energy-partitioning">Earthquake Energy Partitioning</h3>
+<p><img alt="20250409234107 height:550px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250409234107.png" /></p>
+<hr />
+<h3 id="earthquake-energy-partitioning_1">Earthquake Energy Partitioning</h3>
+<p><img alt="20250403002307 height:500px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250403002307.png" /></p>
+<hr />
+<h3 id="earthquake-scaling-static-and-dynamic">Earthquake Scaling: static and dynamic</h3>
+<p><img alt="20250410000604 height:550px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250410000604.png" /></p>
+<hr />
+<h3 id="stess-and-radiated-energy">Stess and Radiated Energy</h3>
+<p>Is the stress drop close to the absolute stress level (weak faults) or just a small portion (strong faults)?</p>
+<p><img alt="bg right:60% fit" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250410000726.png" /></p>
+<hr />
+<h3 id="radiation-efficiency">Radiation efficiency</h3>
+<div class="arithmatex">\[
+\eta_R = \frac{E_R}{E_R + E_G}
+\]</div>
+<p>For simple slip-weakening friction</p>
+<div class="arithmatex">\[
+\eta_R = \frac{E_R}{\frac{1}{2} \Delta \sigma D A} = \frac{2 \mu}{\Delta \sigma} 
+\frac{E_R}{M_0} = 2\mu \frac{\tilde{e}}{\Delta \sigma}
+\]</div>
+<p>where <span class="arithmatex">\(\tilde{e} = \frac{E_R}{M_0}\)</span> is called the scaled energy and is dimensionless.</p>
+<hr />
+<h3 id="seismic-efficiency">Seismic efficiency</h3>
+<p>The radiation efficiency should not be confused with the seismic  efficiency</p>
+<div class="arithmatex">\[
+\eta_s = \frac{E_R}{R} = \frac{E_R}{\bar{\sigma} \bar{D} A} = \frac{\mu E_R}{\bar{\sigma} M_0} = \frac{\mu \tilde{e}}{\bar{\sigma}}
+\]</div>
+<p>The seismic efficiency is more difficult to estimate than the radiation  efficiency because it depends upon the poorly constrained absolute stress  level on the fault.</p>
+<hr />
+<h3 id="apparent-stress-abercrombie-1995">Apparent Stress (Abercrombie, 1995)</h3>
+<p><img alt="20250410001145 height:550px" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250410001145.png" /></p>
+<hr />
+<h3 id="apparent-stress-ide-and-beroza-2001">Apparent Stress (Ide and Beroza, 2001)</h3>
+<p><img alt="20250410000915" src="https://raw.githubusercontent.com/zhuwq0/images/main/20250410000915.png" /></p>
+<hr />
+<h3 id="seismic-wave-propagation-notebook">Seismic wave propagation (<a href="codes/wave_propagation/">notebook</a>)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">P-wave</th>
+<th style="text-align: center;">S-wave</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="width:500px" src="https://gpg.geosci.xyz/_images/pwave-animated-2.gif" /></td>
+<td style="text-align: center;"><img alt="width:500px" src="https://gpg.geosci.xyz/_images/s-wave-animated.gif" /></td>
+</tr>
+</tbody>
+</table>
+<!-- ---
+
+![height:500px](./assets/Screenshot%202023-08-24%20at%2010.46.37.png)
+
+---
+
+![height:600px](./assets/Screenshot%202023-08-24%20at%2010.48.17.png) -->
+
+<!-- --- -->
+
+<!-- ## Earthquake recurrence model
+
+![width:900px](./assets/Screenshot%202023-08-24%20at%2016.07.47.png)
+( Shimazaki and Nakata, 1980) -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "content.code.annotate", "content.action.edit"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
