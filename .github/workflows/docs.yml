@@ -2,7 +2,7 @@ name: docs
 
 on:
   push:
-    branches: 
+    branches:
       - master
       - main
 
@@ -22,24 +22,49 @@ jobs:
 
       # - run: |
       #     git lfs install
-      #     git lfs pull 
+      #     git lfs pull
 
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
 
-      - run: pip install mkdocs-material mkdocs-jupyter mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
+      - name: Install dependencies
+        run: pip install mkdocs-material mkdocs-jupyter mkdocs-monorepo-plugin mkdocs-bibtex mkdocs-redirects
 
-      - run: |
-          mkdir -p docs/earthquake-catalog-workshop/introduction && wget -O docs/earthquake-catalog-workshop/introduction/SSA25_catalog_workshop_intro.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_intro.pdf
-          mkdir -p docs/earthquake-catalog-workshop/seismic_network && wget -O docs/earthquake-catalog-workshop/seismic_network/SSA25_catalog_workshop_RSNs.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_RSNs.pdf
-          # wget -O docs/earthquake-catalog-workshop/seismic_network/tutorials.md https://raw.githubusercontent.com/SCEDC/tutorials/refs/heads/main/README.md
-          mkdir -p docs/earthquake-catalog-workshop/machine_learning && wget -O docs/earthquake-catalog-workshop/machine_learning/SSA25_catalog_workshop_machine_learning.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_machine_learning.pdf
-          mkdir -p docs/earthquake-catalog-workshop/template_matching && wget -O docs/earthquake-catalog-workshop/template_matching/SSA25_catalog_workshop_template_matching.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_template_matching.pdf
-          mkdir -p docs/earthquake-catalog-workshop/catalog_analysis && wget -O docs/earthquake-catalog-workshop/catalog_analysis/SSA25_catalog_workshop_quality.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_quality.pdf
-          mkdir -p docs/earthquake-catalog-workshop/conclusion && wget -O docs/earthquake-catalog-workshop/conclusion/SSA25_catalog_workshop_conclusion.pdf https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_conclusion.pdf
+      - name: Remove symlinks
+        run: find ./ -name "docs" -type d | xargs -I {} find {} -type l -delete
 
-      - run: mkdocs gh-deploy --force
+      - name: Download workshop materials
+        run: |
+          mkdir -p docs/earthquake-catalog-workshop/introduction && \
+          wget -O docs/earthquake-catalog-workshop/introduction/SSA25_catalog_workshop_intro.pdf \
+            https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_intro.pdf
+          
+          mkdir -p docs/earthquake-catalog-workshop/seismic_network && \
+          wget -O docs/earthquake-catalog-workshop/seismic_network/SSA25_catalog_workshop_RSNs.pdf \
+            https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_RSNs.pdf
+          
+          # wget -O docs/earthquake-catalog-workshop/seismic_network/tutorials.md \
+          #   https://raw.githubusercontent.com/SCEDC/tutorials/refs/heads/main/README.md
+          
+          mkdir -p docs/earthquake-catalog-workshop/machine_learning && \
+          wget -O docs/earthquake-catalog-workshop/machine_learning/SSA25_catalog_workshop_machine_learning.pdf \
+            https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_machine_learning.pdf
+          
+          mkdir -p docs/earthquake-catalog-workshop/template_matching && \
+          wget -O docs/earthquake-catalog-workshop/template_matching/SSA25_catalog_workshop_template_matching.pdf \
+            https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_template_matching.pdf
+          
+          mkdir -p docs/earthquake-catalog-workshop/catalog_analysis && \
+          wget -O docs/earthquake-catalog-workshop/catalog_analysis/SSA25_catalog_workshop_quality.pdf \
+            https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_quality.pdf
+          
+          mkdir -p docs/earthquake-catalog-workshop/conclusion && \
+          wget -O docs/earthquake-catalog-workshop/conclusion/SSA25_catalog_workshop_conclusion.pdf \
+            https://github.com/AI4EPS/Earthquake_Catalog_Workshop/releases/download/Slides/SSA25_catalog_workshop_conclusion.pdf
+
+      - name: Deploy docs
+        run: mkdocs gh-deploy --force
 
       # - uses: peaceiris/actions-gh-pages@v4
       #   if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'

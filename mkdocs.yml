@@ -48,7 +48,7 @@ plugins:
   - mkdocs-jupyter:
       ignore_h1_titles: true
       # include_source: true
-      allow_errors: true
+      # allow_errors: true
       ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
   - monorepo
   - bibtex:
@@ -74,6 +74,7 @@ extra_javascript:
 
 extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
+  - extra.css
 
 extra:
   generator: false
@@ -82,6 +83,3 @@ extra:
     property: G-5P3JS5EJW8
   # analytics:
   #   provider: clustrmaps
-
-extra_css:
-  - extra.css
