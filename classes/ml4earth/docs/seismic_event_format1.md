@@ -27,7 +27,7 @@ For simple explanation, we use the [M6.4 Ridgecrest earthquake](https://earthqua
 		- "magnitude": 6.4 (float)
 		- "magnitude_type": Mw (str)
 		- "sampling_rate": 100 (int)
-		- "nt": 1200 (int)
+		- "nt": 12000 (int)
    		- "nx"[^2]: 15 (int)
 		- "source": CI (str)
 	- "ci38443183/CI.RJOB..EH":  (dataset; shape: 3$\times$nt, unit: μm/s; float32)
