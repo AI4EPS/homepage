@@ -18,9 +18,9 @@
 	path = projects/ADSeismic.jl
 	url = git@github.com:AI4EPS/ADSeismic.jl.git
 	branch = main
-[submodule "projects/ADTomo.jl"]
-	path = projects/ADTomo.jl
-	url = https://github.com/AI4EPS/ADTomo.jl.git
+[submodule "projects/ADTomo"]
+	path = projects/ADTomo
+	url = https://github.com/AI4EPS/ADTomo.git
 	branch = main
 [submodule "classes/seismology"]
 	path = classes/seismology
