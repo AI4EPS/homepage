@@ -1,0 +1,49 @@
+name: update submodules
+
+# The project and course docs are git submodules, so the site only shows whatever
+# commit each one is pinned to. Left alone those pins drift for months, which is how
+# the site went stale. Once a month, move every submodule to the tip of the branch
+# named in .gitmodules and redeploy if anything moved.
+
+on:
+  schedule:
+    - cron: "0 6 1 * *" # 06:00 UTC on the 1st of each month
+  workflow_dispatch: # and on demand from the Actions tab
+
+jobs:
+  update:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.bump.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Move submodules to their tracked branches
+        id: bump
+        run: |
+          git submodule update --init --remote
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "All submodules are already current."
+            exit 0
+          fi
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "Updated:"
+          git diff --submodule=log | grep -E '^Submodule' || true
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Update submodules to current upstream"
+          git push
+
+  # A push made with the default GITHUB_TOKEN does not start other workflows, so the
+  # docs build has to be invoked directly rather than left to its own push trigger.
+  deploy:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    permissions:
+      contents: write
+    uses: ./.github/workflows/docs.yml

@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+  workflow_call: # so update-submodules.yml can redeploy after bumping the pins
 
 jobs:
   deploy:
