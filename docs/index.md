@@ -9,7 +9,7 @@ hide:
 
 ### Weiqiang Zhu 
 
-[Assistant Professor](https://eps.berkeley.edu/people/weiqiang-zhu) ([CV](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/AI4EPS/homepage/3ca4586a14724bca313080b4e1f62c0b4a841e38/docs/cv.pdf))
+[Assistant Professor](https://eps.berkeley.edu/people/weiqiang-zhu) ([CV](cv.pdf))
 
 [Earth & Planetary Science](https://www.eps.berkeley.edu), [University of California, Berkeley](https://www.berkeley.edu)
 
@@ -19,11 +19,7 @@ hide:
 
 Email: zhuwq@berkeley.edu
 
-Github: [AI4EPS](https://github.com/AI4EPS)
-
-
-## News
-[05/2022] I will be joining the Department of Earth & Planetary Science at University of California, Berkeley as an Assistant Professor starting from July 2023. I am looking for self-motivated Ph.D. students and PostDoc fellows to join my research group. Candidates interested in earthquake science and machine learning are particularly encouraged to apply. 
+Github: [AI4EPS](https://github.com/AI4EPS) &middot; [Google Scholar](https://scholar.google.com/citations?user=ApsNeMkAAAAJ&hl=en)
 
 ## Education
 
@@ -45,17 +41,11 @@ Github: [AI4EPS](https://github.com/AI4EPS)
 
 ## Research
 
-My research focuses on understanding earthquake physics and statistics by applying cutting-edge artificial intelligence and scientific computing methods to gain new insights from large seismic datasets.
-
-### Machine Learning/Deep Learning for Geophysical Signal Discovery
-- Applying deep learning to detecting hidden earthquake signals from large seismic datasets to understand complex earthquake sequences and fault zone structures.
-- Applying cloud computing to large-scale data mining to build high-resolution earthquake catalogs for studying earthquake mechanisms and other geophysical processes, such as subsurface fluid migration, volcanic unrest, and induced seismicity.
-
-### Earthquake Simulation and Seismic Inversion for Understanding Earthquake Physics
-- Applying earthquake simulation to analyze multiphysics couplings within fault zones such as fluid, permeability, friction, and other mechanical properties.
-- Applying automatic differentiation to improve geophysical inversion and constrain key physical parameters such as earthquake source parameters and the Earth’s interior structures.
+Much of what we need to understand earthquakes already sits unread in decades of seismic archives. We develop machine-learning methods to recover that information, and use it to build catalogs, characterize earthquake sources, image faults at depth, and forecast future shaking and seismicity. See [Research](research.md) for details.
 
 ## Honors and Awards
+- 2025, [Charles F. Richter Early-Career Award](https://www.seismosoc.org/award-recipient/weiqiang-zhu/), Seismological Society of America
+- 2025, Hellman Fellowship, University of California, Berkeley
 - 2021, Director’s Postdoctoral Fellowship, Caltech Seismological Laboratory 
 - 2021, Exceptional Thesis, Geophysics, Stanford University
 - 2021, Outstanding Student Presentation Award, American Geophysical Union
@@ -65,5 +55,3 @@ My research focuses on understanding earthquake physics and statistics by applyi
 
 <!-- ## Outreach
 - 06/2022 - 07/2002, Mentor for [Caltech Earthquake Fellows Program](http://www.seismolab.caltech.edu/eq_fellows.html) ([news](https://www.caltech.edu/about/news/caltech-earthquake-fellows)) -->
-
-[![Views](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fai4eps.github.io%2Fhomepage%2F&label=views&labelColor=%23d9e3f0&countColor=%23263759&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fai4eps.github.io%2Fhomepage%2F)

@@ -1,14 +1,22 @@
+# Teaching
 
-### [Observational Seismology](../eps207-observational-seismology/)
+Course materials are open and version-controlled, so that students learn the science by working with real seismic data.
 
-### [Earthquake Catalog Workshop](../earthquake-catalog-workshop)
+## Courses
 
-### [PyEarth: A Python Introduction to Earth Science](../eps88-pyearth-a-python-introduction-to-earth-science/)
+- **EPS 130: Introduction to Seismology** (Spring 2025, 2026). [Course site](../eps130-introduction-to-seismology/)
+- **EPS 254: Advanced Topics in Seismology and Geophysics** (Spring 2025)
+- **EPS 88: PyEarth, A Python Introduction to Earth Science** (Fall 2024). [Course site](../eps88-pyearth-a-python-introduction-to-earth-science/)
+- **EPS 260: Research in Earth Science** (Fall 2023, 2024)
+- **EPS 207: Observational Seismology** (Fall 2023). [Course site](../eps207-observational-seismology/)
 
-### [ML4Earth](../ml4earth)
+## Workshops
 
-### Playground
+- [DAS Seismology Workshop](https://ai4eps.github.io/DAS_Seismology_Workshop/), SSA Annual Meeting
+- [Earthquake Catalog Workshop](../earthquake-catalog-workshop), SSA Annual Meeting
+<!-- - [ML4Earth](../ml4earth), machine learning for Earth science -->
 
-[Jupyterhub](https://datahub.berkeley.edu/hub/home): [https://datahub.berkeley.edu](https://datahub.berkeley.edu/hub/home)
 
-[Colab](https://colab.research.google.com/): [https://colab.research.google.com/](https://colab.research.google.com/)
+## Playground
+
+[Jupyterhub](https://datahub.berkeley.edu/hub/home) &middot; [Colab](https://colab.research.google.com/)

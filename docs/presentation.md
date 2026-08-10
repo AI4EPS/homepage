@@ -1,10 +1,29 @@
-## Invited Talks
+# Invited Talks
 
-- Keynote Speaker of [GMG Fall 2022 Meeting](https://gmg.caltech.edu) (2022/09): Deep Learning for Earthquake Monitoring using Seismic Networks and Distributed Acoustic Sensing
-
-- Plenary Speaker of [2022 SCEC Annual Meeting](https://www.scec.org/meetings/2022/am) (2022/09): Deep Learning and Cloud Computing for Earthquake Science
-
-## Conferences
-
-
-
+- Invited Showcase Talk, ARMA Symposium, Tucson (Jun 2026)
+- Featured Speaker, NSF GAGE/SAGE Community Science Workshop (May 2025)
+- Geological Seminar, UW-Madison (Apr 2025)
+- Lawrence Livermore National Laboratory GMP Seminar (Mar 2025)
+- IGPP Seminars, UC Santa Cruz (Dec 2024)
+- Geomechanics and Mitigation of Geohazards Deep Dive: DAS, Caltech (May 2024)
+- Slow-to-Fast Earthquakes Session, JpGU Meeting (May 2024)
+- Department Seminar, Tongji University (May 2024)
+- Panel: Science in the AI Era, UC Berkeley (Nov 2023)
+- BIDMaP AI + Physical Sciences Seminar, UC Berkeley (Nov 2023)
+- EEPS Department Seminar, Rice University (Nov 2023)
+- Workshop: DAS Advances and ML Techniques, IMAGE 2023 (Sep 2023)
+- Workshop: Machine Learning & AI, SZ4D (Aug 2023)
+- 4th AI Seismology Conference, China (Jul 2023)
+- Earthquake Science Center Seminars, USGS (Jun 2023)
+- IGPP Seminar Series, UC San Diego (May 2023)
+- Panel: ML for Real-time Monitoring, SSA (Apr 2023)
+- Earth & Environmental Sciences Seminars, Michigan State University (Apr 2023)
+- 13th UJNR Panel for Earthquake Research (Sep 2022)
+- Plenary Speaker, Computational Science, SCEC (Sep 2022)
+- Keynote, Geomechanics and Mitigation of Geohazards, Caltech (Sep 2022)
+- EAS Seminar Series, Cornell University (Jan 2022)
+- Geology Colloquium, UIUC (Dec 2021)
+- Department Seminar, Peking University (Oct 2021)
+- 37th General Assembly, European Seismological Commission (Sep 2021)
+- ESSC Seminars, Chinese University of Hong Kong (Aug 2021)
+- Seismological Methods and Programs Course, USTC (Aug 2021)

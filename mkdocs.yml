@@ -1,7 +1,7 @@
 site_name: "AI4EPS"
 site_url: "https://ai4eps.github.io/homepage"
 site_author: "Weiqiang Zhu"
-site_description: ""
+site_description: "Artificial Intelligence for Earth and Planetary Science: machine learning for earthquake monitoring, seismic imaging, and forecasting at UC Berkeley."
 repo_name: "AI4EPS"
 repo_url: "https://github.com/ai4eps/homepage/"
 edit_uri: edit/main/docs/
@@ -11,8 +11,10 @@ nav:
   - Research: 
     - Research: 'research.md'
     - QuakeFlow: '!include ./projects/QuakeFlow/mkdocs.yml'
+    - CCTorch: '!include ./projects/CCTorch/mkdocs.yml'
     - DeepDenoiser: '!include ./projects/DeepDenoiser/mkdocs.yml'
     - PhaseNet: '!include ./projects/PhaseNet/mkdocs.yml'
+    - EQNet: '!include ./projects/EQNet/mkdocs.yml'
     - GaMMA: '!include ./projects/GaMMA/mkdocs.yml'
     - ADSeismic: '!include ./projects/ADSeismic.jl/mkdocs.yml'
     - ADLoc: '!include ./projects/ADLoc/mkdocs.yml'
@@ -20,10 +22,12 @@ nav:
     - Deep Catalog: '!include ./projects/Catalog/mkdocs.yml'
   - Teaching: 
     - Teaching: 'teaching.md'
+    - EPS130 Seismology: '!include ./classes/eps130/mkdocs.yml'
     - Seismology: '!include ./classes/seismology/mkdocs.yml'
     - PyEarth: '!include ./classes/pyearth/mkdocs.yml'
     - ML4Earth: '!include ./classes/ml4earth/mkdocs.yml'
-    - Workshop: '!include ./classes/workshop/mkdocs.yml'
+    - Catalog Workshop: '!include ./classes/workshop/mkdocs.yml'
+    - DAS Workshop: '!include ./classes/das_workshop/mkdocs.yml'
   - Publication: 
     - Publications: publication.md
     - Presentations: presentation.md 
@@ -51,15 +55,13 @@ plugins:
       # allow_errors: true
       ignore: ["ADSeismic/examples/*/*.ipynb", "ADSeismic/examples/*/*/*.ipynb"]
   - monorepo
-  - bibtex:
-      bib_file: "docs/publications.bib"
   - redirects:
       redirect_maps:
         'quakeflow.md': 'https://ai4eps.github.io/QuakeFlow' 
         'deepdenoiser.md': 'https://ai4eps.github.io/DeepDenoiser' 
         'phasenet.md': 'https://ai4eps.github.io/PhaseNet'
         'gamma.md': 'https://ai4eps.github.io/GaMMA'
-        'adseismic.md': 'https://ai4eps.github.io/ADSeismic'
+        'adseismic.md': 'https://github.com/AI4EPS/ADSeismic.jl'
         'catalog.md': 'https://ai4eps.github.io/Earthquake-Deep-Catalog'
 
 markdown_extensions:

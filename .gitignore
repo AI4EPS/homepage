@@ -1,6 +1,8 @@
 site
+.venv
+.cache
 
-# powerpoint 
+# powerpoint
 ~$*
 
 # mac
@@ -11,3 +13,5 @@ classes/seismology/docs/obspy/raw_event/
 classes/seismology/docs/obspy/raw_phase/
 docs/earthquake-catalog-workshop/**/*.pdf
 earthquake-catalog-workshop/**/*.pdf
+pdfs/
+__pycache__/

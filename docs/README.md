@@ -10,6 +10,4 @@
 
 
 <!-- ![](/docs/assets/defense_flyer_zhuwq.png) -->
-![](https://github.com/AI4EPS/homepage/blob/master/docs/assets/defense_flyer_zhuwq.png?raw=true)
-
-Under development...
+![](https://github.com/AI4EPS/homepage/blob/main/docs/assets/defense_flyer_zhuwq.png?raw=true)

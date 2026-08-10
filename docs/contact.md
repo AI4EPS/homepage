@@ -4,7 +4,7 @@ If you are interested in exploring the interdisciplinary field of seismology and
 
 ## Ph.D. program
 
-The application deadline of the Ph.D. program of EPS for the 2024-2025 academic year is December 4, 2023.
+The application deadline of the Ph.D. program of EPS for the 2027-2028 academic year is December 1, 2026 (8:59pm PST).
 
 GRE scores are optional. International applicants from countries where English is not the official language are required to take the Test of English as a Foreign Language (TOEFL). 
 
@@ -18,4 +18,4 @@ Other links about EPS and Berkeley:
 ## Postdoc
 
 - [Miller Fellowship](https://miller.berkeley.edu/fellowship) (Deadline September each year)
-- [NSF Postdoctoral Fellowships](https://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf22625)
+- [NSF Postdoctoral Fellowships](https://www.nsf.gov/funding/opportunities/ear-pf-earth-sciences-postdoctoral-fellowships)

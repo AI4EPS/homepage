@@ -1,37 +1,89 @@
-[Google Scholar Page](https://scholar.google.com/citations?user=ApsNeMkAAAAJ&hl=en)
+# Publications
 
-If you cannot find PDFs from your library, please send me a paper request on [ResearchGate](https://www.researchgate.net/profile/Zhu-Weiqiang/publications)
+[Google Scholar](https://scholar.google.com/citations?user=ApsNeMkAAAAJ&hl=en) &middot; [ResearchGate](https://www.researchgate.net/profile/Zhu-Weiqiang/publications)
 
-### 2022
-- **Zhu, W.**, Hou, A. B., Yang, R., Datta, A., Mousavi, S. M., Ellsworth, W. L., & Beroza, G. C. (2022). QuakeFlow: A Scalable Machine-learning-based Earthquake Monitoring Workflow with Cloud Computing. Geophysical Journal International.
-- **Zhu, W.**, Tai, K. S., Mousavi, S. M., Bailis, P., & Beroza, G. C. (2022). An end-to-end earthquake detection method for joint phase picking and association using deep learning. Journal of Geophysical Research: Solid Earth.
-- **Zhu, W.**, McBrearty, I. W., Mousavi, S. M., Ellsworth, W. L., & Beroza, G. C. (2022). Earthquake phase association using a bayesian gaussian mixture model. Journal of Geophysical Research: Solid Earth.
-- Xu, K., **Zhu, W.**, & Darve, E. (2022). Learning generative neural networks with physics knowledge. Research in the Mathematical Sciences.
-- Yang, L., Liu, X., **Zhu, W.**, Zhao, L., & Beroza, G. C. (2022). Toward improved urban earthquake monitoring through deep-learning-based noise suppression. Science advances.
-- Datta, A., Wu, D. J., **Zhu, W.**, Cai, M., & Ellsworth, W. L. (2022). Deepshake: Shaking intensity prediction using deep spatiotemporal RNNs for earthquake early warning. Seismological Society of America.
+If you cannot reach a paper through your library, email me and I will send a copy.
 
-### 2021
-- **Zhu, W.** (2021). Ph.D. Thesis: Applications of Deep Learning in Seismology. [pdf](https://1drv.ms/b/s!AuyqwNjN-DpngQ4_BfvUR67NjRFk?e=UjDwT2)
-- **Zhu, W.**, Xu, K., Darve, E., & Beroza, G. C. (2021). A General Approach to Seismic Inversion with Automatic Differentiation. Computers & Geosciences.
-- **Zhu, W.**, Xu, K., Darve, E., Biondi, B., & Beroza, G. C. (2021). Integrating deep neural networks with full-waveform inversion: Reparametrization, regularization, and uncertainty quantification. Geophysics.
-- Retailleau, L., Saurel, J.-M., **Zhu, W.**, Satriano, C., Beroza, G. C., Issartel, S., ... Team, O. (2021). PhaseWorm: A real-time machine-learning-based algorithm for volcano-tectonic earthquake monitoring. Seismological Research Letters.
-- Tan, Y. J., Waldhauser, F., Ellsworth, W. L., Zhang, M., **Zhu, W.**, Michele, M., ... Segou, M. (2021). Machine-learning-based high-resolution earthquake catalog reveals how complex fault structures were activated during the 2016–2017 central italy sequence. The Seismic Record.
+## 2026
 
-### 2020
-- **Zhu, W.**, Mousavi, S. M., & Beroza, G. C. (2020). Seismic Signal Augmentation to Improve Generalization of Deep Neural Networks. Advances in Geophysics. [pdf](https://1drv.ms/b/s!AuyqwNjN-DpngQ0KqNGC3Ylxk9tV?e=j2uXLg)
-- **Zhu, W.**, Allison, K. L., Dunham, E. M., & Yang, Y. (2020). Fault Valving and Pore Pressure Evolution in Simulations of Earthquake Sequences and Aseismic Slip. Nature Communications.
-- Xu, K., **Zhu, W.**, & Darve, E. (2020). Distributed machine learning for computational engineering using MPI. arXiv preprint.
-- Mousavi, S. M., Ellsworth, W. L., **Zhu, W.**, Chuang, L. Y., & Beroza, G. C. (2020). Earthquake transformer—an attentive deep-learning model for simultaneous earthquake detection and phase picking. Nature Communications.
-- Chai, C., Maceira, M., Santos-Villalobos, H. J., Venkatakrishnan, S. V., Schoenball, M., **Zhu, W.**, ... Team, E. C. (2020). Using a deep neural network and transfer learning to bridge scales for seismic phase picking. Geophysical Research Letters.
-- Liu, M., Zhang, M., **Zhu, W.**, Ellsworth, W. L., & Li, H. (2020). Rapid characterization of the july 2019 Ridgecrest, california, earthquake sequence from raw seismic data using machine-learning phase picker. Geophysical Research Letters.
-- Park, Y., Mousavi, S. M., **Zhu, W.**, Ellsworth, W. L., & Beroza, G. C. (2020). Machine-learning-based analysis of the Guy-Greenbrier, arkansas earthquakes: A tale of two sequences. Geophysical Research Letters.
+- Jie, Y., Wei, S. S., **Zhu, W.**, Freymueller, J., Elliott, J. (2026). Deep-Learning-Based Catalog of Background Seismicity and Aftershocks of the 2020–2021 Large Earthquakes Along the Alaska Peninsula. *Seismological Research Letters*. [doi](https://doi.org/10.1785/0220250072) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/jie2026deep.pdf)
+- Wolf, J., Romanowicz, B., Garnero, E., **Zhu, W.**, West, J. D. (2026). Widespread Deformation at the Base of the Mantle Linked to Subducted Slabs. *The Seismic Record*. [doi](https://doi.org/10.1785/0320260001) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/wolf2026widespread.pdf)
+- Zhang, C., **Zhu, W.**, Romanowicz, B. A., Allen, R. M., Soga, K., Wu, Y. (2026). A Deep Learning Framework for Marine Acoustic and Seismic Monitoring with Distributed Acoustic Sensing. *arXiv preprint*. [doi](https://doi.org/10.48550/arXiv.2603.14844) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhang2026deep.pdf)
+- Zhu, C., Yang, Y., Yang, K., **Zhu, W.**, Yang, Q. (2026). Monitoring Landslide Disturbances Using Distributed Acoustic Sensing under Extreme Weather Conditions. *npj Natural Hazards*. [doi](https://doi.org/10.1038/s44304-026-00182-y) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2026monitoring.pdf)
 
-### 2019
-- **Zhu, W.**, Mousavi, S. M., & Beroza, G. C. (2019). Seismic Signal Denoising and Decomposition using Deep Neural Networks. IEEE Transactions on Geoscience and Remote Sensing.
-- Mousavi, S. M., Sheng, Y., **Zhu, W.**, & Beroza, G. C. (2019). STanford EArthquake Dataset (STEAD): A global data set of seismic signals for AI. IEEE Access.
-- Mousavi, S. M., **Zhu, W.**, Ellsworth, W., & Beroza, G. (2019). Unsupervised clustering of seismic signals using deep convolutional autoencoders. IEEE Geoscience and Remote Sensing Letters.
-- Mousavi, S. M., **Zhu, W.**, Sheng, Y., & Beroza, G. C. (2019). CRED: A deep residual network of convolutional and recurrent units for earthquake signal detection. Scientific Reports.
+## 2025
 
-### 2018
-- **Zhu, W.**, & Beroza, G. C. (2018). PhaseNet: a deep-neural-network-based seismic arrival-time picking method. arXiv preprint.
+- Ding, Q., Shen, Z., **Zhu, W.**, Liu, B. (2025). DASFormer: Self-Supervised Pretraining for Earthquake Monitoring. *Visual Intelligence*. [doi](https://doi.org/10.1007/s44267-025-00085-y) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/ding2025dasformer.pdf)
+- Gou, Y., Allen, R. M., **Zhu, W.**, Taira, T., Chen, L. (2025). Leveraging Submarine DAS Arrays for Offshore Earthquake Early Warning: A Case Study in Monterey Bay, California. *Bulletin of the Seismological Society of America*. [doi](https://doi.org/10.1785/0120240234) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/gou2025leveraging.pdf)
+- Poggiali, G., Chiaraluce, L., Ross, Z. E., **Zhu, W.**, Marone, C. (2025). Fault Geometry and Source Mechanics of the Altotiberina Fault System from a High-Resolution Machine-Learning Earthquake Catalog. *Bulletin of the Seismological Society of America*. [doi](https://doi.org/10.1785/0120250072) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/poggiali2025fault.pdf)
+- Song, J., **Zhu, W.**, Zi, J., Yang, H., Chu, R. (2025). An Enhanced Focal Mechanism Catalog of Induced Earthquakes in Weiyuan, Sichuan, from Dense Array Data and a Multitask Deep Learning Model. *The Seismic Record*. [doi](https://doi.org/10.1785/0320250004) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/song2025enhanced.pdf)
+- Suzuki, R., Uchida, N., **Zhu, W.**, Beroza, G. C., Nakayama, T., Yoshida, K., Toyokuni, G., Takagi, R., Azuma, R., Hasegawa, A. (2025). The Forearc Seismic Belt: A Fluid Pathway Constraining Down-Dip Megathrust Earthquake Rupture. *Science*. [doi](https://doi.org/10.1126/science.adt6389) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/suzuki2025forearc.pdf)
+- Tepp, G., Yu, E., Bhaskaran, A., Tam, R., **Zhu, W.**, Newman, Z., Jaski, E., Scheckel, N. (2025). Improvements from Incorporating Machine Learning Algorithms into Near Real-Time Operational Post-Processing. *Scientific Reports*. [doi](https://doi.org/10.1038/s41598-025-14491-1) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/tepp2025improvements.pdf)
+- **Zhu, W.**, Rong, B., Jie, Y., Wei, S. S. (2025). Robust Earthquake Location Using Random Sample Consensus (RANSAC). *arXiv preprint*. [doi](https://doi.org/10.48550/arXiv.2502.10933) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2025robust.pdf)
+- **Zhu, W.**, Song, J., Wang, H., Münchmeyer, J. (2025). Towards End-to-End Earthquake Monitoring Using a Multitask Deep Learning Model. *arXiv preprint*. [doi](https://doi.org/10.48550/arXiv.2506.06939) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2025towards.pdf)
+- **Zhu, W.**, Wang, H., Rong, B., Yu, E., Zuzlewski, S., Tepp, G., Taira, T., Marty, J., Husker, A., Allen, R. M. (2025). California Earthquake Dataset for Machine Learning and Cloud Computing. *arXiv preprint*. [doi](https://doi.org/10.48550/arXiv.2502.11500) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2025california.pdf)
 
+## 2024
+
+- Atterholt, J., Zhan, Z., Yang, Y., **Zhu, W.** (2024). Imaging the Garlock Fault Zone with a Fiber: A Limited Damage Zone and Hidden Bimaterial Contrast. *Journal of Geophysical Research: Solid Earth*. [doi](https://doi.org/10.1029/2024jb028900) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/atterholt2024imaging.pdf)
+- Feng, Y., **Zhu, W.**, Lu, X. (2024). QuakeFormer: A Uniform Approach to Earthquake Ground Motion Prediction Using Masked Transformers. *arXiv preprint*. [doi](https://doi.org/10.48550/arXiv.2412.00815) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/feng2024quakeformer.pdf)
+- Xi, Z., Wei, S. S., **Zhu, W.**, Beroza, G. C., Jie, Y., Saloor, N. (2024). Deep Learning for Deep Earthquakes: Insights from OBS Observations of the Tonga Subduction Zone. *Geophysical Journal International*. [doi](https://doi.org/10.31223/x5c105) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/xi2024deep.pdf)
+
+## 2023
+
+- Biondi, E., **Zhu, W.**, Li, J., Williams, E. F., Zhan, Z. (2023). An Upper-Crust Lid over the Long Valley Magma Chamber. *Science Advances*. [doi](https://doi.org/10.1126/sciadv.adi9878) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/biondi2023upper.pdf)
+- Li, J., **Zhu, W.**, Biondi, E., Zhan, Z. (2023). Earthquake Focal Mechanisms with Distributed Acoustic Sensing. *Nature Communications*. [doi](https://doi.org/10.1038/s41467-023-39639-3) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/li2023earthquake.pdf)
+- Ross, Z. E., **Zhu, W.**, Azizzadenesheli, K. (2023). Neural Mixture Model Association of Seismic Phases. *arXiv preprint*. [doi](https://doi.org/10.48550/arXiv.2301.02597) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/ross2023neural.pdf)
+- Sun, H., Ross, Z. E., **Zhu, W.**, Azizzadenesheli, K. (2023). Phase Neural Operator for Multi-Station Picking of Seismic Arrivals. *Geophysical Research Letters*. [doi](https://doi.org/10.1029/2023gl106434) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/sun2023phase.pdf)
+- Wilding, J. D., **Zhu, W.**, Ross, Z. E., Jackson, J. M. (2023). The Magmatic Web beneath Hawaiʻi. *Science*. [doi](https://doi.org/10.1126/science.ade5755) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/wilding2023magmatic.pdf)
+- Yin, J., Soto, M. A., Ramírez, J., Kamalov, V., **Zhu, W.**, Husker, A., Zhan, Z. (2023). Real-Data Testing of Distributed Acoustic Sensing for Offshore Earthquake Early Warning. *The Seismic Record*. [doi](https://doi.org/10.1785/0320230018) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/yin2023real.pdf)
+- Yin, J., **Zhu, W.**, Li, J., Biondi, E., Miao, Y., Spica, Z. J., Viens, L., Shinohara, M., Ide, S., Mochizuki, K., Husker, A., Zhan, Z. (2023). Earthquake Magnitude with DAS: A Transferable Data-Based Scaling Relation. *Geophysical Research Letters*. [doi](https://doi.org/10.1029/2023GL103045) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/yin2023earthquake.pdf)
+- **Zhu, W.**, Biondi, E., Li, J., Yin, J., Ross, Z. E., Zhan, Z. (2023). Seismic Arrival-Time Picking on Distributed Acoustic Sensing Data Using Semi-Supervised Learning. *Nature Communications*. [doi](https://doi.org/10.1038/s41467-023-43355-3) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2023seismic.pdf)
+
+## 2022
+
+- Datta, A., Wu, D. J., **Zhu, W.**, Cai, M., Ellsworth, W. L. (2022). DeepShake: Shaking Intensity Prediction Using Deep Spatiotemporal RNNs for Earthquake Early Warning. *Seismological Research Letters*. [doi](https://doi.org/10.1785/0220210141) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/datta2022deepshake.pdf)
+- Retailleau, L., Saurel, J., Laporte, M., Lavayssière, A., Ferrazzini, V., **Zhu, W.**, Beroza, G. C., Satriano, C., Komorowski, J. (2022). Automatic Detection for a Comprehensive View of Mayotte Seismicity. *Comptes Rendus Géoscience*. [doi](https://doi.org/10.5802/crgeos.133) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/retailleau2022automatic.pdf)
+- Retailleau, L., Saurel, J., **Zhu, W.**, Satriano, C., Beroza, G. C., Issartel, S., Boissier, P. (2022). A Wrapper to Use a Machine-Learning-Based Algorithm for Earthquake Monitoring. *Seismological Research Letters*. [doi](https://doi.org/10.1785/0220210279) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/retailleau2022wrapper.pdf)
+- Wang, K., Ellsworth, W., Beroza, G. C., **Zhu, W.**, Rubinstein, J. L. (2022). DevelNet: Earthquake Detection on Develocorder Films with Deep Learning: Application to the Rangely Earthquake Control Experiment. *Seismological Research Letters*. [doi](https://doi.org/10.1785/0220220066) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/wang2022develnet.pdf)
+- Xu, K., **Zhu, W.**, Darve, E. (2022). Learning Generative Neural Networks with Physics Knowledge. *Research in the Mathematical Sciences*. [doi](https://doi.org/10.1007/s40687-022-00329-z) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/xu2022learning.pdf)
+- Yang, L., Liu, X., **Zhu, W.**, Zhao, L., Beroza, G. C. (2022). Toward Improved Urban Earthquake Monitoring through Deep-Learning-Based Noise Suppression. *Science Advances*. [doi](https://doi.org/10.1126/sciadv.abl3564) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/yang2022toward.pdf)
+- Zhang, M., Liu, M., Feng, T., Wang, R., **Zhu, W.** (2022). LOC-FLOW: An End-to-End Machine Learning-Based High-Precision Earthquake Location Workflow. *Seismological Research Letters*. [doi](https://doi.org/10.1785/0220220019) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhang2022loc.pdf)
+- **Zhu, W.**, Hou, A. B., Yang, R., Datta, A., Mousavi, S. M., Ellsworth, W. L., Beroza, G. C. (2022). QuakeFlow: A Scalable Machine-Learning-Based Earthquake Monitoring Workflow with Cloud Computing. *Geophysical Journal International*. [doi](https://doi.org/10.1093/gji/ggac355) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2022quakeflow.pdf)
+- **Zhu, W.**, McBrearty, I. W., Mousavi, S. M., Ellsworth, W. L., Beroza, G. C. (2022). Earthquake Phase Association Using a Bayesian Gaussian Mixture Model. *Journal of Geophysical Research: Solid Earth*. [doi](https://doi.org/10.1029/2021jb023249) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2022earthquake.pdf)
+- **Zhu, W.**, Tai, K. S., Mousavi, S. M., Bailis, P., Beroza, G. C. (2022). An End-to-End Earthquake Detection Method for Joint Phase Picking and Association Using Deep Learning. *Journal of Geophysical Research: Solid Earth*. [doi](https://doi.org/10.1029/2021jb023283) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2022end.pdf)
+- **Zhu, W.**, Xu, K., Darve, E., Biondi, B., Beroza, G. C. (2022). Integrating Deep Neural Networks with Full-Waveform Inversion: Reparameterization, Regularization, and Uncertainty Quantification. *Geophysics*. [doi](https://doi.org/10.1190/geo2020-0933.1) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2022integrating.pdf)
+
+## 2021
+
+- Ma, B., **Zhu, W.**, Huang, Q. (2021). Imaging Shallow Fault Structures by Three-Dimensional Reverse Time Migration of Ground Penetration Radar Data. *Journal of Applied Geophysics*. [doi](https://doi.org/10.1016/j.jappgeo.2021.104342) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/ma2021imaging.pdf)
+- Tan, Y. J., Waldhauser, F., Ellsworth, W. L., Zhang, M., **Zhu, W.**, Michele, M., Chiaraluce, L., Beroza, G. C., Segou, M. (2021). Machine-Learning-Based High-Resolution Earthquake Catalog Reveals How Complex Fault Structures Were Activated during the 2016–2017 Central Italy Sequence. *The Seismic Record*. [doi](https://doi.org/10.1785/0320210001) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/tan2021machine.pdf)
+- **Zhu, W.** (2021). Applications of Deep Learning in Seismology. *Ph.D. Thesis, Stanford University*. [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2021applications.pdf)
+- **Zhu, W.**, Xu, K., Darve, E., Beroza, G. C. (2021). A General Approach to Seismic Inversion with Automatic Differentiation. *Computers & Geosciences*. [doi](https://doi.org/10.1016/j.cageo.2021.104751) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2021general.pdf)
+
+## 2020
+
+- Chai, C., Maceira, M., Santos-Villalobos, H. J., Venkatakrishnan, S. V., Schoenball, M., **Zhu, W.**, Beroza, G. C., Thurber, C. (2020). Using a Deep Neural Network and Transfer Learning to Bridge Scales for Seismic Phase Picking. *Geophysical Research Letters*. [doi](https://doi.org/10.1029/2020gl088651) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/chai2020using.pdf)
+- Liu, M., Zhang, M., **Zhu, W.**, Ellsworth, W. L., Li, H. (2020). Rapid Characterization of the July 2019 Ridgecrest, California, Earthquake Sequence from Raw Seismic Data Using Machine-Learning Phase Picker. *Geophysical Research Letters*. [doi](https://doi.org/10.1029/2019gl086189) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/liu2020rapid.pdf)
+- Mousavi, S. M., Ellsworth, W. L., **Zhu, W.**, Chuang, L. Y., Beroza, G. C. (2020). Earthquake Transformer—an Attentive Deep-Learning Model for Simultaneous Earthquake Detection and Phase Picking. *Nature Communications*. [doi](https://doi.org/10.1038/s41467-020-17591-w) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/mousavi2020earthquake.pdf)
+- Park, Y., Mousavi, S. M., **Zhu, W.**, Ellsworth, W. L., Beroza, G. C. (2020). Machine-Learning-Based Analysis of the Guy-Greenbrier, Arkansas Earthquakes: A Tale of Two Sequences. *Geophysical Research Letters*. [doi](https://doi.org/10.1029/2020GL087032) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/park2020machine.pdf)
+- Xu, K., **Zhu, W.**, Darve, E. (2020). Distributed Machine Learning for Computational Engineering Using MPI. *arXiv preprint*. [doi](https://doi.org/10.48550/arXiv.2011.01349) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/xu2020distributed.pdf)
+- Zheng, J., Shen, S., Jiang, T., **Zhu, W.** (2020). Deep Neural Networks Design and Analysis for Automatic Phase Pickers from Three-Component Microseismic Recordings. *Geophysical Journal International*. [doi](https://doi.org/10.1093/gji/ggz441) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zheng2020deep.pdf)
+- **Zhu, W.**, Allison, K. L., Dunham, E. M., Yang, Y. (2020). Fault Valving and Pore Pressure Evolution in Simulations of Earthquake Sequences and Aseismic Slip. *Nature Communications*. [doi](https://doi.org/10.1038/s41467-020-18598-z) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2020fault.pdf)
+- **Zhu, W.**, Huang, Q., Liu, L., Ma, B. (2020). Three-Dimensional Reverse Time Migration of Ground-Penetrating Radar Signals. *Pure and Applied Geophysics*. [doi](https://doi.org/10.1007/s00024-019-02341-x) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2020three.pdf)
+- **Zhu, W.**, Mousavi, S. M., Beroza, G. C. (2020). Seismic Signal Augmentation to Improve Generalization of Deep Neural Networks. *Advances in Geophysics*. [doi](https://doi.org/10.1016/bs.agph.2020.07.003) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2020seismic.pdf)
+
+## 2019
+
+- Mousavi, S. M., Sheng, Y., **Zhu, W.**, Beroza, G. C. (2019). STanford EArthquake Dataset (STEAD): A Global Data Set of Seismic Signals for AI. *IEEE Access*. [doi](https://doi.org/10.1109/access.2019.2947848) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/mousavi2019stanford.pdf)
+- Mousavi, S. M., **Zhu, W.**, Ellsworth, W., Beroza, G. (2019). Unsupervised Clustering of Seismic Signals Using Deep Convolutional Autoencoders. *IEEE Geoscience and Remote Sensing Letters*. [doi](https://doi.org/10.1109/lgrs.2019.2909218) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/mousavi2019unsupervised.pdf)
+- Mousavi, S. M., **Zhu, W.**, Sheng, Y., Beroza, G. C. (2019). CRED: A Deep Residual Network of Convolutional and Recurrent Units for Earthquake Signal Detection. *Scientific Reports*. [doi](https://doi.org/10.1038/s41598-019-45748-1) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/mousavi2019cred.pdf)
+- **Zhu, W.**, Mousavi, S. M., Beroza, G. C. (2019). Seismic Signal Denoising and Decomposition Using Deep Neural Networks. *IEEE Transactions on Geoscience and Remote Sensing*. [doi](https://doi.org/10.1109/tgrs.2019.2926772) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2019seismic.pdf)
+
+## 2018
+
+- **Zhu, W.**, Beroza, G. C. (2018). PhaseNet: A Deep-Neural-Network-Based Seismic Arrival-Time Picking Method. *Geophysical Journal International*. [doi](https://doi.org/10.1093/gji/ggy423) &middot; [pdf](https://github.com/AI4EPS/homepage/releases/download/papers/zhu2018phasenet.pdf)
+
+## 2016
+
+- **Zhu, W.**, Huang, Q. (2016). Attenuation Compensated Reverse Time Migration Method of Ground Penetrating Radar Signals. *Chinese Journal of Geophysics*.

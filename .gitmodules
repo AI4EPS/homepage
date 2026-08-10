@@ -43,3 +43,19 @@
 	url = https://github.com/AI4EPS/ADLoc.git
 	branch = main
 
+[submodule "classes/das_workshop"]
+	path = classes/das_workshop
+	url = https://github.com/AI4EPS/DAS_Seismology_Workshop.git
+	branch = main
+[submodule "projects/CCTorch"]
+	path = projects/CCTorch
+	url = https://github.com/AI4EPS/CCTorch.git
+	branch = main
+[submodule "projects/EQNet"]
+	path = projects/EQNet
+	url = https://github.com/AI4EPS/EQNet.git
+	branch = master
+[submodule "classes/eps130"]
+	path = classes/eps130
+	url = https://github.com/AI4EPS/EPS130_Seismology.git
+	branch = main
